@@ -1,0 +1,77 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Abramson 1991]{ABRAMSON}
+\abntrefinfo{Abramson}{ABRAMSON}{1991}
+{ABRAMSON, D. Constructing school timetables using simulated annealing:
+  Sequential and parallel algorithms.
+\textbf{Management Science}, v.~37, n.~1, p. 98--113, 1991.
+Dispon{\'\i}vel em:
+  \url{https://EconPapers.repec.org/RePEc:inm:ormnsc:v:37:y:1991:i:1:p:98-113}.}
+
+\bibitem[Bardadym 1996]{Bardadym}
+\abntrefinfo{Bardadym}{BARDADYM}{1996}
+{BARDADYM, V.~A. Computer-aided school and university timetabling: The new
+  wave. In:  BURKE, E.; ROSS, P. (Ed.). \textbf{Practice and Theory of
+  Automated Timetabling}. Berlin, Heidelberg: Springer Berlin Heidelberg, 1996.
+  p. 22--45.
+ISBN 978-3-540-70682-3.}
+
+\bibitem[Brasil 2017]{lei13415}
+\abntrefinfo{Brasil}{BRASIL}{2017}
+{BRASIL. Lei nº 13.415, de 16 de fevereiro de 2017.
+\textbf{Diário Oficial [da] República Federativa do Brasil}, Brasília, DF,
+  2017.
+ISSN 1677-7042.
+Dispon{\'\i}vel em:
+  \url{http://www.planalto.gov.br/ccivil\_03/\_ato2015-2018/2017/lei/l13415.htm}.}
+
+\bibitem[Cooper e Kingston 1995]{Cooper}
+\abntrefinfo{Cooper e Kingston}{COOPER; KINGSTON}{1995}
+{COOPER, T.~B.; KINGSTON, J.~H. The complexity of timetable construction
+  problems. In:  \textbf{International Conference on the Practice and Theory of
+  Automated Timetabling}. [S.l.: s.n.], 1995.}
+
+\bibitem[Fonseca, Santos e Carrano 2016]{FONSECA2016108}
+\abntrefinfo{Fonseca, Santos e Carrano}{FONSECA; SANTOS; CARRANO}{2016}
+{FONSECA, G.~H.; SANTOS, H.~G.; CARRANO, E.~G. Integrating matheuristics and
+  metaheuristics for timetabling.
+\textbf{Computers And Operations Research}, v.~74, p. 108--117, 2016.
+ISSN 0305-0548.
+Dispon{\'\i}vel em:
+  \url{https://www.sciencedirect.com/science/article/pii/S0305054816300879}.}
+
+\bibitem[Laarhoven 1987]{van_1987}
+\abntrefinfo{Laarhoven}{LAARHOVEN}{1987}
+{LAARHOVEN, P.~J. \textbf{Simulated annealing theory and applications}. [S.l.]:
+  Kluwer, 1987.}
+
+\bibitem[Poulsen 2012]{POULSEN}
+\abntrefinfo{Poulsen}{POULSEN}{2012}
+{POULSEN, C. J.~B.
+\textbf{Desenvolvimento de um Modelo para o School Timetabling Problem Baseado
+  na Meta-Heurística Simulated Annealing}.
+141~p. Disserta\c{c}\~{a}o (Mestrado) --- Universidade Federal do Rio Grande do
+  Sul, Porto Alegre, 2012.}
+
+\bibitem[Pressman e Maxim 2016]{pressman2016}
+\abntrefinfo{Pressman e Maxim}{PRESSMAN; MAXIM}{2016}
+{PRESSMAN, R.; MAXIM, B. \textbf{Engenharia de Software - 8{\textordfeminine}
+  Edi{\c{c}}{\~a}o}. [s.n.], 2016.
+ISBN 9788580555349. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=wexzCwAAQBAJ}.}
+
+\bibitem[Tan et al. 2021]{TAN2021113943}
+\abntrefinfo{Tan et al.}{TAN et al.}{2021}
+{TAN, J.~S. et al. A survey of the state-of-the-art of optimisation
+  methodologies in school timetabling problems.
+\textbf{Expert Systems with Applications}, v.~165, p. 113943, 2021.
+ISSN 0957-4174.
+Dispon{\'\i}vel em:
+  \url{https://www.sciencedirect.com/science/article/pii/S0957417420307314}.}
+
+\end{thebibliography}

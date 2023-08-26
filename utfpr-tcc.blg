@@ -1,0 +1,78 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: utfpr-tcc.aux
+A level-1 auxiliary file: estrutura/pre-textuais/sumario.aux
+A level-1 auxiliary file: estrutura/textuais/introducao.aux
+A level-1 auxiliary file: estrutura/textuais/desenvolvimento/revisao-de-literatura.aux
+A level-1 auxiliary file: estrutura/textuais/desenvolvimento/proposta.aux
+A level-1 auxiliary file: estrutura/textuais/desenvolvimento/cronograma.aux
+A level-1 auxiliary file: estrutura/textuais/conclusao.aux
+A level-1 auxiliary file: estrutura/pos-textuais/referencias.aux
+The style file: abntex2-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: abntex2-options.bib
+Database file #2: ./base-referencias.bib
+I was expecting a `{' or a `('---line 79 of file ./base-referencias.bib
+ : 
+ : Eu gostaria de sugerir uma pequena troca na estrutura proposta pelo Kleber:
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 15 entries,
+            6714 wiz_defined-function locations,
+            1282 strings with 11604 characters,
+and the built_in function-call counts, 15341 in all, are:
+= -- 1764
+> -- 245
+< -- 342
++ -- 468
+- -- 77
+* -- 914
+:= -- 1900
+add.period$ -- 42
+call.type$ -- 16
+change.case$ -- 103
+chr.to.int$ -- 31
+cite$ -- 9
+duplicate$ -- 1362
+empty$ -- 810
+format.name$ -- 355
+if$ -- 3233
+int.to.chr$ -- 5
+int.to.str$ -- 3
+missing$ -- 222
+newline$ -- 59
+num.names$ -- 46
+pop$ -- 239
+preamble$ -- 1
+purify$ -- 51
+quote$ -- 0
+skip$ -- 1640
+stack$ -- 1
+substring$ -- 651
+swap$ -- 504
+text.length$ -- 13
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 6
+warning$ -- 0
+while$ -- 70
+width$ -- 0
+write$ -- 159
+(There was 1 error message)

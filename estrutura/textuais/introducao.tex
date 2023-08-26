@@ -1,0 +1,43 @@
+% INTRODUÇÃO-------------------------------------------------------------------
+
+\chapter{INTRODUÇÃO}
+\label{chap:introducao}
+
+A cada ano letivo, se faz necessária a definição de grades horárias que atendam inúmeros requisitos para o bom funcionamento das mais diversas instituições de ensino. Estas exigências dependem e impactam diretamente os envolvidos, sejam estes professores, alunos, gestores, ou ainda, os responsáveis pelo planejamento dos horários. Os requisitos citados anteriormente podem mudar durante o ano, requerendo constantes atualizações das grades definidas. Esta tarefa, segundo \citeonline{Bardadym}, requer grande esforço quando realizada manualmente, frequentemente resultando em soluções subótimas.
+
+Para o desenvolvimento dos horários escolares, vários critérios devem ser considerados, como o número de aulas de cada professor, salas, turnos, além das restrições associadas a cada professor em particular. A combinação destes fatores para a produção de um horário otimizado é conhecida como \textit{school timetabling problem} \cite{FONSECA2016108}. Para a escrita deste trabalho, foi realizada a leitura de artigos que abordam o tema em questão, deste modo os autores \citeonline{FONSECA2016108}, \citeonline{TAN2021113943} e \citeonline{ABRAMSON} se mostraram imprescindíveis para a sua realização.
+
+Ao decorrer da revisão bibliográfica, foi reafirmada a relevância desta pesquisa e da elaboração de um projeto que solucione o problema, dada a complexidade e recorrência deste. \citeonline{POULSEN} estima que a maioria das instituições de ensino brasileiras efetua essa tarefa de maneira manual, o que implica em atrasos para as escolas, além de desgaste entre os docentes envolvidos nas negociações de restrições. Isto justifica novamente a necessidade de uma solução automatizada que entregue grades otimizadas em um tempo hábil.
+
+Diante deste contexto, fica evidente a necessidade de solucionar o seguinte problema: como automatizar a geração de grades horárias que atendam as diversas demandas das instituições de ensino? Por ser um problema combinatório, consideram-se técnicas viáveis \textit{Simulated Annealing}, Busca Tabu, Algoritmos Genéticos, entre outros \cite{TAN2021113943}.
+
+Como critério metodológico, será aplicado o procedimento de levantamento de requisitos com os encarregados por planejar as grades horárias nas escolas, para embasar uma análise quantitativa que traga informações para o desenvolvimento do projeto. Os dados coletados, juntamente com os conhecimentos obtidos a partir da revisão bibliográfica viabilizarão identificar a melhor alternativa para a solução do problema. Por fim ocorrerá a implementação da aplicação.
+
+\section{DELIMITAÇÃO DO TEMA}
+\label{sec:antesleiame}
+
+O presente trabalho visa abordar o tema de otimização de grades horárias escolares, tendo em mente especificamente as necessidades de instituições brasileiras de ensino fundamental e médio. 
+
+\section{PROBLEMAS E PREMISSAS}
+\label{sec:organizacaoTrabalho}
+
+Como mencionado anteriormente, as instituições de ensino necessitam de constantes atualizações de suas grades horárias. Este processo envolve muitas variáveis, e impacta diretamente alunos, professores e gestores. Devido a esta complexidade, o problema já é conhecido na literatura como \textit{school timetabling problem}, sendo divido nos tipos \textit{exam timetabling}, \textit{course timetabling} e \textit{high school timetabling} \cite{TAN2021113943}. Este trabalho tem como foco esta última variação, que, segundo os mesmos autores, é definido em termos da disponibilidade dos professores, número de salas, número de aulas por professor em cada sala e restrições.
+
+\section{OBJETIVOS}
+\subsection{Objetivo Geral}
+
+Desenvolver uma aplicação que automatize e simplifique o processo de criação de grades horárias escolares, otimizando diferentes características de qualidade destas, fazendo com que tais sejam livres de conflitos e atendam a restrições impostas pelas instituições de ensino.
+
+\subsection{Objetivos Específicos}
+
+\begin{enumerate}
+	\item Compreender quais são as reais necessidades das escolas quanto ao planejamento de grades horárias
+	\item Implementar métricas de qualidade para os horários, que refletem se as necessidades são atendidas com êxito
+	\item Aplicar um algoritmo de otimização na geração de grades que evite conflitos, atenda restrições de horários dos docentes, minimize a quantidade de janelas nas aulas dos professores, faça agrupamentos formando aulas duplas e evite excessos da mesma aula
+	\item Proporcionar uma experiência do usuário simples e agradável durante o uso da aplicação
+\end{enumerate}
+
+\section{ESTRUTURA ORGANIZACIONAL}
+
+O trabalho em questão está estruturado da seguinte forma: o capítulo \ref{chap:introducao} traz a introdução sobre o tema, uma visão geral sobre a pesquisa e seus objetivos; no capítulo \ref{chap:fundamentacaoTeorica} será desenvolvida a fundamentação teórica, listando todas as fontes de conhecimento consultadas para para o desenvolvimento do projeto; a forma de implementação do projeto, seus materiais e métodos serão discutidos no capítulo \ref{chap:proposta}; o capítulo \ref{chap:cronograma} apresentará o cronograma das atividades planejadas e por fim, o capítulo \ref{chap:conclusao} trará as considerações finais.
+
