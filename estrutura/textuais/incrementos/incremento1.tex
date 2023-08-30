@@ -1,0 +1,38 @@
+\section{OTIMIZADOR INICIAL}
+
+A primeira parte do projeto desenvolvida foi a versão inicial do otimizador, cuja tarefa era gerar uma grade horária válida, evitando conflitos, ou seja, professores alocados para mais uma turma ao mesmo tempo. Para realizar esta tarefa, aplicaram-se os conceitos de simulated anealling, originando o otimizador representado pelo algoritmo \ref{alg:otimizadorInicial}.
+
+\begin{algorithm}
+	\caption{Otimizador de grades inicial}
+	\label{alg:otimizadorInicial}
+	\KwIn{Lista de professores $LP$, lista de turmas $LT$, matriz de aulas por professor por turma $MA$, temperatura inicial $TI$, Taxa de resfriamento $TR$}
+	\KwOut{Grade horária de professores otimizada}
+	$temperatura \leftarrow TI$\\
+	$grade \leftarrow$ CriaGradeInicial$(LP, LT, MA)$\\
+	$minConflitos \leftarrow$ NumeroConflitos$(grade)$\\
+	\While {condição de parada não atingida} {
+		\For {$passo = 0$ até $numeroPassos$} {
+			$turma \leftarrow EscolheTurmaAleatoria()$\\
+			$linhas \leftarrow EscolheHorariosAleatoriosValidos(sala)$\\
+			$delta \leftarrow CalculaDelta(sala, linhas)$\\
+			$probabilidade \leftarrow e^{-delta/temperatura}$\\
+			$valorAceite \leftarrow Aleatorio(0, 1)$\\
+			\If {$delta < 0$ ou $probabilidade \ge valorAceite$} {
+				$PermutaProfessores(sala, linha1, linha2)$\\
+				\If {NumeroConflitos$(grade)$ < $minConflitos$ } {
+					Imprime$(grade)$\\
+					$minConflitos \leftarrow$ NumeroConflitos$(grade)$
+				}
+			}
+		}
+		$temperatura \leftarrow temperatura * TR$
+	}
+\end{algorithm}
+
+No algoritmo \ref{alg:otimizadorInicial}, o valor da taxa de resfriamento é de 0,99, sendo a temperatura inicial e o número de passos por iteração escolhidos empiricamente. Além disso, durante o desenvolvimento deste primeiro incremento, utilizou-se como condição de parada o esgotamento da temperatura, ou seja, o algoritmo finaliza sua execução assim que a temperatura atinge um valor próximo de zero, quando não ocorrem mais permutações de professores.
+
+Explicando melhor o algoritmo, o método "CriaGradeInicial" gera uma matriz com os as turmas e números de aulas de cada professor alocados corretamente. Esta grade inicial provavelmente possui inúmeros conflitos, portanto são aplicados os passos de otimização. 
+
+Para cada passo de otimização, são escolhidas aleatoriamente uma turma e duas linhas (posições) da grade horária. Com estas informações, é calculada a variação do número de conflitos que a permutação dos professores nas linhas escolhidas ocasionaria. De acordo com este valor de variação, é determinado se a troca dos professores deve ou não ser realizada: uma troca que diminua o número de conflitos sempre é aceita, enquanto uma troca que aumenta o número de conflitos pode ser aceita probabilistacamente, de acordo com o valor da temperatura na iteração atual.
+
+

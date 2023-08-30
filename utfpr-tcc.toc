@@ -12,15 +12,31 @@
 \contentsline {subsection}{\numberline {2.1.1}Highschool Timetabling Problem}{3}{subsection.2.1.1}%
 \contentsline {section}{\numberline {2.2}NOVO ENSINO MÉDIO}{3}{section.2.2}%
 \contentsline {section}{\numberline {2.3}SIMULATED ANNEALING}{4}{section.2.3}%
-\contentsline {chapter}{\chapternumberline {3}PROPOSTA}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}PÚBLICO-ALVO}{5}{section.3.1}%
-\contentsline {section}{\numberline {3.2}TECNOLOGIAS E FERRAMENTAS}{5}{section.3.2}%
-\contentsline {section}{\numberline {3.3}ANÁLISE E DESENVOLVIMENTO}{6}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Interface}{6}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Servidor}{10}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Otimizador}{13}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}MÉTODO}{13}{section.3.4}%
-\contentsline {chapter}{\chapternumberline {4}CRONOGRAMA}{14}{chapter.4}%
-\contentsline {chapter}{\chapternumberline {5}CONSIDERAÇÕES FINAIS}{15}{chapter.5}%
-\contentsline {chapter}{Refer\^encias}{16}{chapter*.6}%
+\contentsline {chapter}{\chapternumberline {3}DESENVOLVIMENTO}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}OTIMIZADOR INICIAL}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}PESOS E RESTRIÇÕES}{6}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Agrupamento de aulas}{6}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Constantes}{7}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Restrições}{8}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Regiões}{10}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Grupos de Alinhamento}{12}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Janelas}{14}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Preferências}{14}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Armazenamento de soluções}{14}{subsection.3.2.8}%
+\contentsline {section}{\numberline {3.3}SERVIDOR E BANCO DE DADOS}{16}{section.3.3}%
+\contentsline {section}{\numberline {3.4}INTERFACE}{18}{section.3.4}%
+\contentsline {section}{\numberline {3.5}USUÁRIOS E AUTENTICAÇÃO}{24}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Adaptação do banco de dados}{24}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Tela de login}{24}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Rotas de autenticação}{25}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Middlewares}{27}{subsection.3.5.4}%
+\contentsline {section}{\numberline {3.6}ALOCAÇÃO DE MATÉRIAS}{29}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Alteração no banco de dados}{29}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Alteração de telas}{30}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Alteração de métodos no servidor}{31}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Matérias no otimizador}{31}{subsection.3.6.4}%
+\contentsline {section}{\numberline {3.7}VALIDAÇÃO DE CONFIGURAÇÕES}{32}{section.3.7}%
+\contentsline {section}{\numberline {3.8}EXPORTAÇÃO DE GRADES HORÁRIAS}{32}{section.3.8}%
+\contentsline {chapter}{\chapternumberline {4}CONSIDERAÇÕES FINAIS}{34}{chapter.4}%
+\contentsline {chapter}{Refer\^encias}{35}{chapter*.6}%
 \vspace {\cftbeforepartskip }

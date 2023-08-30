@@ -1,0 +1,51 @@
+\section{SERVIDOR E BANCO DE DADOS}
+
+A aplicação do lado do servidor é responsável por receber as requisições da interface, persistir as configurações no banco de dados e realizar a comunicação com o otimizador, a fim de produzir e armazenar as grades horárias.
+
+Para o desenvolvimento deste componente, optou-se pelo \textit{framework Express.js}, a ser executado na plataforma \textit{Node.js}, devido à simplicidade de implementação que estas tecnologias proporcionam. Em relação ao banco de dados, será utilizado o sistema de gerenciamento de banco de dados \textit{PostgresSQL}, devido à sua robustez.
+
+Conforme as premissas do problema sendo tratado, a modelagem do banco de dados é centrada na entidade ``Configuração'', que agrupa as configurações de determinada instituição de ensino para a geração de suas grades horárias. Cada uma dessas entidades tem turnos, salas, professores, e as configurações de quantas aulas cada professor deve ministrar em cada sala, e as respectivas restrições.
+
+A modelagem comentada está representada na \autoref{fig:diagramaEr}:
+
+\begin{figure}[!htb]
+	\centering
+	\caption{Modelo Entidade-Relacionamento}
+	\includegraphics[width=1\textwidth]{./dados/figuras/diagrama_er}
+	\fonte{Autor}
+	\label{fig:diagramaEr}
+\end{figure}
+\newpage
+
+Dentre as entidades mostradas no modelo entidade-relacionamento, vale ressaltar a importância da entidade ``Grupo Alinhamento''. Esta será utilizada para configurar aulas que devam acontecer simultaneamente, a fim de resolver o desafio dos itinerários formativos do Novo Ensino Médio, conforme exposto na seção \ref{sec:novo_ensino_medio}.
+
+Para validar a modelagem do banco de dados, realizaram-se inserções de informações de exemplo nas diferentes tabelas. A \autoref{fig:sqlValidacao} mostra algumas dessas inserções e os vínculos instituídos pelos identificadores escolhidos.
+
+\begin{figure}[!htb]
+	\centering
+	\caption{Consultas de validação da modelagem}
+	\includegraphics[width=1\textwidth]{./dados/figuras/sql_validacao}
+	\fonte{Autor}
+	\label{fig:sqlValidacao}
+\end{figure}
+\newpage
+
+Validou-se também o armazenamento das grades horárias no banco de dados. A \autoref{fig:sqlGrade} traz um exemplo de consulta de uma grade horária com sete salas:
+
+\begin{figure}[!htb]
+	\centering
+	\caption{Consulta SQL de grade horária com sete salas}
+	\includegraphics[width=0.7\textwidth]{./dados/figuras/sql_grade}
+	\fonte{Autor}
+	\label{fig:sqlGrade}
+\end{figure}
+
+A consulta anterior traz como resultado a tabela visível na \autoref{fig:consultaGrade}, com linhas e colunas correpondentes a horários de aulas e salas respectivamente.
+
+\begin{figure}[!htb]
+	\centering
+	\caption{Resultado da consulta de uma grade no banco de dados}
+	\includegraphics[width=0.7\textwidth]{./dados/figuras/ConsultaGrade}
+	\fonte{Autor}
+	\label{fig:consultaGrade}
+\end{figure}

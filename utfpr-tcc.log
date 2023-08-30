@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  30 MAY 2023 20:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  29 AUG 2023 21:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -945,8 +945,7 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 (./estrutura/pre-textuais/listas/listas-ilustracoes/lista-figuras.aux)
 (./estrutura/pre-textuais/sumario.aux) (./estrutura/textuais/introducao.aux)
 (./estrutura/textuais/desenvolvimento/revisao-de-literatura.aux)
-(./estrutura/textuais/desenvolvimento/proposta.aux)
-(./estrutura/textuais/desenvolvimento/cronograma.aux)
+(./estrutura/textuais/desenvolvimento/metodologia.aux)
 (./estrutura/textuais/conclusao.aux) (./estrutura/pos-textuais/referencias.aux)
 )
 \openout1 = `utfpr-tcc.aux'.
@@ -1183,14 +1182,21 @@ l.7 \cleardoublepage
 
 
 
-])
+]
+
+LaTeX Warning: Reference `chap:proposta' on page 2 undefined on input line 42.
+
+
+LaTeX Warning: Reference `chap:cronograma' on page 2 undefined on input line 42
+.
+
+)
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10> not available
 (Font)              Font shape `T1/aess/m/sl' tried instead on input line 67.
  [2]
 \openout2 = `estrutura/textuais/desenvolvimento/revisao-de-literatura.aux'.
 
-
-(./estrutura/textuais/desenvolvimento/revisao-de-literatura.tex
+ (./estrutura/textuais/desenvolvimento/revisao-de-literatura.tex
 LaTeX Font Info:    Trying to load font information for TS1+aess on input line 
 24.
 LaTeX Font Info:    No file TS1aess.fd. on input line 24.
@@ -1210,170 +1216,380 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 ]) [4]
-\openout2 = `estrutura/textuais/desenvolvimento/proposta.aux'.
+\openout2 = `estrutura/textuais/desenvolvimento/metodologia.aux'.
 
- (./estrutura/textuais/desenvolvimento/proposta.tex [5
+ (./estrutura/textuais/desenvolvimento/metodologia.tex
+
+LaTeX Warning: Reference `sec:metodo' on page 5 undefined on input line 5.
+
+(./estrutura/textuais/incrementos/incremento1.tex [5
 
 
 
 
+pdfTeX warning (ext4): destination with the same identifier (name{algocf.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.37 
+     ]) (./estrutura/textuais/incrementos/incremento2.tex [6pdfTeX warning (ext
+4): destination with the same identifier (name{quadro.3.1}) has been already us
+ed, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.48 	\item A
+             ulas separadas: 1, 2 e 3, visto que não estão em nenhum agrup...
 ]
-<./dados/figuras/diagrama_uc.png, id=187, 1098.1025pt x 1567.8575pt>
-File: ./dados/figuras/diagrama_uc.png Graphic file (type png)
-<use ./dados/figuras/diagrama_uc.png>
-Package pdftex.def Info: ./dados/figuras/diagrama_uc.png  used on input line 44
-.
-(pdftex.def)             Requested size: 295.74722pt x 422.25063pt.
- [6pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
-}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.48 \newpage
-              <./dados/figuras/diagrama_uc.png>]
-<./dados/figuras/tela_configuracoes.png, id=194, 1927.2pt x 966.61125pt>
-File: ./dados/figuras/tela_configuracoes.png Graphic file (type png)
-<use ./dados/figuras/tela_configuracoes.png>
-Package pdftex.def Info: ./dados/figuras/tela_configuracoes.png  used on input 
-line 56.
-(pdftex.def)             Requested size: 364.00139pt x 182.56659pt.
-<./dados/figuras/tela_estrutura1.png, id=196, 1927.2pt x 966.61125pt>
-File: ./dados/figuras/tela_estrutura1.png Graphic file (type png)
-<use ./dados/figuras/tela_estrutura1.png>
-Package pdftex.def Info: ./dados/figuras/tela_estrutura1.png  used on input lin
-e 66.
-(pdftex.def)             Requested size: 364.00139pt x 182.56659pt.
- [7pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
-}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.70 \newpage
-             pdfTeX warning (ext4): destination with the same identifier (name{
-figure.3.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.70 \newpage
-              <./dados/figuras/tela_configuracoes.png> <./dados/figuras/tela_es
-trutura1.png>]
-<./dados/figuras/tela_estrutura2.png, id=206, 1927.2pt x 966.61125pt>
-File: ./dados/figuras/tela_estrutura2.png Graphic file (type png)
-<use ./dados/figuras/tela_estrutura2.png>
-Package pdftex.def Info: ./dados/figuras/tela_estrutura2.png  used on input lin
-e 77.
-(pdftex.def)             Requested size: 364.00139pt x 182.56659pt.
-<./dados/figuras/tela_aulas.png, id=208, 1927.2pt x 966.61125pt>
-File: ./dados/figuras/tela_aulas.png Graphic file (type png)
-<use ./dados/figuras/tela_aulas.png>
-Package pdftex.def Info: ./dados/figuras/tela_aulas.png  used on input line 87.
+<./dados/figuras/constantes.png, id=265, 193.6836pt x 204.0423pt>
+File: ./dados/figuras/constantes.png Graphic file (type png)
+<use ./dados/figuras/constantes.png>
+Package pdftex.def Info: ./dados/figuras/constantes.png  used on input line 85.
 
-(pdftex.def)             Requested size: 364.00139pt x 182.56659pt.
- [8pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4
+(pdftex.def)             Requested size: 455.0pt x 479.39978pt.
+ [7pdfTeX warning (ext4): destination with the same identifier (name{quadro.3.2
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.91 \newpage
-             pdfTeX warning (ext4): destination with the same identifier (name{
-figure.3.5}) has been already used, duplicate ignored
+l.90 
+     ] [8pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.3.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.91 \newpage
-              <./dados/figuras/tela_estrutura2.png> <./dados/figuras/tela_aulas
-.png>]
-<./dados/figuras/tela_restricoes.png, id=216, 1927.2pt x 966.61125pt>
-File: ./dados/figuras/tela_restricoes.png Graphic file (type png)
-<use ./dados/figuras/tela_restricoes.png>
-Package pdftex.def Info: ./dados/figuras/tela_restricoes.png  used on input lin
-e 98.
-(pdftex.def)             Requested size: 364.00139pt x 182.56659pt.
-<./dados/figuras/tela_horarios.png, id=218, 1927.2pt x 966.61125pt>
-File: ./dados/figuras/tela_horarios.png Graphic file (type png)
-<use ./dados/figuras/tela_horarios.png>
-Package pdftex.def Info: ./dados/figuras/tela_horarios.png  used on input line 
-108.
-(pdftex.def)             Requested size: 364.00139pt x 182.56659pt.
- [9pdfTeX warning (ext4): destination with the same identifier (name{figure.3.6
+l.96 
+      <./dados/figuras/constantes.png>]
+<./dados/figuras/restricoes.png, id=279, 169.5936pt x 204.0423pt>
+File: ./dados/figuras/restricoes.png Graphic file (type png)
+<use ./dados/figuras/restricoes.png>
+Package pdftex.def Info: ./dados/figuras/restricoes.png  used on input line 102
+.
+(pdftex.def)             Requested size: 455.0pt x 547.51854pt.
+ [9pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.112 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name
-{figure.3.7}) has been already used, duplicate ignored
+l.107 
+       <./dados/figuras/restricoes.png>]
+<./dados/figuras/regioes.png, id=286, 169.5936pt x 204.0423pt>
+File: ./dados/figuras/regioes.png Graphic file (type png)
+<use ./dados/figuras/regioes.png>
+Package pdftex.def Info: ./dados/figuras/regioes.png  used on input line 119.
+(pdftex.def)             Requested size: 455.0pt x 547.51854pt.
+ [10] [11pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.3.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.112 \newpage
-               <./dados/figuras/tela_restricoes.png> <./dados/figuras/tela_hora
-rios.png>]
-<./dados/figuras/diagrama_er.png, id=226, 1446.40375pt x 1205.50375pt>
+l.128 
+       <./dados/figuras/regioes.png>]
+<./dados/figuras/gruposAlinhamento.png, id=299, 166.4619pt x 61.1886pt>
+File: ./dados/figuras/gruposAlinhamento.png Graphic file (type png)
+<use ./dados/figuras/gruposAlinhamento.png>
+Package pdftex.def Info: ./dados/figuras/gruposAlinhamento.png  used on input l
+ine 138.
+(pdftex.def)             Requested size: 455.0pt x 167.27383pt.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.143 
+       <./dados/figuras/gruposAlinhamento.png>]
+<./dados/figuras/alinhados.png, id=307, 152.2488pt x 191.5155pt>
+File: ./dados/figuras/alinhados.png Graphic file (type png)
+<use ./dados/figuras/alinhados.png>
+Package pdftex.def Info: ./dados/figuras/alinhados.png  used on input line 149.
+
+(pdftex.def)             Requested size: 455.0pt x 572.45853pt.
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.154 
+       <./dados/figuras/alinhados.png>]
+
+LaTeX Font Warning: Font shape `TS1/aess/b/n' undefined
+(Font)              using `TS1/aess/m/n' instead
+(Font)              for symbol `textordmasculine' on input line 166.
+
+[14pdfTeX warning (ext4): destination with the same identifier (name{quadro.3.3
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.234 
+      ] [15pdfTeX warning (ext4): destination with the same identifier (name{al
+gocf.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.234 
+      ]) (./estrutura/textuais/incrementos/incremento3.tex
+<./dados/figuras/diagrama_er.png, id=330, 1446.40375pt x 1205.50375pt>
 File: ./dados/figuras/diagrama_er.png Graphic file (type png)
 <use ./dados/figuras/diagrama_er.png>
-Package pdftex.def Info: ./dados/figuras/diagrama_er.png  used on input line 12
-6.
+Package pdftex.def Info: ./dados/figuras/diagrama_er.png  used on input line 14
+.
 (pdftex.def)             Requested size: 455.0pt x 379.22064pt.
- [10pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-8}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.130 \newpage
-               <./dados/figuras/diagrama_er.png>]
-<./dados/figuras/sql_validacao.png, id=234, 1223.57124pt x 553.06625pt>
+ [16]
+<./dados/figuras/sql_validacao.png, id=337, 1223.57124pt x 553.06625pt>
 File: ./dados/figuras/sql_validacao.png Graphic file (type png)
 <use ./dados/figuras/sql_validacao.png>
 Package pdftex.def Info: ./dados/figuras/sql_validacao.png  used on input line 
-139.
+27.
 (pdftex.def)             Requested size: 455.0pt x 205.66087pt.
- [11pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-9}) has been already used, duplicate ignored
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.143 \newpage
-               <./dados/figuras/sql_validacao.png>]
-<./dados/figuras/sql_grade.png, id=241, 833.1125pt x 571.13374pt>
+l.31 \newpage
+              <./dados/figuras/diagrama_er.png>]
+<./dados/figuras/sql_grade.png, id=344, 833.1125pt x 571.13374pt>
 File: ./dados/figuras/sql_grade.png Graphic file (type png)
 <use ./dados/figuras/sql_grade.png>
-Package pdftex.def Info: ./dados/figuras/sql_grade.png  used on input line 150.
-
+Package pdftex.def Info: ./dados/figuras/sql_grade.png  used on input line 38.
 (pdftex.def)             Requested size: 318.49861pt x 218.3403pt.
-<./dados/figuras/ConsultaGrade.png, id=243, 846.16125pt x 665.48625pt>
+<./dados/figuras/ConsultaGrade.png, id=346, 846.16125pt x 665.48625pt>
 File: ./dados/figuras/ConsultaGrade.png Graphic file (type png)
 <use ./dados/figuras/ConsultaGrade.png>
 Package pdftex.def Info: ./dados/figuras/ConsultaGrade.png  used on input line 
-160.
+48.
 (pdftex.def)             Requested size: 318.49861pt x 250.49094pt.
- [12pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+)
+(./estrutura/textuais/incrementos/incremento4.tex [18pdfTeX warning (ext4): des
+tination with the same identifier (name{figure.3.7}) has been already used, dup
+licate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.5 P
+     ara o desenvolvimento deste componente, optou-se pelo framework \textit...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.8}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.5 P
+     ara o desenvolvimento deste componente, optou-se pelo framework \textit...
+ <./dados/figuras/sql_validacao.png> <./dados/figuras/sql_grade.png>]
+<./dados/figuras/diagrama_uc.png, id=354, 1098.1025pt x 1567.8575pt>
+File: ./dados/figuras/diagrama_uc.png Graphic file (type png)
+<use ./dados/figuras/diagrama_uc.png>
+Package pdftex.def Info: ./dados/figuras/diagrama_uc.png  used on input line 12
+.
+(pdftex.def)             Requested size: 295.74722pt x 422.25063pt.
+ [19pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.16 \newpage
+              <./dados/figuras/ConsultaGrade.png>]
+<./dados/figuras/tela_configuracoes.png, id=362, 1927.2pt x 966.61125pt>
+File: ./dados/figuras/tela_configuracoes.png Graphic file (type png)
+<use ./dados/figuras/tela_configuracoes.png>
+Package pdftex.def Info: ./dados/figuras/tela_configuracoes.png  used on input 
+line 24.
+(pdftex.def)             Requested size: 364.00139pt x 182.56659pt.
+ [20pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.165 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name
-{figure.3.11}) has been already used, duplicate ignored
+l.29 
+      <./dados/figuras/diagrama_uc.png>]
+<./dados/figuras/tela_estrutura1.png, id=369, 1927.2pt x 966.61125pt>
+File: ./dados/figuras/tela_estrutura1.png Graphic file (type png)
+<use ./dados/figuras/tela_estrutura1.png>
+Package pdftex.def Info: ./dados/figuras/tela_estrutura1.png  used on input lin
+e 35.
+(pdftex.def)             Requested size: 364.00139pt x 182.56659pt.
+ [21pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.165 \newpage
-               <./dados/figuras/sql_grade.png> <./dados/figuras/ConsultaGrade.p
-ng>]) [13]
-\openout2 = `estrutura/textuais/desenvolvimento/cronograma.aux'.
+l.39 \newpage
+             pdfTeX warning (ext4): destination with the same identifier (name{
+figure.3.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.39 \newpage
+              <./dados/figuras/tela_configuracoes.png> <./dados/figuras/tela_es
+trutura1.png>]
+<./dados/figuras/tela_estrutura2.png, id=378, 1927.2pt x 966.61125pt>
+File: ./dados/figuras/tela_estrutura2.png Graphic file (type png)
+<use ./dados/figuras/tela_estrutura2.png>
+Package pdftex.def Info: ./dados/figuras/tela_estrutura2.png  used on input lin
+e 46.
+(pdftex.def)             Requested size: 364.00139pt x 182.56659pt.
+<./dados/figuras/tela_aulas.png, id=380, 1927.2pt x 966.61125pt>
+File: ./dados/figuras/tela_aulas.png Graphic file (type png)
+<use ./dados/figuras/tela_aulas.png>
+Package pdftex.def Info: ./dados/figuras/tela_aulas.png  used on input line 56.
 
- (./estrutura/textuais/desenvolvimento/cronograma.tex
-<./dados/figuras/cronograma.png, id=261, 1035.87pt x 364.36125pt>
-File: ./dados/figuras/cronograma.png Graphic file (type png)
-<use ./dados/figuras/cronograma.png>
-Package pdftex.def Info: ./dados/figuras/cronograma.png  used on input line 12.
+(pdftex.def)             Requested size: 364.00139pt x 182.56659pt.
+ [22pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+13}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.60 \newpage
+             pdfTeX warning (ext4): destination with the same identifier (name{
+figure.3.14}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.60 \newpage
+              <./dados/figuras/tela_estrutura2.png> <./dados/figuras/tela_aulas
+.png>]
+<./dados/figuras/tela_restricoes.png, id=388, 1927.2pt x 966.61125pt>
+File: ./dados/figuras/tela_restricoes.png Graphic file (type png)
+<use ./dados/figuras/tela_restricoes.png>
+Package pdftex.def Info: ./dados/figuras/tela_restricoes.png  used on input lin
+e 67.
+(pdftex.def)             Requested size: 364.00139pt x 182.56659pt.
+<./dados/figuras/tela_horarios.png, id=390, 1927.2pt x 966.61125pt>
+File: ./dados/figuras/tela_horarios.png Graphic file (type png)
+<use ./dados/figuras/tela_horarios.png>
+Package pdftex.def Info: ./dados/figuras/tela_horarios.png  used on input line 
+77.
+(pdftex.def)             Requested size: 364.00139pt x 182.56659pt.
+ [23pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+15}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.81 \newpage
+             pdfTeX warning (ext4): destination with the same identifier (name{
+figure.3.16}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.81 \newpage
+              <./dados/figuras/tela_restricoes.png> <./dados/figuras/tela_horar
+ios.png>]) (./estrutura/textuais/incrementos/incremento5.tex
 
-(pdftex.def)             Requested size: 455.0pt x 160.04701pt.
-) [14
+LaTeX Warning: Reference `fig:er_atualizado' on page 24 undefined on input line
+ 15.
 
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.12})
+<./dados/figuras/er_horario_com_usuario.png, id=397, 1445.4pt x 1205.50375pt>
+File: ./dados/figuras/er_horario_com_usuario.png Graphic file (type png)
+<use ./dados/figuras/er_horario_com_usuario.png>
+Package pdftex.def Info: ./dados/figuras/er_horario_com_usuario.png  used on in
+put line 20.
+(pdftex.def)             Requested size: 295.74722pt x 246.65161pt.
+<./dados/figuras/telaLogin.png, id=399, 461.8053pt x 232.4685pt>
+File: ./dados/figuras/telaLogin.png Graphic file (type png)
+<use ./dados/figuras/telaLogin.png>
+Package pdftex.def Info: ./dados/figuras/telaLogin.png  used on input line 31.
+(pdftex.def)             Requested size: 455.0pt x 229.05199pt.
+[24pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
+7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.36 
+      <./dados/figuras/er_horario_com_usuario.png>]
+<./dados/figuras/register.png, id=412, 1421.31pt x 1653.17625pt>
+File: ./dados/figuras/register.png Graphic file (type png)
+<use ./dados/figuras/register.png>
+Package pdftex.def Info: ./dados/figuras/register.png  used on input line 45.
+(pdftex.def)             Requested size: 364.00139pt x 423.38321pt.
+ [25pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+18}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.50 
+      <./dados/figuras/telaLogin.png>]
+<./dados/figuras/login.png, id=420, 1431.3475pt x 1134.2375pt>
+File: ./dados/figuras/login.png Graphic file (type png)
+<use ./dados/figuras/login.png>
+Package pdftex.def Info: ./dados/figuras/login.png  used on input line 56.
+(pdftex.def)             Requested size: 364.00139pt x 288.43927pt.
+ [26pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+19}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.61 
+      <./dados/figuras/register.png>]
+<./dados/figuras/authMiddleware.png, id=428, 1210.5225pt x 686.565pt>
+File: ./dados/figuras/authMiddleware.png Graphic file (type png)
+<use ./dados/figuras/authMiddleware.png>
+Package pdftex.def Info: ./dados/figuras/authMiddleware.png  used on input line
+ 68.
+(pdftex.def)             Requested size: 364.00139pt x 206.4425pt.
+ [27pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+20}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.73 
+      <./dados/figuras/login.png>]
+<./dados/figuras/configMiddleware.png, id=435, 1465.475pt x 1021.8175pt>
+File: ./dados/figuras/configMiddleware.png Graphic file (type png)
+<use ./dados/figuras/configMiddleware.png>
+Package pdftex.def Info: ./dados/figuras/configMiddleware.png  used on input li
+ne 79.
+(pdftex.def)             Requested size: 364.00139pt x 253.80103pt.
+ [28pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+21}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.84 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.3
+.22}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.84 
+      <./dados/figuras/authMiddleware.png> <./dados/figuras/configMiddleware.pn
+g>]) (./estrutura/textuais/incrementos/incremento6.tex
+<./dados/figuras/er_materias.png, id=443, 1445.4pt x 1205.50375pt>
+File: ./dados/figuras/er_materias.png Graphic file (type png)
+<use ./dados/figuras/er_materias.png>
+Package pdftex.def Info: ./dados/figuras/er_materias.png  used on input line 27
+.
+(pdftex.def)             Requested size: 295.74722pt x 246.65161pt.
+ [29]
+<./dados/figuras/alteracaoEstrutura.png, id=453, 1923.185pt x 970.62625pt>
+File: ./dados/figuras/alteracaoEstrutura.png Graphic file (type png)
+<use ./dados/figuras/alteracaoEstrutura.png>
+Package pdftex.def Info: ./dados/figuras/alteracaoEstrutura.png  used on input 
+line 39.
+(pdftex.def)             Requested size: 295.74722pt x 149.26067pt.
+ [30pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+23}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.44 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.3
+.24}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.44 
+      <./dados/figuras/er_materias.png> <./dados/figuras/alteracaoEstrutura.png
+>]
+<./dados/figuras/alteracaoAulas.png, id=461, 1923.185pt x 970.62625pt>
+File: ./dados/figuras/alteracaoAulas.png Graphic file (type png)
+<use ./dados/figuras/alteracaoAulas.png>
+Package pdftex.def Info: ./dados/figuras/alteracaoAulas.png  used on input line
+ 50.
+(pdftex.def)             Requested size: 295.74722pt x 149.26067pt.
+<./dados/figuras/alteracaoHorarios.png, id=463, 1923.185pt x 970.62625pt>
+File: ./dados/figuras/alteracaoHorarios.png Graphic file (type png)
+<use ./dados/figuras/alteracaoHorarios.png>
+Package pdftex.def Info: ./dados/figuras/alteracaoHorarios.png  used on input l
+ine 60.
+(pdftex.def)             Requested size: 295.74722pt x 149.26067pt.
+ [31pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+25}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.71 A
+       diferença é que o novo método implementado obtém determinada grad...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.26})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.70 ...utura/textuais/desenvolvimento/cronograma}
-                                                   <./dados/figuras/cronograma.
-png>]
+l.71 A
+       diferença é que o novo método implementado obtém determinada grad...
+ <./dados/figuras/alteracaoAulas.png> <./dados/figuras/alteracaoHorarios.png>])
+(./estrutura/textuais/incrementos/incremento7.tex)
+(./estrutura/textuais/incrementos/incremento8.tex)) [32] [33pdfTeX warning (ext
+4): destination with the same identifier (name{algocf.3}) has been already used
+, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.71 ...tura/textuais/desenvolvimento/metodologia}
+                                                                     % Metod...
+]
 \openout2 = `estrutura/textuais/conclusao.aux'.
 
- (./estrutura/textuais/conclusao.tex) [15
+ (./estrutura/textuais/conclusao.tex) [34
 
 
 
@@ -1388,12 +1604,7 @@ png>]
 
 
 bibitemlist
-
-LaTeX Font Warning: Font shape `TS1/aess/b/n' undefined
-(Font)              using `TS1/aess/m/n' instead
-(Font)              for symbol `textordfeminine' on input line 67.
-
-)) [16
+)) [35
 
 
 
@@ -1411,37 +1622,42 @@ AED: lastpage setting LastPage
 (./estrutura/pre-textuais/listas/listas-ilustracoes/lista-figuras.aux)
 (./estrutura/pre-textuais/sumario.aux) (./estrutura/textuais/introducao.aux)
 (./estrutura/textuais/desenvolvimento/revisao-de-literatura.aux)
-(./estrutura/textuais/desenvolvimento/proposta.aux)
-(./estrutura/textuais/desenvolvimento/cronograma.aux)
+(./estrutura/textuais/desenvolvimento/metodologia.aux)
 (./estrutura/textuais/conclusao.aux) (./estrutura/pos-textuais/referencias.aux)
 )
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `utfpr-tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: FD319E07E02FC8495CF005C8728B1A4C;692.
+(rerunfilecheck)             Checksum: 9AF56E51C9C10237CEC214C1453E8D00;643.
  ) 
 Here is how much of TeX's memory you used:
- 22182 strings out of 478287
- 362842 string characters out of 5849289
- 891006 words of memory out of 5000000
- 39320 multiletter control sequences out of 15000+600000
- 538564 words of font info for 488 fonts, out of 8000000 for 9000
+ 22468 strings out of 478287
+ 369774 string characters out of 5849289
+ 896006 words of memory out of 5000000
+ 39513 multiletter control sequences out of 15000+600000
+ 538507 words of font info for 479 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 89i,13n,107p,1632b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 89i,19n,107p,1632b,567s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmssi12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.p
-fb>
-Output written on utfpr-tcc.pdf (22 pages, 1165766 bytes).
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+si12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on utfpr-tcc.pdf (41 pages, 2468738 bytes).
 PDF statistics:
- 432 PDF objects out of 1000 (max. 8388607)
- 362 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
- 83738 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 729 PDF objects out of 1000 (max. 8388607)
+ 601 compressed objects within 7 object streams
+ 150 named destinations out of 1000 (max. 500000)
+ 85984 words of extra memory for PDF output out of 89155 (max. 10000000)
 
