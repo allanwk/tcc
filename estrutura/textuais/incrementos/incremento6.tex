@@ -1,4 +1,4 @@
-\section{ALOCAÇÃO DE MATÉRIAS}
+\subsection{ALOCAÇÃO DE MATÉRIAS}
 
 Durante os incrementos anterioriores, o otimizador gerava grades horárias que continham apenas os nomes dos professores alocados para aula. Em outras palavras, as grades eram matrizes nas quais as linhas eram os horários disponíveis, as colunas eram as salas e cada posição na matriz representava qual professor deveria ministrar a aula naquele horário.
 
@@ -11,7 +11,7 @@ A alocação dos professores é muito importante para a resolução do problema,
 	\item Alterar código do otimizador para produzir grades horárias com matérias
 \end{enumerate}
 
-\subsection{Alteração no banco de dados}
+\subsubsection{Alteração no banco de dados}
 Para armazenar informações relacionadas às matérias, a modelagem do banco de dados foi alterada com a criação de três tabelas: 
 \begin{itemize}
 	\item materia
@@ -30,7 +30,7 @@ Com esta modelagem atualizada, presente na figura \ref{fig:modelagemMateiras}, c
 \end{figure}
 \pagebreak
 
-\subsection{Alteração de telas}
+\subsubsection{Alteração de telas}
 Com a adição do conceito das matérias ao sistema, algumas telas da interface precisaram ser modificadas. A primeira destas, foi a tela inicial da configuração, ou seja, a tela de "Estrutura da Escola", cuja alteração pode ser vista na figura \ref{fig:estruturaAtualizada} consistiu na adição de uma seção para cadastro e visualização de matérias, semelhante ao componente de cadastro de professores.
 
 \begin{figure}[!htb]
@@ -62,10 +62,10 @@ Por fim, na tela final da configuração, representável por exibir as grades ho
 	\label{fig:alteracaoHorario}
 \end{figure}
 
-\subsection{Alteração de métodos no servidor}
+\subsubsection{Alteração de métodos no servidor}
 A adição das matérias também envolveu algumas alterações no servidor. As rotas alteradas para acomodar a melhoria foram rotas de armazenamento e consulta da estrutura da escola, aulas e grades horárias.
 
-\subsection{Matérias no otimizador}
+\subsubsection{Matérias no otimizador}
 Após as alterações na interface, servidor e banco de dados, o sistema estava pronto para lidar com as informações relacionadas às matérias, faltando apenas a incorporação destas na geração de grades horárias por parte do otimizador. Para realizar isso, implementou-se um método análogo ao \autoref{alg:otimizadorComRestricoes}, porém voltado à geração de grades de matérias.
 
 A diferença é que o novo método implementado obtém determinada grade horária gerada pelo \autoref{alg:otimizadorComRestricoes}, e realiza as operações necessárias para preencher a grade com matérias. Vale ressaltar que essas operações são semelhantes à geração da grade de aulas dos professores: preenchimento da grade inicial, cálculo da variação de custo, realização de trocas de posições e armazenamento das soluções.

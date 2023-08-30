@@ -21,7 +21,10 @@
 \contentsline {figure}{\numberline {20}{\ignorespaces Método de Login}}{27}{figure.3.20}%
 \contentsline {figure}{\numberline {21}{\ignorespaces Middleware de autenticação}}{28}{figure.3.21}%
 \contentsline {figure}{\numberline {22}{\ignorespaces Middleware de validação da configuração}}{28}{figure.3.22}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Modelo Entidade-Relacionamento com Matérias}}{30}{figure.3.23}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Modelo Entidade-Relacionamento com Matérias}}{29}{figure.3.23}%
 \contentsline {figure}{\numberline {24}{\ignorespaces Estrutura da Escola com Matérias}}{30}{figure.3.24}%
 \contentsline {figure}{\numberline {25}{\ignorespaces Tela de configuração de quantidades de aulas por matéria}}{31}{figure.3.25}%
 \contentsline {figure}{\numberline {26}{\ignorespaces Visualização de grade horária com matérias}}{31}{figure.3.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Mensagem de erro de validação}}{32}{figure.3.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Grade horária exportada para planilha}}{34}{figure.3.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Botão para exportar grade horária}}{35}{figure.3.29}%

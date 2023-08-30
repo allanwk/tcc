@@ -1,4 +1,4 @@
-\section{USUÁRIOS E AUTENTICAÇÃO}
+\subsection{USUÁRIOS E AUTENTICAÇÃO}
 
 Para controlar a visibilidade de informações no sistema desenvolvido, implementou-se um sistema de usuários. A melhoria consistiu em:
 
@@ -11,7 +11,7 @@ Para controlar a visibilidade de informações no sistema desenvolvido, implemen
 	\item Criação do \textit{middleware} de validação da configuração
 \end{enumerate}
 
-\subsection{Adaptação do banco de dados}
+\subsubsection{Adaptação do banco de dados}
 A aplicação dos itens 1 e 2 foi realizada diretamente no banco de dados, através da criação da tabela mencionada e a chave estrangeira possibilitando a associação de cada usuário a múltiplas configurações. Após estas alterações, o diagrama entidade relacionamento do banco de dados passa a ser representado pela figura \ref{fig:er_atualizado}.
 
 \begin{figure}[!htb]
@@ -22,7 +22,7 @@ A aplicação dos itens 1 e 2 foi realizada diretamente no banco de dados, atrav
 	\label{fig:er_atualizado-uc}
 \end{figure}
 
-\subsection{Tela de login}
+\subsubsection{Tela de login}
 Como pode ser visto na figura \ref{fig:login}, desenvolveu-se uma tela simples de \textit{login}, a qual também desempenha a função de cadastro de novos usuários.
 
 \begin{figure}[!htb]
@@ -34,7 +34,7 @@ Como pode ser visto na figura \ref{fig:login}, desenvolveu-se uma tela simples d
 \end{figure}
 \pagebreak
 
-\subsection{Rotas de autenticação}
+\subsubsection{Rotas de autenticação}
 Para a implementação das rotas de cadastro e \textit{login}, utilizou-se além do \textit{framework ExpressJS}, os pacotes JWT (\textit{Json Web Token}) e \textit{bcrypt}. O pacote JWT é utilizado para gerar \textit{tokens}, que são enviados para a interface web e podem ser utilizados para autenticar os usuários; já o \textit{bcrypt} é utilizado para gerar e validars as \textit{hashes} das senhas dos usuários, para que nunca sejam armazenadas senhas em texto pleno no banco de dados.
 
 A função utilizada pela nova rota de cadastro pode vista na figura \ref{fig:metodoCadastro}. A função "register" realiza validação dos parâmetros, e cria um usuário no banco de dados, caso já não exista outro com o mesmo e-mail. Além disso, a função retorna um \textit{token} JWT para a interface web, para que seja possível verificar a autenticidade das próximas requisições realizadas pelo usuário. 
@@ -59,7 +59,7 @@ A função de \textit{login}, visível na figura \ref{fig:metodoLogin} é simila
 \end{figure}
 \pagebreak
 
-\subsection{Middlewares}
+\subsubsection{Middlewares}
 Foram criados duas funções \textit{middleware} relacionadas aos usuários. A primeira é responsável por verificar que apenas usuários propriamente autenticados tenham acesso aos recursos protegidos do sistema. Como pode ser visto na figura \ref{fig:auth}, essa verificação é realizada através da verificação da presença e validade de um \textit{token} JWT no \textit{header "authorization"} da requisição.
 
 \begin{figure}[!htb]

@@ -1,4 +1,4 @@
-\section{PESOS E RESTRIÇÕES}
+\subsection{PESOS E RESTRIÇÕES}
 
 Apesar a importância da resolução de conflitos, existem diversas outras nuances durante o planejamento das grades horárias que precisam ser levadas em conta para que as grades produzidas sejam aplicáveis na prática.
 
@@ -8,7 +8,7 @@ Adicionalmente, as métricas podem ser rígidas ou suaves. As métricas rígidas
 
 As próximas seções terão como objetivo explicar cada uma destas métricas e os desafios associados. A \autoref{subsec:salvamento} entrará em mais detalhes sobre como as grades horárias passaram a ser salvas após a implementação das métricas.
 
-\subsection{Agrupamento de aulas}
+\subsubsection{Agrupamento de aulas}
 
 Observando grades horárias escolares, é possível notar que existe um desejo de realizar agrupamentos, formando aulas duplas. Isso aumenta a produtividade das aulas, à medida que diminui a troca e deslocamento de professores entre as salas. Para produzir estes agrupamentos, foram adicionadas algumas métricas que fazem o otimizador penalizar:
 
@@ -73,7 +73,7 @@ Por fim, a situação de dias com todas aulas diferentes, que serão referidos c
 	\fonte{Autoria própria}
 \end{quadro}
 
-\subsection{Constantes}
+\subsubsection{Constantes}
 
 Durante o desenvolvimento, concebeu-se o conceito de "Aulas constantes", como aulas que absolutamente devem ser alocadas em determinada posição da grade horária. Isto é útil para guiar o otimizador rumo a uma solução desejada, quando já são conhecidas algumas aulas que devem ser fixas. 
 
@@ -90,7 +90,7 @@ Como exemplo de caso de uso, uma escola com seis aulas diárias pode ter alguns 
 
 Considerando a natureza absoluta das aulas constantes, estas não são consideradas um métrica de qualidade, e não possuem um peso próprio. Em vez disso, no método "GeraGradeInicial" do algoritmo \ref{alg:otimizadorInicial}, o otimizador já aloca as aulas constantes nas posições desejadas, e a função "EscolheHorariosAleatoriosValidos" não seleciona posições que estejam alocadas com aulas constantes.
 
-\subsection{Restrições}
+\subsubsection{Restrições}
 
 As restrições representam o oposto das aulas constantes: posições em que determinadas aulas não devem ser alocadas. Implementaram-se no otimizador restrições suaves e rígidas, cada uma podendo também receber um peso customizado. Dessa forma, é possível configurar o otimizador para nunca alocar determinada aula em certa posição da grade, ou simplesmente evitar isso.
 
@@ -107,7 +107,7 @@ Como exemplo de uso dessa funcionalidade, a figura \ref{fig:restricoes} demonstr
 
 No caso das restrições, a métrica associada mensura a quantidade de restrições violadas, ou seja, posições em que determinada aula foi alocada, mas não deveria ter sido.
 
-\subsection{Regiões}
+\subsubsection{Regiões}
 
 O conceito de regiões foi concebido como uma forma de proporcionar ainda mais controle ao usuário, sobre o posicionamento das aulas na grade horária. As regiões consistem em um grupo arbitrário de posições da grade horária (uma região), associado a uma regra relacionada a uma quantidade de aulas. Com as regiões, é possível determinar mínimos, máximos ou quantidades exatas de aulas que devem ser alocadas em certas posições da grade horária.
 
@@ -126,7 +126,7 @@ A região configurada na \ref{fig:regioes} pode ser interpretada da seguinte for
 
 Neste caso, a métrica associada mensura o erro das regiões, ou seja, a diferença entre a quantidade de aulas esperada de acordo com a regra de cada região e a quantidade real de aulas alocadas.
 
-\subsection{Grupos de Alinhamento}
+\subsubsection{Grupos de Alinhamento}
 
 Os grupos de alinhamento representam uma forma de configurar o otimizador para agendar aulas para diferentes turmas, nos mesmos horários. Isto é útil para o conceito dos Itinrários Formativos do Novo Ensino Médio, como citado anteriormente.
 
@@ -154,7 +154,7 @@ O efeito da configuração do grupo de alinhamento da figura \ref{fig:gruposAlin
 
 Implementaram-se duas métricas de qualidade relacionadas aos grupos de alinhamento, uma que mensura a quantidade de grupos, que deve ser minimizada; e outra que mede a quantidade de aulas "desalinhadas", ou seja, aulas que deveriam ser agendadas no mesmo horário, mas que não foram.
 
-\subsection{Janelas}
+\subsubsection{Janelas}
 
 As janelas consistem em situações em que um professor tem um horário sem aulas agendadas em sua jornada de trabalho, ficando ocioso na escola. O quadro \ref{qua:janelas} exemplifica esta situação.
 
@@ -183,9 +183,9 @@ No quadro \ref{qua:janelas}, a professora Adriana tem uma janela na terceira aul
 
 A métrica de janelas simplesmente mede, para cada professor, o número de horários na grade em que existem janelas.
 
-\subsection{Preferências}
+\subsubsection{Preferências}
 
-\subsection{Armazenamento de soluções}
+\subsubsection{Armazenamento de soluções}
 \label{subsec:salvamento}
 
 Com a adição das métricas, o critério para considerar uma grade horária como uma solução válida ficou mais estrito, e em muitos casos tornou-se impossível obter uma grade que atenda perfeitamente todas as nuances. Tendo isto em mente, foi necessário implementar uma funciondalide de armazenamento de grades horárias um pouco mais detalhada. O resultado disso, pode ser visto no algoritmo \ref{alg:otimizadorComRestricoes}.
