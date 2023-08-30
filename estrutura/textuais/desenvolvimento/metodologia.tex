@@ -7,8 +7,38 @@ Este capítulo tem como objetivo evidenciar todas as atividades executadas duran
 \section{RECURSOS UTILIZADOS}
 \label{sec:recursos}
 
+Tratando-se do desenvolvimento de um projeto \textit{full stack}, utilizaram-se diversas tecnologias e ferramentas, sendo as de maior importância:
+
+\begin{itemize}
+	\item \textbf{VSCode}: Editor de código-fonte desenvolvido pela Microsoft, escolhido por sua versatilidade e aplicabilidade para desenvolver todos os componente do sistema
+	\item \textbf{DBeaver}: Ferramenta de código aberto de administração de bancos de dados, utilizada para validação da modelagem e interações manuais com a base de dados
+	\item \textbf{PostgreSQL}: Sistema gerenciador de banco de dados relacional, escolhido por sua robustez, possibilitará a persistência dos dados da aplicação em tabelas
+	\item \textbf{JavaScript}: Linguagem de programação ubíqua na engenharia de software, escolhida por sua versatilidade para desenvolver a interface \textit{web} e servidor
+	\item \textbf{VueJS}: \textit{Framework} para desenvolvimento frontend na linguagem JavaScript, escolhido por sua versatilidade e familiaridade do graduando com este
+	\item \textbf{VuetifyJS}: \textit{Framework} de componentes e estilização para o VueJS, utilizado para padronizar o design da aplicação
+	\item \textbf{NodeJS}: \textit{Runtime} de JavaScript que permite a utilização dessa linguagem para escrever aplicações no lado do servidor;
+	\item \textbf{ExpressJS}: \textit{Framework} para desenvolvimento backend na lignuagem JavaScript, utilizando a plataforma NodeJS
+	\item \textbf{C++}: Liguagem de programação compilada, escolhida por sua alta performance para o desenvolvimento do otimizador
+	\item \textbf{G++}: Compilador utilizado para converter o código fonte em C++ do otimizador para um arquivo executável 
+	\item \textbf{GDB}: Debugador da linguagem C++, utilizado para localizar problemas no código fonte do otimizador
+\end{itemize}
+
 \section{MÉTODOS}
 \label{sec:metodos}
+
+Para a processo de software da aplicação, optou-se pelo processo de desenvolvimento incremental. Este processo consiste na divisão da implementação do projeto em incrementos, os quais são executados linearmente, porém de forma escalonada.\cite{pressman2016}
+
+Este processo de software foi escolhido por possibilitar o planejamento de execução do projeto em etapas lógicas, que podem ser sobrepor através de escalonamento, de acordo com as necessidade encontradas. Conforme os requisitos levantados na seção anterior, dividiram-se as tarefas de desenvolvimento nos incrementos pertinentes:
+\begin{itemize}
+	\item \textbf{Incremento 1}: Desenvolvimento inicial do otimizador, aplicando Simulated Annealing apenas para a resolução de conflitos;
+	\item \textbf{Incremento 2}: Implementação de restrições no otimizador;
+	\item \textbf{Incremento 3}: Criação do servidor e banco de dados;
+	\item \textbf{Incremento 4}: Desenvolvimento da interface \textit{web};
+	\item \textbf{Incremento 5}: Adição do sistema de usuários;
+	\item \textbf{Incremento 6}: Adaptação da modelagem para incluir matérias aos horários alocados pelo otimizador;
+	\item \textbf{Incremento 7}: Implementação de validações das configurações de grade inseridas pelo usuário;
+	\item \textbf{Incremento 8}: Desenvolvimento de sistema de exportação de grades horárias.
+\end{itemize}
 
 \section{ANÁLISE E IMPLEMENTAÇÃO}
 \label{sec:implementacao}
