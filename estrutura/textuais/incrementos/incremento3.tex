@@ -2,9 +2,9 @@
 
 A aplicação do lado do servidor é responsável por receber as requisições da interface, persistir as configurações no banco de dados e realizar a comunicação com o otimizador, a fim de produzir e armazenar as grades horárias.
 
-Para o desenvolvimento deste componente, optou-se pelo \textit{framework Express.js}, a ser executado na plataforma \textit{Node.js}, devido à simplicidade de implementação que estas tecnologias proporcionam. Em relação ao banco de dados, será utilizado o sistema de gerenciamento de banco de dados \textit{PostgresSQL}, devido à sua robustez.
+Para o desenvolvimento deste componente, optou-se pelo \textit{framework Express.js}, a ser executado na plataforma \textit{Node.js}, devido à simplicidade de implementação que estas tecnologias proporcionam. Em relação ao banco de dados, será utilizado o sistema de gerenciamento de banco de dados \textit{PostgresSQL}, devido à sua robustez e grande uso no mercado.
 
-Conforme as premissas do problema sendo tratado, a modelagem do banco de dados é centrada na entidade ``Configuração'', que agrupa as configurações de determinada instituição de ensino para a geração de suas grades horárias. Cada uma dessas entidades tem turnos, salas, professores, e as configurações de quantas aulas cada professor deve ministrar em cada sala, e as respectivas restrições.
+Conforme as premissas do problema sendo tratado, a modelagem do banco de dados é centrada na entidade ``Configuração'', que agrupa as configurações de determinada instituição de ensino para a geração de suas grades horárias. Cada uma dessas entidades tem turnos, turmas, professores, e as configurações de quantas aulas cada professor deve ministrar para cada turma, e as respectivas restrições.
 
 A modelagem comentada está representada na \autoref{fig:diagramaEr}:
 
@@ -17,7 +17,7 @@ A modelagem comentada está representada na \autoref{fig:diagramaEr}:
 \end{figure}
 \newpage
 
-Dentre as entidades mostradas no modelo entidade-relacionamento, vale ressaltar a importância da entidade ``Grupo Alinhamento''. Esta será utilizada para configurar aulas que devam acontecer simultaneamente, a fim de resolver o desafio dos itinerários formativos do Novo Ensino Médio, conforme exposto na seção \ref{sec:novo_ensino_medio}.
+Na \autoref{fig:diagramaEr}, é possível notar a presença das entidades elacionadas às diversas métricas de qualidade comentadas na \autoref{subsec:pesos_e_restricoes}, como restrições, contrantes, regiões, grupos de alinhamento, entre outras.
 
 Para validar a modelagem do banco de dados, realizaram-se inserções de informações de exemplo nas diferentes tabelas. A \autoref{fig:sqlValidacao} mostra algumas dessas inserções e os vínculos instituídos pelos identificadores escolhidos.
 

@@ -25,21 +25,21 @@
 \contentsline {subsubsection}{\numberline {3.3.2.5}Grupos de Alinhamento}{13}{subsubsection.3.3.2.5}%
 \contentsline {subsubsection}{\numberline {3.3.2.6}Janelas}{15}{subsubsection.3.3.2.6}%
 \contentsline {subsubsection}{\numberline {3.3.2.7}Preferências}{15}{subsubsection.3.3.2.7}%
-\contentsline {subsubsection}{\numberline {3.3.2.8}Armazenamento de soluções}{15}{subsubsection.3.3.2.8}%
-\contentsline {subsection}{\numberline {3.3.3}SERVIDOR E BANCO DE DADOS}{17}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}INTERFACE}{19}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}USUÁRIOS E AUTENTICAÇÃO}{25}{subsection.3.3.5}%
-\contentsline {subsubsection}{\numberline {3.3.5.1}Adaptação do banco de dados}{25}{subsubsection.3.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.3.5.2}Tela de login}{25}{subsubsection.3.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.3.5.3}Rotas de autenticação}{26}{subsubsection.3.3.5.3}%
-\contentsline {subsubsection}{\numberline {3.3.5.4}Middlewares}{28}{subsubsection.3.3.5.4}%
-\contentsline {subsection}{\numberline {3.3.6}ALOCAÇÃO DE MATÉRIAS}{30}{subsection.3.3.6}%
-\contentsline {subsubsection}{\numberline {3.3.6.1}Alteração no banco de dados}{30}{subsubsection.3.3.6.1}%
-\contentsline {subsubsection}{\numberline {3.3.6.2}Alteração de telas}{31}{subsubsection.3.3.6.2}%
-\contentsline {subsubsection}{\numberline {3.3.6.3}Alteração de métodos no servidor}{32}{subsubsection.3.3.6.3}%
-\contentsline {subsubsection}{\numberline {3.3.6.4}Matérias no otimizador}{32}{subsubsection.3.3.6.4}%
-\contentsline {subsection}{\numberline {3.3.7}VALIDAÇÃO DE CONFIGURAÇÕES}{33}{subsection.3.3.7}%
-\contentsline {subsection}{\numberline {3.3.8}EXPORTAÇÃO DE GRADES HORÁRIAS}{35}{subsection.3.3.8}%
-\contentsline {chapter}{\chapternumberline {4}CONSIDERAÇÕES FINAIS}{37}{chapter.4}%
-\contentsline {chapter}{Refer\^encias}{38}{chapter*.6}%
+\contentsline {subsubsection}{\numberline {3.3.2.8}Armazenamento de soluções}{16}{subsubsection.3.3.2.8}%
+\contentsline {subsection}{\numberline {3.3.3}SERVIDOR E BANCO DE DADOS}{18}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}INTERFACE}{20}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}USUÁRIOS E AUTENTICAÇÃO}{26}{subsection.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.5.1}Adaptação do banco de dados}{27}{subsubsection.3.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.3.5.2}Tela de login}{27}{subsubsection.3.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.3.5.3}Rotas de autenticação}{28}{subsubsection.3.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.3.5.4}Middlewares}{30}{subsubsection.3.3.5.4}%
+\contentsline {subsection}{\numberline {3.3.6}ALOCAÇÃO DE MATÉRIAS}{32}{subsection.3.3.6}%
+\contentsline {subsubsection}{\numberline {3.3.6.1}Alteração no banco de dados}{32}{subsubsection.3.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.3.6.2}Alteração de telas}{33}{subsubsection.3.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.3.6.3}Alteração de métodos no servidor}{34}{subsubsection.3.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.3.6.4}Matérias no otimizador}{35}{subsubsection.3.3.6.4}%
+\contentsline {subsection}{\numberline {3.3.7}VALIDAÇÃO DE CONFIGURAÇÕES}{35}{subsection.3.3.7}%
+\contentsline {subsection}{\numberline {3.3.8}EXPORTAÇÃO DE GRADES HORÁRIAS}{37}{subsection.3.3.8}%
+\contentsline {chapter}{\chapternumberline {4}CONSIDERAÇÕES FINAIS}{38}{chapter.4}%
+\contentsline {chapter}{Refer\^encias}{39}{chapter*.6}%
 \vspace {\cftbeforepartskip }

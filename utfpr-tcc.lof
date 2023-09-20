@@ -2,29 +2,31 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Aulas constantes}}{9}{figure.3.1}%
 \contentsline {figure}{\numberline {2}{\ignorespaces Restrições}}{10}{figure.3.2}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Exemplo de região}}{12}{figure.3.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Exemplo de grupo de alinhamento}}{13}{figure.3.4}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Exemplo de grupo de alinhamento sobre a grade horária gerada}}{13}{figure.3.4}%
 \contentsline {figure}{\numberline {5}{\ignorespaces Efeito de grupo de alinhamento}}{14}{figure.3.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Modelo Entidade-Relacionamento}}{18}{figure.3.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Consultas de validação da modelagem}}{19}{figure.3.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Consulta SQL de grade horária com sete salas}}{19}{figure.3.8}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Resultado da consulta de uma grade no banco de dados}}{20}{figure.3.9}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Diagrama de Casos de Uso}}{21}{figure.3.10}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Tela - Listagem de Configurações de Grade}}{22}{figure.3.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Tela - Estrutura da Escola - Professores}}{22}{figure.3.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Tela - Estrutura da Escola - Salas e Turnos}}{23}{figure.3.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Tela - Aulas por professor}}{23}{figure.3.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Tela - Restrições}}{24}{figure.3.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Tela - Horários}}{24}{figure.3.16}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Modelo Entidade-Relacionamento com adição da tabela de usuários}}{25}{figure.3.17}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Tela de Acesso}}{26}{figure.3.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Método de Cadastro}}{27}{figure.3.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Método de Login}}{28}{figure.3.20}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Middleware de autenticação}}{29}{figure.3.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Middleware de validação da configuração}}{29}{figure.3.22}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Modelo Entidade-Relacionamento com Matérias}}{30}{figure.3.23}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Estrutura da Escola com Matérias}}{31}{figure.3.24}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Tela de configuração de quantidades de aulas por matéria}}{32}{figure.3.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Visualização de grade horária com matérias}}{32}{figure.3.26}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Mensagem de erro de validação}}{33}{figure.3.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Grade horária exportada para planilha}}{35}{figure.3.28}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Botão para exportar grade horária}}{36}{figure.3.29}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Configuração de preferências}}{16}{figure.3.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Modelo Entidade-Relacionamento}}{19}{figure.3.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Consultas de validação da modelagem}}{20}{figure.3.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Consulta SQL de grade horária com sete salas}}{20}{figure.3.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Resultado da consulta de uma grade no banco de dados}}{21}{figure.3.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Diagrama de Casos de Uso}}{22}{figure.3.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Tela - Listagem de Configurações de Grade}}{23}{figure.3.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Tela - Estrutura da Escola - Professores}}{23}{figure.3.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Tela - Estrutura da Escola - Turmas e Turnos}}{24}{figure.3.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Tela - Aulas por professor}}{24}{figure.3.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Tela - Restrições e Preferências}}{25}{figure.3.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Tela - Regiões e Grupos de Alinhamento}}{25}{figure.3.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Tela - Mínimos e Máximos}}{26}{figure.3.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Tela - Horários}}{26}{figure.3.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Modelo Entidade-Relacionamento com adição da tabela de usuários}}{27}{figure.3.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Tela de Acesso}}{28}{figure.3.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Método de Cadastro}}{29}{figure.3.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Método de Login}}{30}{figure.3.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Middleware de autenticação}}{31}{figure.3.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Middleware de validação da configuração}}{31}{figure.3.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Modelo Entidade-Relacionamento com Matérias}}{32}{figure.3.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Estrutura da Escola com Matérias}}{33}{figure.3.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Tela de configuração de quantidades de aulas por matéria}}{34}{figure.3.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Visualização de grade horária com matérias}}{34}{figure.3.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Mensagem de erro de validação}}{37}{figure.3.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Grade horária exportada para planilha}}{37}{figure.3.31}%

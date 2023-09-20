@@ -2,7 +2,7 @@
 
 Durante os incrementos anterioriores, o otimizador gerava grades horárias que continham apenas os nomes dos professores alocados para aula. Em outras palavras, as grades eram matrizes nas quais as linhas eram os horários disponíveis, as colunas eram as salas e cada posição na matriz representava qual professor deveria ministrar a aula naquele horário.
 
-A alocação dos professores é muito importante para a resolução do problema, pois apresenta a maior parte das retrições e dificuldades relacionadas, como os conflitos, por exemplo. Entretando, em termos de completude, as grades horárias devem ter também a alocação de matérias em cada horário de aula, visto que um mesmo professor pode ministrar mais de uma matéria. As alterações necessárias para possibilitar isso foram:
+A alocação dos professores é muito importante para a resolução do problema, pois apresenta a maior parte das retrições e dificuldades relacionadas, como os conflitos, por exemplo. Entretando, em termos de completude, as grades horárias devem ter também a alocação de matérias em cada horário de aula, visto que cada professor pode ministrar aulas de mais de uma matéria. As alterações necessárias para possibilitar isso foram:
 
 \begin{enumerate}
 	\item Alterar a modelagem do banco de dados para comportar informações relacionadas às matérias;
@@ -64,6 +64,8 @@ Por fim, na tela final da configuração, representável por exibir as grades ho
 
 \subsubsection{Alteração de métodos no servidor}
 A adição das matérias também envolveu algumas alterações no servidor. As rotas alteradas para acomodar a melhoria foram rotas de armazenamento e consulta da estrutura da escola, aulas e grades horárias.
+
+Evidentemente, as funções responsáveis por essas rotas precisaram ser modificadas para interagir corretamente com as novas tabelas criadas durante o desenvolvimento deste incremento.
 
 \subsubsection{Matérias no otimizador}
 Após as alterações na interface, servidor e banco de dados, o sistema estava pronto para lidar com as informações relacionadas às matérias, faltando apenas a incorporação destas na geração de grades horárias por parte do otimizador. Para realizar isso, implementou-se um método análogo ao \autoref{alg:otimizadorComRestricoes}, porém voltado à geração de grades de matérias.
