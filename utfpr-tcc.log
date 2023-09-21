@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  21 SEP 2023 16:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  21 SEP 2023 16:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1567,87 +1567,87 @@ t>
 File: ./dados/figuras/ER_horario_INCREMENTO6.png Graphic file (type png)
 <use ./dados/figuras/ER_horario_INCREMENTO6.png>
 Package pdftex.def Info: ./dados/figuras/ER_horario_INCREMENTO6.png  used on in
-put line 27.
+put line 21.
 (pdftex.def)             Requested size: 455.0pt x 322.47481pt.
  [32]
 <./dados/figuras/alteracaoEstrutura.png, id=507, 1923.185pt x 970.62625pt>
 File: ./dados/figuras/alteracaoEstrutura.png Graphic file (type png)
 <use ./dados/figuras/alteracaoEstrutura.png>
 Package pdftex.def Info: ./dados/figuras/alteracaoEstrutura.png  used on input 
-line 39.
+line 33.
 (pdftex.def)             Requested size: 295.74722pt x 149.26067pt.
  [33pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 26}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.44 
+l.38 
      pdfTeX warning (ext4): destination with the same identifier (name{figure.3
 .27}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.44 
+l.38 
       <./dados/figuras/ER_horario_INCREMENTO6.png> <./dados/figuras/alteracaoEs
 trutura.png>]
 <./dados/figuras/alteracaoAulas.png, id=515, 1923.185pt x 970.62625pt>
 File: ./dados/figuras/alteracaoAulas.png Graphic file (type png)
 <use ./dados/figuras/alteracaoAulas.png>
 Package pdftex.def Info: ./dados/figuras/alteracaoAulas.png  used on input line
- 50.
+ 44.
 (pdftex.def)             Requested size: 295.74722pt x 149.26067pt.
 <./dados/figuras/alteracaoHorarios.png, id=517, 1923.185pt x 970.62625pt>
 File: ./dados/figuras/alteracaoHorarios.png Graphic file (type png)
 <use ./dados/figuras/alteracaoHorarios.png>
 Package pdftex.def Info: ./dados/figuras/alteracaoHorarios.png  used on input l
-ine 60.
+ine 54.
 (pdftex.def)             Requested size: 295.74722pt x 149.26067pt.
  [34pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 28}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.72 
+l.66 
      pdfTeX warning (ext4): destination with the same identifier (name{figure.3
 .29}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.72 
+l.66 
       <./dados/figuras/alteracaoAulas.png> <./dados/figuras/alteracaoHorarios.p
-ng>]) (./estrutura/textuais/incrementos/incremento7.tex
-<./dados/figuras/erroValidacao.png, id=528, 133.6995pt x 37.5804pt>
+ng>]) [35] [36pdfTeX warning (ext4): destination with the same identifier (name
+{algocf.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.51 ...tura/textuais/incrementos/incremento6.tex}
+                                                  ]
+(./estrutura/textuais/incrementos/incremento7.tex
+<./dados/figuras/erroValidacao.png, id=537, 133.6995pt x 37.5804pt>
 File: ./dados/figuras/erroValidacao.png Graphic file (type png)
 <use ./dados/figuras/erroValidacao.png>
 Package pdftex.def Info: ./dados/figuras/erroValidacao.png  used on input line 
 22.
 (pdftex.def)             Requested size: 455.0pt x 127.90292pt.
-) [35] [36pdfTeX warning (ext4): destination with the same identifier (name{alg
-ocf.3}) has been already used, duplicate ignored
+) [37pdfTeX warning (ext4): destination with the same identifier (name{figure.3
+.30}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.52 ...tura/textuais/incrementos/incremento7.tex}
-                                                  ]
-(./estrutura/textuais/incrementos/incremento8.tex
-<./dados/figuras/gradeExportada.png, id=549, 254.6313pt x 142.3719pt>
+                                                   <./dados/figuras/erroValidac
+ao.png>] (./estrutura/textuais/incrementos/incremento8.tex
+<./dados/figuras/gradeExportada.png, id=552, 254.6313pt x 142.3719pt>
 File: ./dados/figuras/gradeExportada.png Graphic file (type png)
 <use ./dados/figuras/gradeExportada.png>
 Package pdftex.def Info: ./dados/figuras/gradeExportada.png  used on input line
  10.
 (pdftex.def)             Requested size: 455.0pt x 254.4096pt.
-)) [37pdfTeX warning (ext4): destination with the same identifier (name{figure.
-3.30}) has been already used, duplicate ignored
+)) [38pdfTeX warning (ext4): destination with the same identifier (name{figure.
+3.31}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.71 ...tura/textuais/desenvolvimento/metodologia}
                                                                      % Metod...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3.31})
- has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.71 ...tura/textuais/desenvolvimento/metodologia}
-                                                                     % Metod...
- <./dados/figuras/erroValidacao.png> <./dados/figuras/gradeExportada.png>]
+ <./dados/figuras/gradeExportada.png>]
 \openout2 = `estrutura/textuais/conclusao.aux'.
 
-
-(./estrutura/textuais/conclusao.tex) [38
+ (./estrutura/textuais/conclusao.tex)
+[39
 
 
 
@@ -1655,14 +1655,14 @@ l.71 ...tura/textuais/desenvolvimento/metodologia}
 ]
 \openout2 = `estrutura/pos-textuais/referencias.aux'.
 
-
-(./estrutura/pos-textuais/referencias.tex (./utfpr-tcc.bbl (./utfpr-tcc.brf)
+ (./estrutura/pos-textuais/referencias.tex (./utfpr-tcc.bbl
+(./utfpr-tcc.brf)
 \tf@brf=\write5
 \openout5 = `utfpr-tcc.brf'.
 
 
 bibitemlist
-)) [39
+)) [40
 
 
 
@@ -1693,8 +1693,8 @@ Package rerunfilecheck Info: File `utfpr-tcc.brf' has not changed.
 (rerunfilecheck)             Checksum: D595C337AABCE74153B8103A2755F1E0;691.
  ) 
 Here is how much of TeX's memory you used:
- 22595 strings out of 478287
- 372838 string characters out of 5849289
+ 22596 strings out of 478287
+ 372845 string characters out of 5849289
  897006 words of memory out of 5000000
  39563 multiletter control sequences out of 15000+600000
  542521 words of font info for 520 fonts, out of 8000000 for 9000
@@ -1712,10 +1712,10 @@ m/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 si12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
 r/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on utfpr-tcc.pdf (46 pages, 2882516 bytes).
+Output written on utfpr-tcc.pdf (47 pages, 2882280 bytes).
 PDF statistics:
- 813 PDF objects out of 1000 (max. 8388607)
- 670 compressed objects within 7 object streams
- 172 named destinations out of 1000 (max. 500000)
+ 815 PDF objects out of 1000 (max. 8388607)
+ 671 compressed objects within 7 object streams
+ 173 named destinations out of 1000 (max. 500000)
  86033 words of extra memory for PDF output out of 89155 (max. 10000000)
 

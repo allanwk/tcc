@@ -12,14 +12,8 @@ A alocação dos professores é muito importante para a resolução do problema,
 \end{enumerate}
 
 \subsubsection{Alteração no banco de dados}
-Para armazenar informações relacionadas às matérias, a modelagem do banco de dados foi alterada com a criação de três tabelas: 
-\begin{itemize}
-	\item materia
-	\item horario-materias: representa uma grade horária de matérias, que tem vínculo com a entidade principal da grade horária
-	\item horario-materia: representa uma matéria alocada em determinada posição de uma grade horária
-\end{itemize}
-
-Com esta modelagem atualizada, presente na figura \ref{fig:modelagemMateiras}, cada grade horária de professores, pode ter diferentes opções de grades de matérias.
+Para armazenar informações relacionadas às matérias, a modelagem do banco de dados foi alterada com a criação de uma tabela para armazenar as matérias, e a adição de uma coluna à tabela ``horario'' aula para que seja possível especificar matérias alocadas nas grades horárias. 
+Com estas alterações, a modelagem do banco de dados passa a ser representada pela figura \ref{fig:modelagemMateiras}.
 
 \begin{figure}[!htb]
 	\centering
@@ -52,7 +46,7 @@ Além da tela de estrutura, a segunda aba da configuração ("Aulas/Matérias") 
 	\label{fig:alteracaoAulas}
 \end{figure}
 
-Por fim, na tela final da configuração, representável por exibir as grades horárias geradas, foi necessário alterar o componente da grade para incluir, além dos nomes dos professores, os nomes das matérias alocadas para cada horário, como pode ser visto na figura \ref{fig:alteracaoHorario}.
+Por fim, na tela final da configuração, responsável por exibir as grades horárias geradas, foi necessário alterar o componente da grade para incluir, além dos nomes dos professores, os nomes das matérias alocadas para cada horário, como pode ser visto na figura \ref{fig:alteracaoHorario}.
 
 \begin{figure}[!htb]
 	\centering
@@ -65,17 +59,16 @@ Por fim, na tela final da configuração, representável por exibir as grades ho
 \subsubsection{Alteração de métodos no servidor}
 A adição das matérias também envolveu algumas alterações no servidor. As rotas alteradas para acomodar a melhoria foram rotas de armazenamento e consulta da estrutura da escola, aulas e grades horárias.
 
-Evidentemente, as funções responsáveis por essas rotas precisaram ser modificadas para interagir corretamente com as novas tabelas criadas durante o desenvolvimento deste incremento.
+Evidentemente, foi necessário criar rotas também para o gerenciamento de matérias, e as demais rotas do sistema precisaram ter suas funções de tratamento modificadas para interagir corretamente com esta nova tabela.
 
 \subsubsection{Matérias no otimizador}
-Após as alterações na interface, servidor e banco de dados, o sistema estava pronto para lidar com as informações relacionadas às matérias, faltando apenas a incorporação destas na geração de grades horárias por parte do otimizador. Para realizar isso, implementou-se um método análogo ao \autoref{alg:otimizadorComRestricoes}, porém voltado à geração de grades de matérias.
+Após as alterações na interface, servidor e banco de dados, o sistema estava pronto para lidar com as informações relacionadas às matérias, faltando apenas a incorporação destas na geração de grades horárias por parte do otimizador. 
 
-A diferença é que o novo método implementado obtém determinada grade horária gerada pelo \autoref{alg:otimizadorComRestricoes}, e realiza as operações necessárias para preencher a grade com matérias. Vale ressaltar que essas operações são semelhantes à geração da grade de aulas dos professores: preenchimento da grade inicial, cálculo da variação de custo, realização de trocas de posições e armazenamento das soluções.
+Para realizar isso, o otimizador foi alterado para alocar também matérias na grade horária, de forma que enquanto antes a grade horária armazenava em cada posição um professor que foi alocado para aquele horário, agora passa a armazenar uma dupla de professor e matéria alocados. Durante os passos de otimização, estas duplas seão permutadas, garantindo assim que cada matéria sempre corresponde a um professor compatível. Com estas alterações, o algoritmo \ref{alg:otimizadorCompleto} passa a representar o otimizador.
 
-O método de geração de grades foi aplicado no otimizador de forma que cada vez que uma grade horária de professores é salva no banco de dados, esta também já tem a sua grade horária de matérias gerada, completando assim o processo de otimização da grade, conforme o \autoref{alg:otimizadorCompleto}.
 
 \begin{algorithm}
-	\caption{Otimizador com matérias}
+	\caption{Otimizador com alocação de matérias}
 	\label{alg:otimizadorCompleto}
 	\KwIn{Lista de professores $LP$, lista de turmas $LT$, matriz de aulas e matérias por professor por turma $MA$, temperatura inicial $TI$, Taxa de resfriamento $TR$}
 	\KwOut{Grade horária de matérias e professores otimizada}
@@ -87,12 +80,12 @@ O método de geração de grades foi aplicado no otimizador de forma que cada ve
 		$deltaTotal \leftarrow 0$\\
 		\For {$passo = 0$ até $numeroPassos$} {
 			$turma \leftarrow grade.EscolheTurmaAleatoria()$\\
-			$linhas \leftarrow grade.EscolheHorariosAleatoriosValidos(sala)$\\
-			$delta \leftarrow grade.CalculaDelta(sala, linhas)$\\
+			$duplas \leftarrow grade.EscolheDuplasAleatoriasValidas(turma)$\\
+			$delta \leftarrow grade.CalculaDelta(turma, duplas)$\\
 			$probabilidade \leftarrow e^{-delta/temperatura}$\\
-			$valorAceite \leftarrow Aleatorio(0, 1)$\\
+			$valorAceite \leftarrow ValorAleatorioEntre(0, 1)$\\
 			\If {$delta < 0$ ou $probabilidade \ge valorAceite$} {
-				$grade.PermutaProfessores(sala, linha1, linha2)$\\
+				$grade.PermutaDuplas(sala, duplas)$\\
 				$deltaTotal \leftarrow deltaTotal + delta$\\
 				\If {grade não existe na lista de soluções} {
 					insere grade na lista de soluções\\
@@ -106,11 +99,7 @@ O método de geração de grades foi aplicado no otimizador de forma que cada ve
 			$iteracoesSemAlteracao \leftarrow 0$\\
 		}
 		\If {$iteracoesSemAlteracao \ge 15$} {
-			\For{gradeProfessores em EscolherGradesRelevantes(solucoes)} {
-				SalvaGradeProfessores$(gradeProfessores)$\\
-				$gradesMaterias \leftarrow$ GeraGradesMaterias$(gradeProfessores)$\\
-				SalvarMelhorGradeMaterias$(gradesMaterias)$\\
-			}
+			salvaGradesRelevantes()\\
 			apaga lista de soluções\\
 			$temperatura \leftarrow TI$\\
 			$iteracoesSemAlteracao \leftarrow 0$\\
@@ -118,3 +107,4 @@ O método de geração de grades foi aplicado no otimizador de forma que cada ve
 		$temperatura \leftarrow temperatura * TR$
 	}
 \end{algorithm}
+\pagebreak
