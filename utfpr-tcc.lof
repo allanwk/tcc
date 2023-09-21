@@ -5,12 +5,12 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces Exemplo de grupo de alinhamento sobre a grade horária gerada}}{13}{figure.3.4}%
 \contentsline {figure}{\numberline {5}{\ignorespaces Efeito de grupo de alinhamento}}{14}{figure.3.5}%
 \contentsline {figure}{\numberline {6}{\ignorespaces Configuração de preferências}}{16}{figure.3.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Modelo Entidade-Relacionamento}}{19}{figure.3.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Consultas de validação da modelagem}}{20}{figure.3.8}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Modelo Entidade-Relacionamento}}{18}{figure.3.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Consultas de validação da modelagem}}{19}{figure.3.8}%
 \contentsline {figure}{\numberline {9}{\ignorespaces Consulta SQL de grade horária com sete salas}}{20}{figure.3.9}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Resultado da consulta de uma grade no banco de dados}}{21}{figure.3.10}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Diagrama de Casos de Uso}}{22}{figure.3.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Tela - Listagem de Configurações de Grade}}{23}{figure.3.12}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Resultado da consulta de uma grade no banco de dados}}{20}{figure.3.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Diagrama de Casos de Uso}}{21}{figure.3.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Tela - Listagem de Configurações de Grade}}{22}{figure.3.12}%
 \contentsline {figure}{\numberline {13}{\ignorespaces Tela - Estrutura da Escola - Professores}}{23}{figure.3.13}%
 \contentsline {figure}{\numberline {14}{\ignorespaces Tela - Estrutura da Escola - Turmas e Turnos}}{24}{figure.3.14}%
 \contentsline {figure}{\numberline {15}{\ignorespaces Tela - Aulas por professor}}{24}{figure.3.15}%
@@ -24,7 +24,7 @@
 \contentsline {figure}{\numberline {23}{\ignorespaces Método de Login}}{30}{figure.3.23}%
 \contentsline {figure}{\numberline {24}{\ignorespaces Middleware de autenticação}}{31}{figure.3.24}%
 \contentsline {figure}{\numberline {25}{\ignorespaces Middleware de validação da configuração}}{31}{figure.3.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Modelo Entidade-Relacionamento com Matérias}}{32}{figure.3.26}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Modelo Entidade-Relacionamento com Matérias}}{33}{figure.3.26}%
 \contentsline {figure}{\numberline {27}{\ignorespaces Estrutura da Escola com Matérias}}{33}{figure.3.27}%
 \contentsline {figure}{\numberline {28}{\ignorespaces Tela de configuração de quantidades de aulas por matéria}}{34}{figure.3.28}%
 \contentsline {figure}{\numberline {29}{\ignorespaces Visualização de grade horária com matérias}}{34}{figure.3.29}%
