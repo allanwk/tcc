@@ -40,6 +40,6 @@
 \contentsline {subsubsection}{\numberline {3.3.6.4}Matérias no otimizador}{35}{subsubsection.3.3.6.4}%
 \contentsline {subsection}{\numberline {3.3.7}VALIDAÇÃO DE CONFIGURAÇÕES}{37}{subsection.3.3.7}%
 \contentsline {subsection}{\numberline {3.3.8}EXPORTAÇÃO DE GRADES HORÁRIAS}{38}{subsection.3.3.8}%
-\contentsline {chapter}{\chapternumberline {4}CONSIDERAÇÕES FINAIS}{39}{chapter.4}%
-\contentsline {chapter}{Refer\^encias}{40}{chapter*.6}%
+\contentsline {chapter}{\chapternumberline {4}CONSIDERAÇÕES FINAIS}{40}{chapter.4}%
+\contentsline {chapter}{Refer\^encias}{41}{chapter*.6}%
 \vspace {\cftbeforepartskip }
