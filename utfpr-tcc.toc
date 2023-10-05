@@ -25,7 +25,8 @@
 \contentsline {subsubsection}{\numberline {3.3.2.5}Grupos de Alinhamento}{14}{subsubsection.3.3.2.5}%
 \contentsline {subsubsection}{\numberline {3.3.2.6}Janelas}{16}{subsubsection.3.3.2.6}%
 \contentsline {subsubsection}{\numberline {3.3.2.7}Preferências}{16}{subsubsection.3.3.2.7}%
-\contentsline {subsubsection}{\numberline {3.3.2.8}Armazenamento de soluções}{17}{subsubsection.3.3.2.8}%
+\contentsline {subsubsection}{\numberline {3.3.2.8}Mínimos e máximos}{17}{subsubsection.3.3.2.8}%
+\contentsline {subsubsection}{\numberline {3.3.2.9}Armazenamento de soluções}{17}{subsubsection.3.3.2.9}%
 \contentsline {subsection}{\numberline {3.3.3}SERVIDOR E BANCO DE DADOS}{19}{subsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.3.4}INTERFACE}{22}{subsection.3.3.4}%
 \contentsline {subsection}{\numberline {3.3.5}USUÁRIOS E AUTENTICAÇÃO}{27}{subsection.3.3.5}%

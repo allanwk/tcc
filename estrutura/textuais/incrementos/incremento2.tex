@@ -213,6 +213,20 @@ A \autoref{fig:preferencias} representa um exemplo de configuração de preferê
 
 Vale ressaltar que o diferencial da preferência específica de última aula é que esta considera a possibilidade de aulas vazias, ou seja, caso o último horário do dia não tenha uma aula alocada, a preferência considera que a aula deve ser alocada na penúltima aula.
 
+\subsubsection{Mínimos e máximos}
+
+Desenvolveram-se métricas de qualidade relacionadas a quantidades de aulas ministradas por dia. Como pode ser visto na figura \ref{fig:tela_minimos}, estas métricas permitem configurar quantidades mínimas e máximas de aulas por dia para cada professor.
+
+\begin{figure}[htb!]
+	\centering
+	\caption{Mínimos de aulas configuradas na interface}
+	\includegraphics[width=1\textwidth]{./dados/figuras/minimos_configurados}
+	\fonte{Autor}
+	\label{fig:tela_minimos}
+\end{figure}
+
+O cálculo das métricas de qualidade relacionadas aos mínimos e máximos consiste no cálculo do erro, ou seja a quantidade de aulas alocada subtraída da quantidade de aulas esperada. Vale ressaltar que enquanto os mínimos são configuráveis por turno, os máximos são interpretados como limites diários, e consequentemente levam em conta a soma da quantidade de aulas em todos os turnos. Por exemplo, se um professor tem um limite diário de cinco aulas configurado, a soma de suas aulas naquele dia, em todos os turnos, não deverá ultrapassar cinco.
+
 \subsubsection{Armazenamento de soluções}
 \label{subsec:salvamento}
 
