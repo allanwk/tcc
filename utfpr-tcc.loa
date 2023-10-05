@@ -1,22 +1,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {algocf}{\numberline {1}{\ignorespaces Exemplo de Algoritmo}}{10}{algocf.1}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {algocf}{\numberline {1}{\ignorespaces Otimizador de grades inicial}}{6}{algocf.1}%
+\contentsline {algocf}{\numberline {2}{\ignorespaces Otimizador com persistência de grades horárias}}{18}{algocf.2}%
+\contentsline {algocf}{\numberline {3}{\ignorespaces Otimizador com alocação de matérias}}{37}{algocf.3}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

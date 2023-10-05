@@ -3,9 +3,11 @@
 
 Apesar da importância da resolução de conflitos, existem diversas outras nuances durante o planejamento das grades horárias que precisam ser levadas em conta para que as grades produzidas sejam aplicáveis na prática.
 
-Para possibilitar a otimização simultêanea de várias características das grades, optou-se por utilizar um sistema de métricas, cada qual mensura quantitativamente determinada característica do horário, e contém um peso que define a sua importância para a grade como um todo. Com estas métricas, para obter o custo de determinada solução, ou seja, a representação da quantidade de problemas que apresenta, basta tomar a média ponderada das métricas. 
+\citeonline{ABRAMSON} sugere uma forma de permitir a otimização de múltiplas características simultanemente utilizando: uma função de custo ponderado. Esta função foi implementada, utilizando-se um sistema de métricas, cada qual mensura quantitativamente determinada característica da grade horária, e contém um peso que define a sua importância para a grade como um todo. 
 
-Adicionalmente, as métricas podem ser rígidas ou suaves. As métricas rígidas precisam ser perfeitamente atendidas para que a grade horária seja considerada viável, enquanto as métricas suaves promovem a melhoria da qualidade, mas não necessariamente precisam ser perfeitamente atendidas.
+A função de custo ponderado retorna um valor que representa a qualidade geral de uma grade horária, através do cálculo da média ponderada de todas as métricas de qualidade. Em outras palavras, quanto menor o custo, melhor a solução encontrada.
+
+Adicionalmente, as métricas foram implementadas de forma que pudessem ser rígidas ou suaves. As métricas rígidas precisam ser perfeitamente atendidas para que a grade horária seja considerada viável, enquanto as métricas suaves promovem a melhoria da qualidade, mas não necessariamente precisam ser perfeitamente atendidas.
 
 As próximas seções terão como objetivo explicar cada uma destas métricas e os desafios associados. A \autoref{subsec:salvamento} entrará em mais detalhes sobre como as grades horárias passaram a ser salvas após a implementação das métricas.
 

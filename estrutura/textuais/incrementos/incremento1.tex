@@ -1,6 +1,8 @@
 \subsection{Otimizador inicial}
 
-A primeira parte do projeto desenvolvida foi a versão inicial do otimizador, cuja tarefa era gerar uma grade horária válida, evitando conflitos, ou seja, professores alocados para mais uma turma ao mesmo tempo. Para realizar esta tarefa, aplicou-se a meta-heurística de \textit{simulated anealling}, originando o algoritmo \ref{alg:otimizadorInicial}.
+Segundo \citeonline{ABRAMSON}, uma parte fundamental para a produção de grades horárias escolares é a resolução de conflitos de recursos. Estes conflitos são caracterizados por recursos alocados simultâneamente, levando a grades horárias não aplicáveis na prática. Um exemplo disso é a alocação de um professor para ministrar aulas em mais de uma turma ao mesmo tempo, o que é impossível.
+
+Neste projeto, a primeira parte desenvolvida foi a versão inicial do otimizador, cuja tarefa era gerar uma grade horária válida, evitando conflitos, ou seja, professores alocados para mais uma turma ao mesmo tempo. Para realizar esta tarefa, aplicou-se a meta-heurística de \textit{simulated anealling}, originando o algoritmo \ref{alg:otimizadorInicial}.
 
 \begin{algorithm}
 	\caption{Otimizador de grades inicial}
@@ -29,7 +31,9 @@ A primeira parte do projeto desenvolvida foi a versão inicial do otimizador, cu
 	}
 \end{algorithm}
 
-No algoritmo \ref{alg:otimizadorInicial}, o valor da taxa de resfriamento é de 0,99, sendo a temperatura inicial e o número de passos por iteração escolhidos empiricamente. Além disso, durante o desenvolvimento deste primeiro incremento, utilizou-se como condição de parada o esgotamento da temperatura, ou seja, o algoritmo finaliza sua execução assim que a temperatura atinge um valor próximo de zero, quando não ocorrem mais permutações de professores.
+No algoritmo \ref{alg:otimizadorInicial}, o valor da taxa de resfriamento é de 0,99, sendo a temperatura inicial e o número de passos por iteração escolhidos empiricamente. Um valor apropriado para a temperatura inicial também pode ser definido empiricamente, ou utilizando o método explicitado por \citeonline{abramsomCooling}, em que é calculada a temperatura em que as soluções passam por uma transição de fase.
+
+Além disso, durante o desenvolvimento deste primeiro incremento, utilizou-se como condição de parada o esgotamento da temperatura, ou seja, o algoritmo finaliza sua execução assim que a temperatura atinge um valor próximo de zero, quando não ocorrem mais permutações de professores.
 
 Explicando melhor o algoritmo, o método ``CriaGradeInicial''  gera uma matriz com as turmas e números de aulas de cada professor alocados corretamente. Esta grade inicial provavelmente possui inúmeros conflitos, portanto são aplicados os passos de otimização. 
 
