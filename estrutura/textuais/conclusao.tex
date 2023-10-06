@@ -1,10 +1,17 @@
 % CONCLUSÃO--------------------------------------------------------------------
 
-\chapter{CONSIDERAÇÕES FINAIS}
+\chapter{CONCLUSÃO}
 \label{chap:conclusao}
 
-Em conclusão, este trabalho abordou o \textit{High School Timetabling Problem}, e a demanda associada por um software de otimização de grades horárias. Verificou-se durante a revisão de literatura a dificuldade que a tarefa de planejamento de grades horárias representa, e que grande parte das instituições de ensino do país ainda realiza essa tarefa manualmente.
+O presente trabalho abordou o \textit{High School Timetabling Problem}, e a demanda associada por um software de otimização de grades horárias. Verificou-se durante a revisão de literatura a dificuldade que a tarefa de planejamento de grades horárias representa, e que grande parte das instituições de ensino do país ainda realiza essa tarefa manualmente.
 
-O presente trabalho trouxe também algumas demonstrações do estado atual do protótipo da aplicação desenvolvida, assim como melhorias sugeridas para a continuação da pesquisa. Com o desenvovolvimento dos primeiros incrementos da aplicação, foi possível verificar a viabilidade do projeto aplicando a técnica de \textit{Simulated Annealing} para produzir e otimizar grades horárias escolares, atendendo múltiplos objetivos tradicionais do problema, assim como a nova preocupação trazida pelo Novo Ensino Médio, os Itinerários Formativos.
+Tal software imaginado foi desenvolvido, aplicando a meta-heurística de \textit{Simulated Annealing}, estudada durante a revisão de literatura. Com essa meta-heurística, foi possível expandir a solução proposta por \citeonline{ABRAMSON}, incorpordando diversas métricas de qualidade adicionais, como janelas, restrições, aulas constantes, preferências, agrupamentos, entre outras.
 
-Resta portanto como atividade de crucial importância a coleta de dados de ponteciais usuários futuros da aplicação, para que seja possível verificar a necessidade de adições e melhorias ao otimizador, e a execução dos incrementos do software a fim de cumprir os objetivos propostos.
+Considerando o grau de configuração atingido para as grades horárias, a performance do otimizador e atendimento às métricas de qualidade, conclui-se que o software desenvolvido atingiu os objetivos propostos neste trabalho.
+
+Quanto às limitações do projeto desenvolvido, temos:
+\begin{enumerate}
+	\item A inexistência do conceito de salas, ou seja, o sistema assume que cada turma sempre recebe suas aulas na mesma sala, o que não reflete a realidade de grandes instituições de ensino;
+	\item O fato de que não foram criadas configurações relacionadas a matérias: conceitos como restrições e aulas constantes são vinculados diretamente aos professores;
+	\item Devido à natureza não determinística do \textit{Simulated Annealing}, é impossível determinar de antemão se a configuração desejada pelo usuário é plausível, e é difícil reportar o progresso da geração das grades
+\end{enumerate}

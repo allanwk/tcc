@@ -28,7 +28,7 @@
 \contentsline {subsubsection}{\numberline {3.3.2.8}Mínimos e máximos}{17}{subsubsection.3.3.2.8}%
 \contentsline {subsubsection}{\numberline {3.3.2.9}Armazenamento de soluções}{17}{subsubsection.3.3.2.9}%
 \contentsline {subsection}{\numberline {3.3.3}SERVIDOR E BANCO DE DADOS}{19}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}INTERFACE}{22}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.4}INTERFACE}{21}{subsection.3.3.4}%
 \contentsline {subsection}{\numberline {3.3.5}USUÁRIOS E AUTENTICAÇÃO}{27}{subsection.3.3.5}%
 \contentsline {subsubsection}{\numberline {3.3.5.1}Adaptação do banco de dados}{28}{subsubsection.3.3.5.1}%
 \contentsline {subsubsection}{\numberline {3.3.5.2}Tela de login}{28}{subsubsection.3.3.5.2}%
@@ -42,6 +42,6 @@
 \contentsline {subsection}{\numberline {3.3.7}VALIDAÇÃO DE CONFIGURAÇÕES}{38}{subsection.3.3.7}%
 \contentsline {subsection}{\numberline {3.3.8}EXPORTAÇÃO DE GRADES HORÁRIAS}{39}{subsection.3.3.8}%
 \contentsline {chapter}{\chapternumberline {4}ANÁLISE E DISCUSSÃO DOS RESULTADOS}{41}{chapter.4}%
-\contentsline {chapter}{\chapternumberline {5}CONSIDERAÇÕES FINAIS}{50}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}CONCLUSÃO}{50}{chapter.5}%
 \contentsline {chapter}{Refer\^encias}{51}{chapter*.8}%
 \vspace {\cftbeforepartskip }
