@@ -57,6 +57,14 @@ Dispon{\'\i}vel em:
 {LAARHOVEN, P.~J. \textbf{Simulated annealing theory and applications}. [S.l.]:
   Kluwer, 1987.}
 
+\bibitem[Post et al. 2011]{xhstt}
+\abntrefinfo{Post et al.}{POST et al.}{2011}
+{POST, G. et al. \textbf{XHSTT: An XML archive for high school timetabling
+  problems in different countries - annals of operations research}. Springer
+  US, 2011.
+Dispon{\'\i}vel em:
+  \url{https://link.springer.com/article/10.1007/s10479-011-1012-2}.}
+
 \bibitem[Poulsen 2012]{POULSEN}
 \abntrefinfo{Poulsen}{POULSEN}{2012}
 {POULSEN, C. J.~B.
@@ -80,5 +88,11 @@ ISBN 9788580555349. Dispon{\'\i}vel em:
 ISSN 0957-4174.
 Dispon{\'\i}vel em:
   \url{https://www.sciencedirect.com/science/article/pii/S0957417420307314}.}
+
+\bibitem[Twente]{Twente}
+\abntrefinfo{Twente}{TWENTE}{}
+{TWENTE, U. \textbf{DMMP - high school Timetabling Project (HSTT): High school
+  timetabling project (HSTT)}.
+Dispon{\'\i}vel em: \url{https://www.utwente.nl/en/eemcs/dmmp/hstt/}.}
 
 \end{thebibliography}

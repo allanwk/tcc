@@ -4,6 +4,8 @@ The top-level auxiliary file: utfpr-tcc.aux
 A level-1 auxiliary file: estrutura/pre-textuais/resumo.aux
 A level-1 auxiliary file: estrutura/pre-textuais/abstract.aux
 A level-1 auxiliary file: estrutura/pre-textuais/listas/listas-ilustracoes/lista-figuras.aux
+A level-1 auxiliary file: estrutura/pre-textuais/listas/listas-ilustracoes/lista-quadros.aux
+A level-1 auxiliary file: estrutura/pre-textuais/listas/listas-diversas/lista-algoritmos.aux
 A level-1 auxiliary file: estrutura/pre-textuais/sumario.aux
 A level-1 auxiliary file: estrutura/textuais/introducao.aux
 A level-1 auxiliary file: estrutura/textuais/desenvolvimento/revisao-de-literatura.aux
@@ -27,49 +29,51 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--campo year vazio ou faltando em Twente
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 16 entries,
+You've used 18 entries,
             6714 wiz_defined-function locations,
-            1294 strings with 11974 characters,
-and the built_in function-call counts, 16260 in all, are:
-= -- 1826
-> -- 287
-< -- 345
-+ -- 484
-- -- 89
-* -- 990
-:= -- 2024
-add.period$ -- 45
-call.type$ -- 17
-change.case$ -- 117
-chr.to.int$ -- 35
-cite$ -- 10
-duplicate$ -- 1405
-empty$ -- 867
-format.name$ -- 416
-if$ -- 3447
+            1309 strings with 12674 characters,
+and the built_in function-call counts, 19613 in all, are:
+= -- 2234
+> -- 343
+< -- 448
++ -- 608
+- -- 106
+* -- 1190
+:= -- 2433
+add.period$ -- 52
+call.type$ -- 19
+change.case$ -- 136
+chr.to.int$ -- 37
+cite$ -- 13
+duplicate$ -- 1765
+empty$ -- 984
+format.name$ -- 500
+if$ -- 4100
 int.to.chr$ -- 5
 int.to.str$ -- 3
-missing$ -- 240
-newline$ -- 64
-num.names$ -- 51
-pop$ -- 260
+missing$ -- 273
+newline$ -- 74
+num.names$ -- 61
+pop$ -- 306
 preamble$ -- 1
-purify$ -- 56
+purify$ -- 64
 quote$ -- 0
-skip$ -- 1685
+skip$ -- 2073
 stack$ -- 1
-substring$ -- 688
-swap$ -- 526
-text.length$ -- 15
+substring$ -- 815
+swap$ -- 649
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 6
-warning$ -- 0
-while$ -- 79
+warning$ -- 1
+while$ -- 92
 width$ -- 0
-write$ -- 176
+write$ -- 204
+(There was 1 warning)

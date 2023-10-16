@@ -1,8 +1,12 @@
 % RESULTADOS-------------------------------------------------------------------
 
 \chapter{ANÁLISE E DISCUSSÃO DOS RESULTADOS}
+\label{chap:resultados}
 
-Este capítulo será responsável por evidenciar o estado final do \textit{software}, trazendo a validação das suas funcionalidades.
+Este capítulo será responsável por evidenciar o estado final do \textit{software}, trazendo a validação das suas funcionalidades. O capítulo está estruturado em duas seções: a seção \ref{sec:validacao_geral} evideciará o funcionamento de ponta a ponta geral do sistema, utilizando uma instância arbitrária; enquanto a seção \ref{sec:validacao_datasets} trará os resultados de testes do sistema utilizando \textit{datasets} públicos.
+
+\section{VALIDAÇÃO GERAL}
+\label{sec:validacao_geral}
 
 Conforme amplamente abordado no \autoref{chap:desenvolvimento}, foram desenvolvivos ao longo do projeto três componentes principais: a interface web, a aplicação de servidor e o otimizador de grades. Para validar o funcionamento do sistema como um todo, realizou-se um teste de ponta a ponta, envolvendo os seguintes passos:
 
@@ -17,74 +21,16 @@ Conforme amplamente abordado no \autoref{chap:desenvolvimento}, foram desenvolvi
 
 Após a execução dos itens 1 e 2, foi criada uma configuração que foi utilizada para a validação do \textit{software}. Esta configuração de teste contém dois turnos (``Manhã'' e ``Tarde''), cada qual com sete turmas. O quadro \ref{qua:validacao} contém a relação de professores, matérias e turmas do turno da manhã. 
 
-\begin{quadro}[!htb]
-	\centering
-	\caption{Configuração de aulas para validação.\label{qua:validacao}}
-	\begin{tabular}{|p{2cm}|p{2cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|}
-		\hline
-		\textbf{Professor} & \textbf{Matéria} & \textbf{6ºAno} & \textbf{7ºAno} & \textbf{8ºAno} & \textbf{9ºAno} & \textbf{1ºEM} & \textbf{2ºEM} & \textbf{3ºEM} \\
-		\hline
-		Adriana & Biologia & 0 & 0 & 0 & 0 & 3 & 3 & 3 \\
-		\hline
-		Adriana & Ciências & 3 & 3 & 3 & 3 & 0 & 0 & 0 \\
-		\hline
-		Adriana & Química & 0 & 0 & 0 & 0 & 3 & 3 & 3 \\
-		\hline
-		Beatriz & ED. Física & 1 & 1 & 1 & 1 & 0 & 0 & 0 \\
-		\hline
-		Cristiane & Artes & 2 & 0 & 2 & 0 & 0 & 0 & 0 \\
-		\hline
-		Fabio & Física & 0 & 0 & 0 & 0 & 3 & 3 & 3 \\
-		\hline
-		Fabio & Matemática & 0 & 0 & 0 & 5 & 0 & 0 & 0 \\
-		\hline
-		Fabio & P. Vida & 0 & 0 & 0 & 0 & 1 & 1 & 1 \\
-		\hline
-		Glaucia & Matemática & 0 & 0 & 0 & 0 & 5 & 5 & 5 \\
-		\hline
-		Jack & Espanhol & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
-		\hline
-		Jack & Português & 5 & 5 & 0 & 0 & 0 & 0 & 0 \\
-		\hline
-		Jéssica & Artes & 0 & 2 & 0 & 2 & 1 & 1 & 1 \\
-		\hline
-		Jéssica & Filosofia & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
-		\hline
-		Jéssica & Inglês & 2 & 2 & 2 & 2 & 2 & 2 & 2 \\
-		\hline
-		Luciana & Literatura & 0 & 0 & 0 & 0 & 1 & 1 & 1 \\
-		\hline
-		Luciana & Of. Texto & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
-		\hline
-		Luciana & Português & 0 & 0 & 5 & 5 & 3 & 3 & 3 \\
-		\hline
-		Renata & História & 3 & 3 & 3 & 3 & 2 & 3 & 2 \\
-		\hline
-		Rosa & Matemática & 5 & 5 & 5 & 0 & 0 & 0 & 0 \\
-		\hline
-		Verônica & Geografia & 3 & 3 & 3 & 3 & 2 & 2 & 3 \\
-		\hline
-		Verônica & Sociologia & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
-		\hline
-	\end{tabular}
-	\fonte{Autoria própria}
-\end{quadro}
+A tabela \ref{tab:validacao} contém o número de aulas que cada professor deve ministrar de cada matéria, em cada uma das salas. Por exemplo, seguindo esta configuração, a professora ``Adriana'' deve ministrar três aulas de qúimica e três aulas de biologia na turma do ``3º EM''.
 
-O quadro \ref{qua:validacao} contém o número de aulas que cada professor deve ministrar de cada matéria, em cada uma das salas. Por exemplo, seguindo esta configuração, a professora ``Adriana'' deve ministrar três aulas de qúimica e três aulas de biologia na turma do ``3º EM''. Algumas dessas quantidades podem ser vistas configuradas através da interface web na figura \ref{fig:aulas_validacao}.
+\input{./dados/tabelas/quantidadeAulasValidacaoInterna}
 
-\begin{figure}[!htb]
-	\centering
-	\caption{Aulas configuradas na interface}
-	\includegraphics[width=1\textwidth]{./dados/figuras/aulas_validacao}
-	\fonte{Autor}
-	\label{fig:aulas_validacao}
-\end{figure}
-
+\newpage
 Por questão de simplicidade, o turno da tarde contém turmas análogas ao turno da manhã, porém com o sufixo ``B'' para que possam ser diferenciadas. Por exemplo, se no turno da manhã consta a turma ``6º Ano'', no turno da tarde constará a turma ``6º Ano B''.
 
 Para que o teste contemplasse as diversas métricas de qualidade do sistema, configuraram-se também as outras diversas características das grades horárias, que podem ser verificadas nas figuras a seguir. As figuras representam o estado final das interfaces desenvolvidas durante o projeto, e após sua apresentação, constará uma explicação mais detalhada de cada métrica configurada.
 
-\begin{figure}
+\begin{figure}[p]
 	\centering
 	\caption{Constantes configuradas na interface}
 	\includegraphics[width=1\textwidth]{./dados/figuras/constantes_configuradas}
@@ -92,7 +38,7 @@ Para que o teste contemplasse as diversas métricas de qualidade do sistema, con
 	\label{fig:constantes_configuradas}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[p]
 	\centering
 	\caption{Restrições e preferências configuradas na interface}
 	\includegraphics[width=1\textwidth]{./dados/figuras/restricoes_configuradas}
@@ -100,7 +46,7 @@ Para que o teste contemplasse as diversas métricas de qualidade do sistema, con
 	\label{fig:restricoes_configuradas}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[p]
 	\centering
 	\caption{Regiões e grupos de alinhamento configuradas para o turno da ``Manhã''}
 	\includegraphics[width=1\textwidth]{./dados/figuras/regioes_configuradas_manha}
@@ -108,7 +54,7 @@ Para que o teste contemplasse as diversas métricas de qualidade do sistema, con
 	\label{fig:regioes_configuradas_manha}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[p]
 	\centering
 	\caption{Regiões e grupos de alinhamento configuradas para o turno da ``Tarde''}
 	\includegraphics[width=1\textwidth]{./dados/figuras/regioes_configuradas_tarde}
@@ -116,15 +62,15 @@ Para que o teste contemplasse as diversas métricas de qualidade do sistema, con
 	\label{fig:regioes_configuradas_tarde}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\caption{Mínimos de aulas configuradas na interface}
 	\includegraphics[width=1\textwidth]{./dados/figuras/minimos_configurados}
 	\fonte{Autor}
 	\label{fig:minimos_configurados}
 \end{figure}
-\pagebreak
 
+\newpage
 \begin{enumerate}
 	\item \label{item_constantes} \textbf{Constantes}: Conforme a figura \ref{fig:constantes_configuradas}, definiu-se que ``Cristiane'' deveria lecionar as duas primeiras aulas da segunda-feira na turma do ``6º Ano'', em ambos os turnos;
 	\item \label{item_restricoes} \textbf{Restrições e preferências}: Na figura \ref{fig:restricoes_configuradas}, é possível notar que no turno da manhã, ``Beatriz'' não deve ter aulas alocadas na quarta, quinta ou sexta-feira. Além disso, informou-se pela interface que suas aulas devem ser lecionadas obrigatoriamente como a última aula do expediente de cada turma;
@@ -133,20 +79,9 @@ Para que o teste contemplasse as diversas métricas de qualidade do sistema, con
 	\item \label{item_minimos} \textbf{Mínimos e limites diários}: Como pode ser visto na figura \ref{fig:minimos_configurados}, configurou-se que no turno da tarde, ``Beatriz'' deve ministrar no mínimo duas aulas na segunda-feira e 2 aulas na quarta-feira; além disso, ``Gláucia'' deve ministrar no máximo duas aulas na sexta-feira, contabilizando ambos os turnos.
 \end{enumerate}
 
-Realizadas as configurações, o otimizador foi ativado, e utilizou-se como condição de parada a passagem de um intervalo de tempo de um minuto. Como pode ser visto na figura \ref{fig:horarios_gerados_validacao} Durante este intervalo, o otimizador produziu 65 soluções diferentes, cada qual contendo uma grade horária para o turno da manhã e uma para o turno da tarde.
+Realizadas as configurações, o otimizador foi ativado, e utilizou-se como condição de parada a passagem de um intervalo de tempo de um minuto. Durante este intervalo, o otimizador produziu 65 soluções plausíveis diferentes, cada qual contendo uma grade horária para o turno da manhã e uma para o turno da tarde.
 
-\begin{figure}
-	\centering
-	\caption{Listagem de grades horárias geradas}
-	\includegraphics[width=1\textwidth]{./dados/figuras/horarios_gerados_validacao}
-	\fonte{Autor}
-	\label{fig:horarios_gerados_validacao}
-\end{figure}
-\pagebreak
-
-A listagem da figura \ref{fig:horarios_gerados_validacao} é dada em ordem de qualidade, ou seja, a primeira grade horária da lista apresenta os melhores valores para as métricas de qualidade. A figura \ref{fig:horario_exportado_manha} contém a grade horária do turno da manhã presente na melhor solução encontrada, cujas métricas de qualidade foram trasncritas para o quadro \ref{qua:caracteristicas_horario_validacao}. Para melhor leitura e análise, as informações de ambos os turnos dessa solução foram exportadas para as planilhas nas figuras \ref{fig:planilha_exportada_manha} e \ref{fig:planilha_exportada_tarde}, respectivamente.
-
-\begin{figure}
+\begin{figure}[p]
 	\centering
 	\caption{Visualização de turno da manhã da melhor solução}
 	\includegraphics[width=1\textwidth]{./dados/figuras/horario_exportado_manha}
@@ -154,7 +89,9 @@ A listagem da figura \ref{fig:horarios_gerados_validacao} é dada em ordem de qu
 	\label{fig:horario_exportado_manha}
 \end{figure}
 
-\begin{quadro}
+Destas soluções, a melhor encontrada pode ser vista na figura \ref{fig:horario_exportado_manha}, cujas métricas de qualidade foram trasncritas para o quadro \ref{qua:caracteristicas_horario_validacao}. Para melhor leitura e análise, as informações de ambos os turnos da grade gerada foram exportadas para as planilhas nas figuras \ref{fig:planilha_exportada_manha} e \ref{fig:planilha_exportada_tarde}, respectivamente.
+
+\begin{quadro}[p]
 	\centering
 	\caption{Métricas de qualidade da melhor solução.\label{qua:caracteristicas_horario_validacao}}
 	\begin{tabular}{|p{8cm}|p{1cm}|p{3cm}|}
@@ -187,7 +124,7 @@ A listagem da figura \ref{fig:horarios_gerados_validacao} é dada em ordem de qu
 		\hline
 		Restrições opcionais violadas & 0 & Suave \\
 		\hline
-		Horários com janela (total de todos professores) & 10 & Suave \\
+		Horários com janela (total de todos professores) & 1 & Suave \\
 		\hline
 		Número de grupos de alinhamento formados & 4 & Suave \\
 		\hline
@@ -203,7 +140,7 @@ A listagem da figura \ref{fig:horarios_gerados_validacao} é dada em ordem de qu
 	\fonte{Autoria própria}
 \end{quadro}
 
-\begin{figure}
+\begin{figure}[p]
 	\centering
 	\caption{Grade exportada - Turno da Manhã}
 	\includegraphics[width=1\textwidth]{./dados/figuras/planilha_exportada_manha}
@@ -211,15 +148,15 @@ A listagem da figura \ref{fig:horarios_gerados_validacao} é dada em ordem de qu
 	\label{fig:planilha_exportada_manha}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[p]
 	\centering
 	\caption{Grade exportada - Turno da Tarde}
 	\includegraphics[width=1\textwidth]{./dados/figuras/planilha_exportada_tarde}
 	\fonte{Autor}
 	\label{fig:planilha_exportada_tarde}
 \end{figure}
-\pagebreak
 
+\newpage
 Observando as figuras \ref{fig:planilha_exportada_manha} e \ref{fig:planilha_exportada_tarde}, constata-se que:
 
 \begin{enumerate}
@@ -231,10 +168,6 @@ Observando as figuras \ref{fig:planilha_exportada_manha} e \ref{fig:planilha_exp
 	\item Em conformidade com o item \ref{item_regioes}, na segunda-feira a professora ``Adriana'' teve exatamente duas aulas alocadas na turma do ``7º Ano'', e duas no ``7º Ano B'';
 	\item O grupo de alinhamento da figura \ref{fig:regioes_configuradas_manha} foi respeitado, já que duas aulas do professor ``Fábio'' no ``9º Ano'' foram alocadas simultaneamente a duas aulas de ``Adriana'' no ``1º EM''. As aulas do grupo da figura \ref{fig:regioes_configuradas_tarde} também foram alocadas corretamente;
 	\item As quantidades mínimas e máximas de aulas do item \ref{item_minimos} foram respeitadas: foram alocadas para ``Beatriz'' exatamente duas aulas na segunda e quarta-feira no período da tarde; e exatamente duas aulas para ``Gláucia'' na sexta-feira, somando as aulas de ambos os turnos;
-\end{enumerate}
-
-
-
-
+\end{enumerate}      
 
 

@@ -113,6 +113,13 @@ Como exemplo de uso dessa funcionalidade, a figura \ref{fig:restricoes} demonstr
 
 No caso das restrições, a métrica associada mensura a quantidade de restrições violadas, ou seja, posições em que determinada aula foi alocada, mas não deveria ter sido.
 
+\subsubsection{Limite de dias trabalhados}
+
+Adicionou-se esta métrica como uma forma de especificar um número máximo de dias por semana em que um professor pode ser alocado. Como exemplo de aplicação dessa configuração, considere uma grade horária que comporta 30 horários de aulas (6 aulas por dia, 5 dias por semana, por exemplo). Se um professor deve minstrar 15 aulas nessa grade, o ideal é que suas aulas sejam concentradas em apenas três dias. Logo, configurando-se um limite de 3 dias de trabalho para esse professor, asseguramos que suas aulas serão alocadas de uma forma mais compacta na grade horária.
+
+Esta métrica simplesmente mensura o excesso de dias trabalhados, conforme os limites configurados. Por exemplo, se determinado professor tem um limite de 2 dias trabalhados, mas teve aulas alocadas em quatro dias diferentes, a métrica considera um desvio de dois dias.
+
+
 \subsubsection{Regiões}
 
 O conceito de regiões foi concebido como uma forma de proporcionar ainda mais controle ao usuário, sobre o posicionamento das aulas na grade horária. Cada região consiste em um grupo arbitrário de posições da grade horária, associado a uma regra relacionada a uma quantidade de aulas. Com as regiões, é possível determinar mínimos, máximos ou quantidades exatas de aulas que devem ser alocadas em certas posições da grade horária.
@@ -160,7 +167,7 @@ O efeito da configuração do grupo de alinhamento da figura \ref{fig:gruposAlin
 
 Implementaram-se duas métricas de qualidade relacionadas aos grupos de alinhamento, uma que mensura a quantidade de grupos formados e a quantidade de aulas ``desalinhadas'', ou seja, aulas que deveriam ser agendadas no mesmo horário, mas que não foram.
 
-No caso da \ref{fig:alinhados}, foram formados dois grupos (demarcados em vermelho), e nenhuma aula ficou desalinhada, ou seja, todas as seis aulas configuradas no grupo de alinhamento foram corretamente alocadas em horários simultâneos.
+No caso da figura \ref{fig:alinhados}, foram formados dois grupos (demarcados em vermelho), e nenhuma aula ficou desalinhada, ou seja, todas as seis aulas configuradas no grupo de alinhamento foram corretamente alocadas em horários simultâneos.
 
 \subsubsection{Janelas}
 
