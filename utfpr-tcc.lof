@@ -26,9 +26,9 @@
 \contentsline {figure}{\numberline {25}{\ignorespaces Middleware de autenticação}}{32}{figure.3.25}%
 \contentsline {figure}{\numberline {26}{\ignorespaces Middleware de validação da configuração}}{32}{figure.3.26}%
 \contentsline {figure}{\numberline {27}{\ignorespaces Modelo Entidade-Relacionamento com Matérias}}{34}{figure.3.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Estrutura da Escola com Matérias}}{34}{figure.3.28}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Estrutura da Escola com Matérias}}{35}{figure.3.28}%
 \contentsline {figure}{\numberline {29}{\ignorespaces Tela de configuração de quantidades de aulas por matéria}}{35}{figure.3.29}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Visualização de grade horária com matérias}}{35}{figure.3.30}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Visualização de grade horária com matérias}}{36}{figure.3.30}%
 \contentsline {figure}{\numberline {31}{\ignorespaces Mensagem de erro de validação}}{38}{figure.3.31}%
 \contentsline {figure}{\numberline {32}{\ignorespaces Grade horária exportada para planilha}}{39}{figure.3.32}%
 \contentsline {figure}{\numberline {33}{\ignorespaces Grade horária exportada para planilha}}{40}{figure.3.33}%
@@ -42,6 +42,12 @@
 \contentsline {figure}{\numberline {41}{\ignorespaces Grade exportada - Turno da Manhã}}{48}{figure.4.41}%
 \contentsline {figure}{\numberline {42}{\ignorespaces Grade exportada - Turno da Tarde}}{48}{figure.4.42}%
 \contentsline {figure}{\numberline {43}{\ignorespaces Grade exportada - Solução para a instância BrazilInstance1}}{51}{figure.4.43}%
-\contentsline {figure}{\numberline {44}{\ignorespaces Grade exportada - Solução para a instância BrazilInstance5}}{55}{figure.4.44}%
-\contentsline {figure}{\numberline {45}{\ignorespaces Solução para a instância BrazilInstance7 - Turmas S1 a S10}}{59}{figure.4.45}%
-\contentsline {figure}{\numberline {46}{\ignorespaces Solução para a instância BrazilInstance7 - Turmas S11 a S20}}{59}{figure.4.46}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Relatório produzido pel HSEval para a solução apresentada}}{52}{figure.4.44}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Relatório HSeval comparativo das soluções para a BrazilInstance1}}{52}{figure.4.45}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Grade exportada - Solução para a instância BrazilInstance5}}{55}{figure.4.46}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Relatório produzido pelo HSEval para a solução apresentada}}{56}{figure.4.47}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Relatório HSeval comparativo das soluções para a BrazilInstance5}}{56}{figure.4.48}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Solução para a instância BrazilInstance7 - Turmas S1 a S10}}{60}{figure.4.49}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Solução para a instância BrazilInstance7 - Turmas S11 a S20}}{60}{figure.4.50}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Relatório produzido pelo HSEval para a solução apresentada}}{61}{figure.4.51}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Relatório HSeval comparativo das soluções para a BrazilInstance7}}{61}{figure.4.52}%

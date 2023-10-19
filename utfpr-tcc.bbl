@@ -52,6 +52,12 @@ ISSN 0305-0548.
 Dispon{\'\i}vel em:
   \url{https://www.sciencedirect.com/science/article/pii/S0305054816300879}.}
 
+\bibitem[Kingston 2012]{HSEval}
+\abntrefinfo{Kingston}{KINGSTON}{2012}
+{KINGSTON, J. \textbf{The HSEval High School Timetable Evaluator}. 2012.
+Acesso em 19 de outubro de 2023.
+Dispon{\'\i}vel em: \url{http://jeffreykingston.id.au/cgi-bin/hseval.cgi}.}
+
 \bibitem[Laarhoven 1987]{van_1987}
 \abntrefinfo{Laarhoven}{LAARHOVEN}{1987}
 {LAARHOVEN, P.~J. \textbf{Simulated annealing theory and applications}. [S.l.]:
@@ -89,10 +95,11 @@ ISSN 0957-4174.
 Dispon{\'\i}vel em:
   \url{https://www.sciencedirect.com/science/article/pii/S0957417420307314}.}
 
-\bibitem[Twente]{Twente}
-\abntrefinfo{Twente}{TWENTE}{}
+\bibitem[Twente 2019]{Twente}
+\abntrefinfo{Twente}{TWENTE}{2019}
 {TWENTE, U. \textbf{DMMP - high school Timetabling Project (HSTT): High school
-  timetabling project (HSTT)}.
+  timetabling project (HSTT)}. 2019.
+Acesso em 15 de outubro de 2023.
 Dispon{\'\i}vel em: \url{https://www.utwente.nl/en/eemcs/dmmp/hstt/}.}
 
 \end{thebibliography}

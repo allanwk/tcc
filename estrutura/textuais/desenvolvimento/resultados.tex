@@ -3,9 +3,9 @@
 \chapter{ANÁLISE E DISCUSSÃO DOS RESULTADOS}
 \label{chap:resultados}
 
-Este capítulo será responsável por evidenciar o estado final do \textit{software}, trazendo a validação das suas funcionalidades. O capítulo está estruturado em duas seções: a seção \ref{sec:validacao_geral} evideciará o funcionamento de ponta a ponta geral do sistema, utilizando uma instância arbitrária; enquanto a seção \ref{sec:validacao_datasets} trará os resultados de testes do sistema utilizando \textit{datasets} públicos.
+Este capítulo será responsável por evidenciar o estado final do \textit{software}, trazendo a validação das suas funcionalidades. O capítulo está estruturado em duas seções: a seção \ref{sec:validacao_geral} evideciará o funcionamento de ponta a ponta geral do sistema, utilizando uma instância arbitrária; enquanto a seção \ref{sec:validacao_datasets} trará os resultados de testes do sistema utilizando alguns \textit{datasets} públicos.
 
-\section{VALIDAÇÃO GERAL}
+\section{VALIDAÇÃO INTERNA}
 \label{sec:validacao_geral}
 
 Conforme amplamente abordado no \autoref{chap:desenvolvimento}, foram desenvolvivos ao longo do projeto três componentes principais: a interface web, a aplicação de servidor e o otimizador de grades. Para validar o funcionamento do sistema como um todo, realizou-se um teste de ponta a ponta, envolvendo os seguintes passos:
@@ -19,7 +19,7 @@ Conforme amplamente abordado no \autoref{chap:desenvolvimento}, foram desenvolvi
 	\item Realizar a exportação da grade horária no formato XLSX
 \end{enumerate}
 
-Após a execução dos itens 1 e 2, foi criada uma configuração que foi utilizada para a validação do \textit{software}. Esta configuração de teste contém dois turnos (``Manhã'' e ``Tarde''), cada qual com sete turmas. O quadro \ref{qua:validacao} contém a relação de professores, matérias e turmas do turno da manhã. 
+Após a execução dos itens 1 e 2, foi criada uma configuração que foi utilizada para a validação do \textit{software}. Esta configuração de teste contém dois turnos (``Manhã'' e ``Tarde''), cada qual com sete turmas. A tabela \ref{tab:validacao} contém a relação de professores, matérias e turmas do turno da manhã. 
 
 A tabela \ref{tab:validacao} contém o número de aulas que cada professor deve ministrar de cada matéria, em cada uma das salas. Por exemplo, seguindo esta configuração, a professora ``Adriana'' deve ministrar três aulas de qúimica e três aulas de biologia na turma do ``3º EM''.
 
@@ -75,7 +75,7 @@ Para que o teste contemplasse as diversas métricas de qualidade do sistema, con
 	\item \label{item_constantes} \textbf{Constantes}: Conforme a figura \ref{fig:constantes_configuradas}, definiu-se que ``Cristiane'' deveria lecionar as duas primeiras aulas da segunda-feira na turma do ``6º Ano'', em ambos os turnos;
 	\item \label{item_restricoes} \textbf{Restrições e preferências}: Na figura \ref{fig:restricoes_configuradas}, é possível notar que no turno da manhã, ``Beatriz'' não deve ter aulas alocadas na quarta, quinta ou sexta-feira. Além disso, informou-se pela interface que suas aulas devem ser lecionadas obrigatoriamente como a última aula do expediente de cada turma;
 	\item \label{item_regioes} \textbf{Regiões}: Utilizando o conceito das regiões, definiu-se que ``Adriana'' deveria lecionar exatamente duas aulas para a turma do ``7º Ano'' na segunda-feira, e exatamente 2 aulas para ``7º Ano B'' na terça-feira. Estas configurações abragem tanto o turno da ``Manhã'', quanto da ``Tarde'', como pode ser visto nas figuras \ref{fig:regioes_configuradas_manha} e \ref{fig:regioes_configuradas_tarde};
-	\item \label{item_grupos} \textbf{Grupos de alinhamento}: Defniu-se que duas aulas do professor ``Fábio'' no ``9º Ano'' devem ser alocadas simulataneamente a duas aulas da professora ``Glaucia'' no ``1º EM''. Além disso, duas aulas de ``Adriana'' no ``7º Ano B'' devem ser alocadas simulataneamente a duas aulas de ``Verônica'' no ``8º Ano B'', e vice-versa. Assim como as regiões, as configurações dos grupos de alinhamento podem ser conferidas nas figuras \ref{fig:regioes_configuradas_manha} e \ref{fig:regioes_configuradas_tarde};
+	\item \label{item_grupos} \textbf{Grupos de alinhamento}: Definiu-se que duas aulas do professor ``Fábio'' no ``9º Ano'' devem ser alocadas simulataneamente a duas aulas da professora ``Glaucia'' no ``1º EM''. Além disso, duas aulas de ``Adriana'' no ``7º Ano B'' devem ser alocadas simulataneamente a duas aulas de ``Verônica'' no ``8º Ano B'', e vice-versa. Assim como as regiões, as configurações dos grupos de alinhamento podem ser conferidas nas figuras \ref{fig:regioes_configuradas_manha} e \ref{fig:regioes_configuradas_tarde};
 	\item \label{item_minimos} \textbf{Mínimos e limites diários}: Como pode ser visto na figura \ref{fig:minimos_configurados}, configurou-se que no turno da tarde, ``Beatriz'' deve ministrar no mínimo duas aulas na segunda-feira e 2 aulas na quarta-feira; além disso, ``Gláucia'' deve ministrar no máximo duas aulas na sexta-feira, contabilizando ambos os turnos.
 \end{enumerate}
 
@@ -160,7 +160,7 @@ Destas soluções, a melhor encontrada pode ser vista na figura \ref{fig:horario
 Observando as figuras \ref{fig:planilha_exportada_manha} e \ref{fig:planilha_exportada_tarde}, constata-se que:
 
 \begin{enumerate}
-	\item Foi alocada a quantidade correta de aulas para cada professor e matéria, nas salas corretas, de acordo com o quadro \ref{qua:validacao};
+	\item Foi alocada a quantidade correta de aulas para cada professor e matéria, nas salas corretas, de acordo com a tabela \ref{tab:validacao};
 	\item As aulas foram alocadas sem causar conflitos, ou seja, em nenhum horário das grades, um professor está alocado para mais de uma turma simultaneamente;
 	\item Aproximadamente 64\% das aulas foram agrupadas: conforme o quadro \ref{qua:caracteristicas_horario_validacao}, apenas 142 do total de 396 aulas permaneceram separadas;
 	\item As aulas constantes mencionadas no item \ref{item_constantes} foram alocadas corretamente: Cristiane foi alocada nas duas primeiras aulas da segunda-feira na turma do 6º Ano e 6º Ano B;

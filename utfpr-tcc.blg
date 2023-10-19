@@ -5,12 +5,14 @@ A level-1 auxiliary file: estrutura/pre-textuais/resumo.aux
 A level-1 auxiliary file: estrutura/pre-textuais/abstract.aux
 A level-1 auxiliary file: estrutura/pre-textuais/listas/listas-ilustracoes/lista-figuras.aux
 A level-1 auxiliary file: estrutura/pre-textuais/listas/listas-ilustracoes/lista-quadros.aux
+A level-1 auxiliary file: estrutura/pre-textuais/listas/lista-tabelas.aux
 A level-1 auxiliary file: estrutura/pre-textuais/listas/listas-diversas/lista-algoritmos.aux
 A level-1 auxiliary file: estrutura/pre-textuais/sumario.aux
 A level-1 auxiliary file: estrutura/textuais/introducao.aux
 A level-1 auxiliary file: estrutura/textuais/desenvolvimento/revisao-de-literatura.aux
 A level-1 auxiliary file: estrutura/textuais/desenvolvimento/metodologia.aux
 A level-1 auxiliary file: estrutura/textuais/desenvolvimento/resultados.aux
+A level-1 auxiliary file: estrutura/textuais/desenvolvimento/validacao_externa.aux
 A level-1 auxiliary file: estrutura/textuais/conclusao.aux
 A level-1 auxiliary file: estrutura/pos-textuais/referencias.aux
 The style file: abntex2-alf.bst
@@ -25,55 +27,58 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: ./base-referencias.bib
+Warning--entry type for "Twente" isn't style-file defined
+--line 108 of file ./base-referencias.bib
+Warning--entry type for "HSEval" isn't style-file defined
+--line 116 of file ./base-referencias.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Warning--campo year vazio ou faltando em Twente
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 18 entries,
+You've used 19 entries,
             6714 wiz_defined-function locations,
-            1309 strings with 12674 characters,
-and the built_in function-call counts, 19613 in all, are:
-= -- 2234
-> -- 343
-< -- 448
-+ -- 608
-- -- 106
-* -- 1190
-:= -- 2433
-add.period$ -- 52
-call.type$ -- 19
-change.case$ -- 136
-chr.to.int$ -- 37
+            1319 strings with 12960 characters,
+and the built_in function-call counts, 21209 in all, are:
+= -- 2435
+> -- 358
+< -- 496
++ -- 662
+- -- 111
+* -- 1281
+:= -- 2628
+add.period$ -- 59
+call.type$ -- 20
+change.case$ -- 144
+chr.to.int$ -- 38
 cite$ -- 13
-duplicate$ -- 1765
-empty$ -- 984
-format.name$ -- 500
-if$ -- 4100
+duplicate$ -- 1941
+empty$ -- 1049
+format.name$ -- 523
+if$ -- 4408
 int.to.chr$ -- 5
 int.to.str$ -- 3
-missing$ -- 273
-newline$ -- 74
-num.names$ -- 61
-pop$ -- 306
+missing$ -- 292
+newline$ -- 81
+num.names$ -- 66
+pop$ -- 331
 preamble$ -- 1
-purify$ -- 64
+purify$ -- 67
 quote$ -- 0
-skip$ -- 2073
+skip$ -- 2242
 stack$ -- 1
-substring$ -- 815
-swap$ -- 649
-text.length$ -- 17
+substring$ -- 897
+swap$ -- 712
+text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 6
-warning$ -- 1
-while$ -- 92
+warning$ -- 0
+while$ -- 100
 width$ -- 0
-write$ -- 204
-(There was 1 warning)
+write$ -- 221
+(There were 2 warnings)

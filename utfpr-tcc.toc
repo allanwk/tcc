@@ -43,11 +43,11 @@
 \contentsline {subsection}{\numberline {3.3.7}VALIDAÇÃO DE CONFIGURAÇÕES}{38}{subsection.3.3.7}%
 \contentsline {subsection}{\numberline {3.3.8}EXPORTAÇÃO DE GRADES HORÁRIAS}{39}{subsection.3.3.8}%
 \contentsline {chapter}{\chapternumberline {4}ANÁLISE E DISCUSSÃO DOS RESULTADOS}{41}{chapter.4}%
-\contentsline {section}{\numberline {4.1}VALIDAÇÃO GERAL}{41}{section.4.1}%
+\contentsline {section}{\numberline {4.1}VALIDAÇÃO INTERNA}{41}{section.4.1}%
 \contentsline {section}{\numberline {4.2}VALIDAÇÃO COM DATASETS PÚBLICOS}{50}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Instância 1}{50}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Instância 2}{53}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Instância 3}{56}{subsection.4.2.3}%
-\contentsline {chapter}{\chapternumberline {5}CONCLUSÃO}{61}{chapter.5}%
-\contentsline {chapter}{Refer\^encias}{62}{chapter*.9}%
+\contentsline {subsection}{\numberline {4.2.3}Instância 3}{57}{subsection.4.2.3}%
+\contentsline {chapter}{\chapternumberline {5}CONCLUSÃO}{62}{chapter.5}%
+\contentsline {chapter}{Refer\^encias}{63}{chapter*.9}%
 \vspace {\cftbeforepartskip }

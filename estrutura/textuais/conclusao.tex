@@ -7,11 +7,15 @@ O presente trabalho abordou o \textit{High School Timetabling Problem}, e a dema
 
 Tal software imaginado foi desenvolvido, aplicando a meta-heurística de \textit{Simulated Annealing}, estudada durante a revisão de literatura. Com essa meta-heurística, foi possível expandir a solução proposta por \citeonline{ABRAMSON}, incorpordando diversas métricas de qualidade adicionais, como janelas, restrições, aulas constantes, preferências, agrupamentos, entre outras.
 
-Considerando o grau de configuração atingido para as grades horárias, a performance do otimizador e atendimento às métricas de qualidade, conclui-se que o software desenvolvido atingiu os objetivos propostos neste trabalho.
+No capítulo \ref{chap:resultados}, foi averiquado o funcionamento do \textit{software} utilizando uma instância arbitrária do problema, e três instâncias disponíveis publicamente. Os relatórios gerados pelo software HSeval mostram que nas instâncias testadas, o otimizador desenvolvido atende totalmente os requisitos obrigatórios, e atende satisfatoriamente os requisitos não obrigatórios, quando comparado com as outras soluções.
+
+Considerando o grau de configuração atingido para as grades horárias, a performance do otimizador e atendimento às métricas de qualidade nas instâncias utilizadas para validção, conclui-se que o \textit{software} desenvolvido atingiu os objetivos propostos neste trabalho.
 
 Quanto às limitações do projeto desenvolvido, temos:
 \begin{enumerate}
 	\item A inexistência do conceito de salas, ou seja, o sistema assume que cada turma sempre recebe suas aulas na mesma sala, o que não reflete a realidade de grandes instituições de ensino;
 	\item O fato de que não foram criadas configurações relacionadas a matérias: conceitos como restrições e aulas constantes são vinculados diretamente aos professores;
-	\item Devido à natureza não determinística do \textit{Simulated Annealing}, é impossível determinar de antemão se a configuração desejada pelo usuário é plausível, e é difícil reportar o progresso da geração das grades
+	\item Devido à natureza não determinística do \textit{Simulated Annealing}, é impossível determinar de antemão se a configuração desejada pelo usuário é plausível, e é difícil estabelecer uma forma razoável de reportar o progresso de otimização para o usuário.
 \end{enumerate}
+
+Em relação a sugestões de trabalhos futuros, sugere-se como atividade de interesse uma melhor integração com o formato XHSTT. Este formato de representação das instâncias e soluções é muito abrangente, logo devemos reconhecer o potencial para sistemas que conseguirem utilizá-lo e possibilitarem uma configuração visual intuitiva a seus usários.

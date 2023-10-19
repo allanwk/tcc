@@ -3,7 +3,11 @@
 
 Como visto ao longo deste trabalho, o problema abordado envolve diversos tipos de restrições, tornando trabalhosa a troca de informações entre pesquisadores. Para solucionar esse problema, \citeonline{xhstt} sugeriu o XHSTT, um formato padronizado de arquivo XML para a representação de instâncias e soluções do \textit{High School Timetabling Problem}.
 
-O projeto HSTT da \citeonline{Twente} hospeda publicamente diversas instâncias do problema no formato HXSTT. Destas, selecionaram-se três instâncias brasileiras para complementar a validação do sistema desenvolvido, utilizando dados externos. As próximas subções apresentarão cada instância e os resultados relacionados.
+O projeto HSTT da Universidade de \citeonline{Twente} hospeda publicamente diversas instâncias do problema no formato XHSTT. Destas, selecionaram-se três instâncias brasileiras para complementar a validação do sistema desenvolvido, utilizando dados externos.
+
+Para a validação e comparação de soluções utilizando o formato XHSTT, existe um \textit{software} conhecido como \textit{HSEval High School Timetable Evaluator}, parte de um projeto com objetivo de analisar instâncias e soluções para o \textit{High School Timetabling Problem} \cite{HSEval}.
+
+Para cada uma das instâncias de validação presentes nas próximas subseções, foi utilizado o otimizador desenvolvido ao longo deste trabalho para produzir soluções, aplicando um limite de tempo de otimização de 5 minutos para cada instância. As melhores soluções produzidas foram então exportadas e validadas utilizando o HSeval, gerando relatórios de comparação das soluções com outras soluções presentes na literatura.
 
 \subsection{Instância 1}
 
@@ -14,7 +18,7 @@ A primeira instância de teste, identificada como ``BrazilInstance1'', é compos
 Os requisitos associados à instância são:
 \begin{enumerate}
 	\item Requisito 1 (obrigatório) : Não devem existir conflitos;
-	\item Requisito 2 (obrigatório) : Não devem existir janelas;
+	\item Requisito 2 (não obirgatório) : Não devem existir janelas;
 	\item Requisito 3 (obrigatório) : Cada professor tem um dia da semana específico em que suas aulas não podem ser agendadas;
 	\item Requisito 4 (não obrigatório) : Os professores T1, T2, T3, T4. T5, T7 e T8 não devem ser alocados em mais de 2 dias da semana;
 	\item Requisito 5 (não obrigatório) : O professor T6 não deve ser alocado em mais de 3 dias da semana;
@@ -30,65 +34,31 @@ Sobre o requisito 3, a relação dos dias da semana bloqueados para cada profess
 	\item Sexta-feira: T2.
 \end{enumerate}
 
-Dado um limite de execução de 10 segundos, o otimizador produziu como melhor solução a grade horária presente na figura \ref{fig:brazilinstance1_solucao}, cujas métricas de qualidade podem ser vistas no quadro \ref{qua:caracteristicas_horario_validacao_brazilinstance1}. Esta solução atende totalmente os requisitos obrigatórios da instância, e atende parcialmente os requisitos não obrigatórios.
+A melhor solução produzida pelo otimizador pode ser vista na figura \ref{fig:brazilinstance1_solucao}, e a correspondente validação e pontuação na figura \ref{fig:hseval_brazilinstance1}.
 
 \begin{figure}[h]
 	\centering
 	\caption{Grade exportada - Solução para a instância BrazilInstance1}
 	\includegraphics[width=0.5\textwidth]{./dados/figuras/brazilinstance1}
-	\fonte{Autor}
+	\fonte{Autoria própria}
 	\label{fig:brazilinstance1_solucao}
 \end{figure}
 
-\begin{quadro}[h]
+\begin{figure}[h]
 	\centering
-	\caption{Métricas de qualidade da melhor solução - BrazilInstance1.\label{qua:caracteristicas_horario_validacao_brazilinstance1}}
-	\begin{tabular}{|p{8cm}|p{1cm}|p{3cm}|}
-		\hline
-		\textbf{Nome} & \textbf{Valor} & \textbf{Tipo} \\
-		Aulas desagrupadas & 0 & Rígida \\
-		\hline
-		Aulas em grupos de alinhamento não alinhadas & 0 & Rígida \\
-		\hline
-		Conflitos & 0 & Rígida \\
-		\hline
-		Dias com todos professores diferentes & 0 & Rígida \\
-		\hline
-		Erros nas regiões & 0 & Rígida \\
-		\hline
-		Excessos de aulas iguais & 0 & Rígida \\
-		\hline
-		Excessos de matérias iguais & 0 & Rígida \\
-		\hline
-		Horários com janela (total de todos professores) & 0 & Rígida \\
-		\hline
-		Limites diários violados & 0 & Rígida \\
-		\hline
-		Matérias desagrupadas & 0 & Rígida \\
-		\hline
-		Mínimos opcionais violados & 0 & Rígida \\
-		\hline
-		Mínimos violados & 0 & Rígida \\
-		\hline
-		Restrições violadas & 0 & Rígida \\
-		\hline
-		Excessos de dias trabalhados & 7 & Suave \\
-		\hline
-		Aulas separadas & 19 & Suave \\
-		\hline
-		Dias de professores sem aulas duplas & 2 & Suave \\
-		\hline
-		Matérias separadas & 19 & Suave \\
-		\hline
-		Número de grupos de alinhamento formados & 0 & Suave \\
-		\hline
-		Preferências não resolvidas & 0 & Suave \\
-		\hline
-		Restrições opcionais violadas & 0 & Suave \\
-		\hline
-	\end{tabular}
-	\fonte{Autoria própria}
-\end{quadro}
+	\caption{Relatório produzido pel HSEval para a solução apresentada}
+	\includegraphics[width=1\textwidth]{./dados/figuras/hseval_brazilinstance1}
+	\fonte{Relatório produzido no HSEval - \citeonline{HSEval}}
+	\label{fig:hseval_brazilinstance1}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\caption{Relatório HSeval comparativo das soluções para a BrazilInstance1}
+	\includegraphics[width=1\textwidth]{./dados/figuras/benchmark_instance1}
+	\fonte{Relatório produzido no HSEval - \citeonline{HSEval}}
+	\label{fig:rankin_brazilinstance1}
+\end{figure}
 
 \clearpage
 \subsection{Instância 2}
@@ -103,7 +73,7 @@ Os requisitos associados à instância são:
 	\item Requisito 1 (obrigatório) : Não devem existir conflitos;
 	\item Requisito 2 (não obrigatório) : Não devem existir janelas;
 	\item Requisito 3 (não obrigatório) : Cada professor tem um l trabalhados por semana, conforme o quadro \ref{qua:limites_dias_trabalhados_brazilinstance5};
-	\item Requisito 4 (não obrigatório) : Requisitos de quantidades mínimas de aulas duplas, o qual devido à sua extensão e não obrigatoriedade, não será explicitado.
+	\item Requisito 4 (não obrigatório) : Requisitos de quantidades mínimas de aulas duplas, que não serão aqui  devido a sua grande quantidade.
 \end{enumerate}
 
 \begin{quadro}[h]
@@ -176,68 +146,34 @@ Os requisitos associados à instância são:
 		T31 & 1 \\
 		\hline
 	\end{tabular}
-	\fonte{Autoria própria}
+	\fonte{Dataset hospedado pela Universidade de \citeonline{Twente}}
 \end{quadro}
 
-Dado um limite de execução de 60 segundos, o otimizador produziu como melhor solução a grade horária presente na figura \ref{fig:brazilinstance5_solucao}, cujas métricas de qualidade podem ser vistas no quadro \ref{qua:caracteristicas_horario_validacao_brazilinstance5}. Esta solução atende totalmente os requisitos 1 e 3, e atende parcialmente os requisitos não obrigatórios 2 e 4.
+A melhor solução produzida pelo otimizador pode ser vista na figura \ref{fig:brazilinstance5_solucao}, e a correspondente validação e pontuação na figura \ref{fig:hseval_brazilinstance5}.
 
 \begin{figure}[h]
 	\centering
 	\caption{Grade exportada - Solução para a instância BrazilInstance5}
 	\includegraphics[width=1\textwidth]{./dados/figuras/brazilinstance5}
-	\fonte{Autor}
+	\fonte{Autoria própria}
 	\label{fig:brazilinstance5_solucao}
 \end{figure}
 
-\begin{quadro}[h]
+\begin{figure}[h]
 	\centering
-	\caption{Métricas de qualidade da melhor solução - BrazilInstance5.\label{qua:caracteristicas_horario_validacao_brazilinstance5}}
-	\begin{tabular}{|p{8cm}|p{1cm}|p{3cm}|}
-		\hline
-		\textbf{Nome} & \textbf{Valor} & \textbf{Tipo} \\
-		Aulas desagrupadas & 0 & Rígida \\
-		\hline
-		Aulas em grupos de alinhamento não alinhadas & 0 & Rígida \\
-		\hline
-		Conflitos & 0 & Rígida \\
-		\hline
-		Dias com todos professores diferentes & 0 & Rígida \\
-		\hline
-		Erros nas regiões & 0 & Rígida \\
-		\hline
-		Excessos de aulas iguais & 0 & Rígida \\
-		\hline
-		Excessos de matérias iguais & 0 & Rígida \\
-		\hline
-		Limites diários violados & 0 & Rígida \\
-		\hline
-		Matérias desagrupadas & 0 & Rígida \\
-		\hline
-		Mínimos opcionais violados & 0 & Rígida \\
-		\hline
-		Mínimos violados & 0 & Rígida \\
-		\hline
-		Restrições violadas & 0 & Rígida \\
-		\hline
-		Excessos de dias trabalhados & 0 & Suave \\
-		\hline
-		Horários com janela (total de todos professores) & 11 & Suave \\
-		\hline
-		Aulas separadas & 99 & Suave \\
-		\hline
-		Dias de professores sem aulas duplas & 24 & Suave \\
-		\hline
-		Matérias separadas & 99 & Suave \\
-		\hline
-		Número de grupos de alinhamento formados & 0 & Suave \\
-		\hline
-		Preferências não resolvidas & 0 & Suave \\
-		\hline
-		Restrições opcionais violadas & 0 & Suave \\
-		\hline
-	\end{tabular}
-	\fonte{Autoria própria}
-\end{quadro}
+	\caption{Relatório produzido pelo HSEval para a solução apresentada}
+	\includegraphics[width=1\textwidth]{./dados/figuras/hseval_brazilinstance5}
+	\fonte{Relatório produzido no HSEval - \citeonline{HSEval}}
+	\label{fig:hseval_brazilinstance5}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\caption{Relatório HSeval comparativo das soluções para a BrazilInstance5}
+	\includegraphics[width=1\textwidth]{./dados/figuras/benchmark_instance5}
+	\fonte{Relatório produzido no HSEval - \citeonline{HSEval}}
+	\label{fig:rankin_brazilinstance5}
+\end{figure}
 
 \clearpage
 \subsection{Instância 3}
@@ -252,7 +188,7 @@ Os requisitos associados à instância são:
 	\item Requisito 1 (obrigatório) : Não devem existir conflitos;
 	\item Requisito 2 (não obrigatório) : Não devem existir janelas;
 	\item Requisito 3 (não obrigatório) : Cada professor tem um limite de dias trabalhados por semana, conforme o quadro \ref{qua:limites_dias_trabalhados_brazilinstance7};
-	\item Requisito 4 (não obrigatório) : Requisitos de quantidades mínimas de aulas duplas, o qual devido à sua extensão e não obrigatoriedade, não será explicitado.
+	\item Requisito 4 (não obrigatório) : Requisitos de quantidades mínimas de aulas duplas, que não serão aqui  devido a sua grande quantidade.
 \end{enumerate}
 
 \begin{quadro}[h]
@@ -329,77 +265,42 @@ Os requisitos associados à instância são:
 		T33 & 1 \\
 		\hline
 	\end{tabular}
-	\fonte{Autoria própria}
+	\fonte{Dataset hospedado pela Universidade de \citeonline{Twente}}
 \end{quadro}
 
 \newpage
-A melhor solução gerada em um intervalo de 60 segundos pode ser vista nas figuras \ref{fig:brazilinstance7_solucao} e \ref{fig:brazilinstance7_solucao_2}. Vale ressaltar que todas as salas da instância pertecem ao mesmo turno, ou seja, apesar de as turmas terem sido separadas em duas figuras para melhor legibilidade, ainda poderiam ocorrer conflitos entre as turmas S1 e S20, por exemplo.
+A melhor solução produzida pelo otimizador pode ser vista nas figuras \ref{fig:brazilinstance7_solucao} e \ref{fig:brazilinstance7_solucao_2}, e a correspondente validação e pontuação na figura \ref{fig:hseval_brazilinstance5}.
 
-As métricas de qualidade desta solução podem ser observadas no quadro \ref{qua:caracteristicas_horario_validacao_brazilinstance7}, e indicam que foram atendidos totalmente os requisitos 1 e 3, e parcialmente atendidos os requisitos não obrigatórios 2 e 4.
+Vale ressaltar que todas as salas da instância pertecem ao mesmo turno, ou seja, apesar de as turmas terem sido separadas em duas figuras para melhor legibilidade, ainda poderiam ocorrer conflitos entre as turmas S1 e S20, por exemplo. Outra consideração importante é que para melhor legibilidade, na figura \ref{fig:hseval_brazilinstance7} omitiu-se a parte do relatório relacionada às quantidades mínimas de aulas duplas, considerando que a solução gerada tem 48 violações dessa regra. Contudo, estas violações ainda são consideradas no cálculo, como pode ser na primeira linha da tabela ``Summary'' na mesma figura.
 
 \begin{figure}[h]
 	\centering
 	\caption{Solução para a instância BrazilInstance7 - Turmas S1 a S10}
 	\includegraphics[width=1\textwidth]{./dados/figuras/brazilinstance7}
-	\fonte{Autor}
+	\fonte{Autoria própria}
 	\label{fig:brazilinstance7_solucao}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
 	\caption{Solução para a instância BrazilInstance7 - Turmas S11 a S20}
-	\includegraphics[width=1\textwidth]{./dados/figuras/brazilinstance7}
-	\fonte{Autor}
+	\includegraphics[width=1\textwidth]{./dados/figuras/brazilinstance7_2}
+	\fonte{Autoria própria}
 	\label{fig:brazilinstance7_solucao_2}
 \end{figure}
 
-\begin{quadro}[h]
+\begin{figure}[h]
 	\centering
-	\caption{Métricas de qualidade da melhor solução - BrazilInstance7.\label{qua:caracteristicas_horario_validacao_brazilinstance7}}
-	\begin{tabular}{|p{8cm}|p{1cm}|p{3cm}|}
-		\hline
-		\textbf{Nome} & \textbf{Valor} & \textbf{Tipo} \\
-		\hline
-		Aulas desagrupadas & 0 & Rígida \\
-		\hline
-		Aulas em grupos de alinhamento não alinhadas & 0 & Rígida \\
-		\hline
-		Conflitos & 0 & Rígida \\
-		\hline
-		Dias com todos professores diferentes & 0 & Rígida \\
-		\hline
-		Erros nas regiões & 0 & Rígida \\
-		\hline
-		Excessos de aulas iguais & 0 & Rígida \\
-		\hline
-		Excessos de matérias iguais & 0 & Rígida \\
-		\hline
-		Limites diários violados & 0 & Rígida \\
-		\hline
-		Matérias desagrupadas & 0 & Rígida \\
-		\hline
-		Mínimos opcionais violados & 0 & Rígida \\
-		\hline
-		Mínimos violados & 0 & Rígida \\
-		\hline
-		Restrições violadas & 0 & Rígida \\
-		\hline
-		Excessos de dias trabalhados & 3 & Suave \\
-		\hline
-		Aulas separadas & 164 & Suave \\
-		\hline
-		Dias de professores sem aulas duplas & 43 & Suave \\
-		\hline
-		Horários com janela (total de todos professores) & 20 & Suave \\
-		\hline
-		Matérias separadas & 164 & Suave \\
-		\hline
-		Número de grupos de alinhamento formados & 0 & Suave \\
-		\hline
-		Preferências não resolvidas & 0 & Suave \\
-		\hline
-		Restrições opcionais violadas & 0 & Suave \\
-		\hline
-	\end{tabular}
-	\fonte{Autoria própria}
-\end{quadro}
+	\caption{Relatório produzido pelo HSEval para a solução apresentada}
+	\includegraphics[width=1\textwidth]{./dados/figuras/hseval_brazilinstance7}
+	\fonte{Relatório produzido no HSEval - \citeonline{HSEval}}
+	\label{fig:hseval_brazilinstance7}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\caption{Relatório HSeval comparativo das soluções para a BrazilInstance7}
+	\includegraphics[width=1\textwidth]{./dados/figuras/benchmark_instance7}
+	\fonte{Relatório produzido no HSEval - \citeonline{HSEval}}
+	\label{fig:rankin_brazilinstance7}
+\end{figure}
