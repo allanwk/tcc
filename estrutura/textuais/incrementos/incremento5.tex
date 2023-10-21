@@ -1,3 +1,4 @@
+\clearpage
 \subsection{USUÁRIOS E AUTENTICAÇÃO}
 
 Para controlar a visibilidade de informações no sistema desenvolvido, implementou-se um sistema de usuários. A melhoria consistiu na:
@@ -22,6 +23,7 @@ A aplicação dos itens 1 e 2 foi realizada diretamente no banco de dados, atrav
 	\label{fig:er_atualizado}
 \end{figure}
 
+\newpage
 \subsubsection{Tela de login}
 Como pode ser visto na figura \ref{fig:login}, desenvolveu-se uma tela simples de \textit{login}, a qual também desempenha a função de cadastro de novos usuários.
 
@@ -32,7 +34,6 @@ Como pode ser visto na figura \ref{fig:login}, desenvolveu-se uma tela simples d
 	\fonte{Autor}
 	\label{fig:login}
 \end{figure}
-\pagebreak
 
 \subsubsection{Rotas de autenticação}
 Para a implementação das rotas de cadastro e \textit{login}, utilizou-se além do \textit{framework ExpressJS}, os pacotes JWT (\textit{Json Web Token}) e \textit{bcrypt}. O pacote JWT é utilizado para gerar \textit{tokens}, que são enviados para a interface web e podem ser utilizados para autenticar os usuários; já o \textit{bcrypt} é utilizado para gerar e validars as \textit{hashes} das senhas dos usuários, para que nunca sejam armazenadas senhas em texto pleno no banco de dados.

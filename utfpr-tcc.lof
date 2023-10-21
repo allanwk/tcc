@@ -1,53 +1,55 @@
 \babel@toc {brazil}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Aulas constantes}}{10}{figure.3.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Restrições}}{11}{figure.3.2}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Exemplo de região}}{13}{figure.3.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Exemplo de grupo de alinhamento sobre a grade horária gerada}}{14}{figure.3.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Efeito de grupo de alinhamento}}{15}{figure.3.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Configuração de preferências}}{17}{figure.3.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Mínimos de aulas configuradas na interface}}{17}{figure.3.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Modelo Entidade-Relacionamento}}{20}{figure.3.8}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Consultas de validação da modelagem}}{21}{figure.3.9}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Consulta SQL de grade horária com sete salas}}{21}{figure.3.10}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Resultado da consulta de uma grade no banco de dados}}{22}{figure.3.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Diagrama de Casos de Uso}}{23}{figure.3.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Tela - Listagem de Configurações de Grade}}{24}{figure.3.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Tela - Estrutura da Escola - Professores}}{24}{figure.3.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Tela - Estrutura da Escola - Turmas e Turnos}}{25}{figure.3.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Tela - Aulas por professor}}{25}{figure.3.16}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Tela - Restrições e Preferências}}{26}{figure.3.17}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Tela - Regiões e Grupos de Alinhamento}}{26}{figure.3.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Tela - Mínimos e Máximos}}{27}{figure.3.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Tela - Horários}}{27}{figure.3.20}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Modelo Entidade-Relacionamento com adição da tabela de usuários}}{28}{figure.3.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Tela de Acesso}}{29}{figure.3.22}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Método de Cadastro}}{30}{figure.3.23}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Método de Login}}{31}{figure.3.24}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Middleware de autenticação}}{32}{figure.3.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Middleware de validação da configuração}}{32}{figure.3.26}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Modelo Entidade-Relacionamento com Matérias}}{34}{figure.3.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Estrutura da Escola com Matérias}}{35}{figure.3.28}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Tela de configuração de quantidades de aulas por matéria}}{35}{figure.3.29}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Visualização de grade horária com matérias}}{36}{figure.3.30}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Mensagem de erro de validação}}{38}{figure.3.31}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Grade horária exportada para planilha}}{39}{figure.3.32}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Grade horária exportada para planilha}}{40}{figure.3.33}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Grade horária exportada para planilha}}{40}{figure.3.34}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Constantes configuradas na interface}}{43}{figure.4.35}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Restrições e preferências configuradas na interface}}{44}{figure.4.36}%
-\contentsline {figure}{\numberline {37}{\ignorespaces Regiões e grupos de alinhamento configuradas para o turno da ``Manhã''}}{45}{figure.4.37}%
-\contentsline {figure}{\numberline {38}{\ignorespaces Regiões e grupos de alinhamento configuradas para o turno da ``Tarde''}}{45}{figure.4.38}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Mínimos de aulas configuradas na interface}}{46}{figure.4.39}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Visualização de turno da manhã da melhor solução}}{47}{figure.4.40}%
-\contentsline {figure}{\numberline {41}{\ignorespaces Grade exportada - Turno da Manhã}}{48}{figure.4.41}%
-\contentsline {figure}{\numberline {42}{\ignorespaces Grade exportada - Turno da Tarde}}{48}{figure.4.42}%
-\contentsline {figure}{\numberline {43}{\ignorespaces Grade exportada - Solução para a instância BrazilInstance1}}{51}{figure.4.43}%
-\contentsline {figure}{\numberline {44}{\ignorespaces Relatório produzido pel HSEval para a solução apresentada}}{52}{figure.4.44}%
-\contentsline {figure}{\numberline {45}{\ignorespaces Relatório HSeval comparativo das soluções para a BrazilInstance1}}{52}{figure.4.45}%
-\contentsline {figure}{\numberline {46}{\ignorespaces Grade exportada - Solução para a instância BrazilInstance5}}{55}{figure.4.46}%
-\contentsline {figure}{\numberline {47}{\ignorespaces Relatório produzido pelo HSEval para a solução apresentada}}{56}{figure.4.47}%
-\contentsline {figure}{\numberline {48}{\ignorespaces Relatório HSeval comparativo das soluções para a BrazilInstance5}}{56}{figure.4.48}%
-\contentsline {figure}{\numberline {49}{\ignorespaces Solução para a instância BrazilInstance7 - Turmas S1 a S10}}{60}{figure.4.49}%
-\contentsline {figure}{\numberline {50}{\ignorespaces Solução para a instância BrazilInstance7 - Turmas S11 a S20}}{60}{figure.4.50}%
-\contentsline {figure}{\numberline {51}{\ignorespaces Relatório produzido pelo HSEval para a solução apresentada}}{61}{figure.4.51}%
-\contentsline {figure}{\numberline {52}{\ignorespaces Relatório HSeval comparativo das soluções para a BrazilInstance7}}{61}{figure.4.52}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Algoritmo genérico de Simulated Annealing}}{7}{figure.3.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Aulas constantes}}{10}{figure.3.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Restrições}}{11}{figure.3.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Limites de dias trabalhados por professor}}{12}{figure.3.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Exemplo de região}}{13}{figure.3.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Exemplo de grupo de alinhamento configurado}}{14}{figure.3.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Efeito de grupo de alinhamento}}{15}{figure.3.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Configuração de preferências}}{16}{figure.3.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Mínimos de aulas configuradas na interface}}{17}{figure.3.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Modelo Entidade-Relacionamento}}{20}{figure.3.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Consultas de validação da modelagem}}{21}{figure.3.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Resultado da consulta de uma grade no banco de dados}}{21}{figure.3.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Diagrama de Casos de Uso}}{22}{figure.3.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Tela - Listagem de Configurações de Grade}}{23}{figure.3.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Tela - Estrutura da Escola - Professores}}{24}{figure.3.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Tela - Estrutura da Escola - Turmas e Turnos}}{24}{figure.3.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Tela - Aulas por professor}}{25}{figure.3.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Tela - Constantes}}{25}{figure.3.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Tela - Restrições e Preferências}}{26}{figure.3.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Tela - Regiões e Grupos de Alinhamento}}{26}{figure.3.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Tela - Mínimos e Máximos}}{27}{figure.3.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Tela - Horários}}{27}{figure.3.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Modelo Entidade-Relacionamento com adição da tabela de usuários}}{28}{figure.3.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Tela de Acesso}}{29}{figure.3.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Método de Cadastro}}{30}{figure.3.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Método de Login}}{31}{figure.3.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Middleware de autenticação}}{32}{figure.3.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Middleware de validação da configuração}}{32}{figure.3.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Modelo Entidade-Relacionamento com Matérias}}{34}{figure.3.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Estrutura da Escola com Matérias}}{35}{figure.3.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Tela de configuração de quantidades de aulas por matéria}}{35}{figure.3.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Visualização de grade horária com matérias}}{36}{figure.3.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Mensagem de erro de validação}}{38}{figure.3.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Grade horária exportada para planilha}}{39}{figure.3.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Grade horária exportada para planilha}}{40}{figure.3.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Grade horária exportada para planilha}}{40}{figure.3.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Constantes configuradas na interface}}{43}{figure.4.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Restrições e preferências configuradas na interface}}{44}{figure.4.38}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Regiões e grupos de alinhamento configuradas para o turno da ``Manhã''}}{45}{figure.4.39}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Regiões e grupos de alinhamento configuradas para o turno da ``Tarde''}}{45}{figure.4.40}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Mínimos de aulas configuradas na interface}}{46}{figure.4.41}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Visualização de turno da manhã da melhor solução}}{47}{figure.4.42}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Grade exportada - Turno da Manhã}}{48}{figure.4.43}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Grade exportada - Turno da Tarde}}{48}{figure.4.44}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Grade exportada - Solução para a instância BrazilInstance1}}{52}{figure.4.45}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Relatório produzido pel HSEval para a solução apresentada}}{53}{figure.4.46}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Relatório HSeval comparativo das soluções para a BrazilInstance1}}{53}{figure.4.47}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Grade exportada - Solução para a instância BrazilInstance5}}{56}{figure.4.48}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Relatório produzido pelo HSEval para a solução apresentada}}{57}{figure.4.49}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Relatório HSeval comparativo das soluções para a BrazilInstance5}}{57}{figure.4.50}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Solução para a instância BrazilInstance7 - Turmas S1 a S10}}{61}{figure.4.51}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Solução para a instância BrazilInstance7 - Turmas S11 a S20}}{61}{figure.4.52}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Relatório produzido pelo HSEval para a solução apresentada}}{62}{figure.4.53}%
+\contentsline {figure}{\numberline {54}{\ignorespaces Relatório HSeval comparativo das soluções para a BrazilInstance7}}{62}{figure.4.54}%

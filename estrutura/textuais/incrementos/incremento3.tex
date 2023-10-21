@@ -4,9 +4,7 @@ A aplicação do lado do servidor é responsável por receber as requisições d
 
 Para o desenvolvimento deste componente, optou-se pelo \textit{framework Express.js}, a ser executado na plataforma \textit{Node.js}, devido à simplicidade de implementação que estas tecnologias proporcionam. Em relação ao banco de dados, será utilizado o sistema de gerenciamento de banco de dados \textit{PostgresSQL}, devido à sua robustez e grande uso no mercado.
 
-Conforme as premissas do problema sendo tratado, a modelagem do banco de dados é centrada na entidade ``Configuração'', que agrupa as configurações de determinada instituição de ensino para a geração de suas grades horárias. Cada uma dessas entidades tem turnos, turmas, professores, e as configurações de quantas aulas cada professor deve ministrar para cada turma, e as respectivas restrições.
-
-A modelagem comentada está representada na \autoref{fig:diagramaEr}:
+Conforme as premissas do problema sendo tratado, a modelagem do banco de dados visível na \autoref{fig:diagramaEr} é centrada na entidade ``Configuração'', que agrupa as configurações de determinada instituição de ensino para a geração de suas grades horárias. Cada uma dessas entidades tem turnos, turmas, professores, e as configurações de quantas aulas cada professor deve ministrar para cada turma, e as respectivas restrições.
 
 \begin{figure}[!htb]
 	\centering
@@ -19,34 +17,20 @@ A modelagem comentada está representada na \autoref{fig:diagramaEr}:
 
 Na \autoref{fig:diagramaEr}, é possível notar a presença das entidades elacionadas às diversas métricas de qualidade comentadas na \autoref{subsec:pesos_e_restricoes}, como restrições, contrantes, regiões, grupos de alinhamento, entre outras.
 
-Para validar a modelagem do banco de dados, realizaram-se inserções de informações de exemplo nas diferentes tabelas. A \autoref{fig:sqlValidacao} mostra algumas dessas inserções e os vínculos instituídos pelos identificadores escolhidos.
+As figuras \ref{fig:sqlValidacao} e \ref{fig:consultaGrade} demonstram algumas inserções e resultados de consultas utilizadas para validar a modelagem.
 
-\begin{figure}[!htb]
+\begin{figure}[h]
 	\centering
 	\caption{Consultas de validação da modelagem}
 	\includegraphics[width=1\textwidth]{./dados/figuras/sql_validacao}
 	\fonte{Autor}
 	\label{fig:sqlValidacao}
 \end{figure}
-\newpage
 
-Validou-se também o armazenamento das grades horárias no banco de dados. A \autoref{fig:sqlGrade} traz um exemplo de consulta de uma grade horária com sete salas:
-
-\begin{figure}[!htb]
-	\centering
-	\caption{Consulta SQL de grade horária com sete salas}
-	\includegraphics[width=0.7\textwidth]{./dados/figuras/sql_grade}
-	\fonte{Autor}
-	\label{fig:sqlGrade}
-\end{figure}
-
-A consulta anterior traz como resultado a tabela visível na \autoref{fig:consultaGrade}, com linhas e colunas correpondentes a horários de aulas e salas respectivamente.
-
-\begin{figure}[!htb]
+\begin{figure}[h]
 	\centering
 	\caption{Resultado da consulta de uma grade no banco de dados}
 	\includegraphics[width=0.7\textwidth]{./dados/figuras/ConsultaGrade}
 	\fonte{Autor}
 	\label{fig:consultaGrade}
 \end{figure}
-\pagebreak

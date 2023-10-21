@@ -6,12 +6,12 @@
 Este capítulo tem como objetivo explicar o problema de \textit{timetabling} e suas especificidades no caso de grades horárias de ensino médio, assim como a técnica de otimização \textit{Simulated Annealing} e sua aplicação ao problema.
 
 \section{TIMETABLING PROBLEM}
-O problema de \textit{timetabling} ou alocação de horários é definido em termos de quatro conjuntos, sendo estes horários, recursos, encontros e restrições. O problema consiste em associar os encontros desejados aos horários, utilizando os recursos disponíveis e minimizando as violações das restrições.
+O problema de \textit{timetabling} ou alocação de horários é definido em termos de quatro conjuntos, sendo estes horários, recursos, encontros e restrições. Envolve a tarefa de associar os encontros desejados aos horários, utilizando os recursos disponíveis e minimizando as violações das restrições.
 
 É evidente que existem inúmeras tarefas e indústrias que dependem da alocação de horários, portanto é necessário especializar o problema. Uma das variações deste problema é o \textit{school timetabling problem}, que segundo \citeonline{TAN2021113943} subdivide-se em \textit{exam timetabling}, \textit{course timetabling} e \textit{high school timetabling}. Esta última subdivisão, relacionada a escolas de ensino médio, será o foco deste trabalho.
 
 \subsection{Highschool Timetabling Problem}
-No caso específico da alocação de horários para escolas de ensino médio, o problema é definido em termos da disponibilidade dos professores, número de salas, número de aulas por professor em cada sala e restrições. Adequando estas necessidades à formulação do \textit{timetabling problem}, os encontros que desejamos alocar são entre os professores e determinada sala de aula, dados os horários de aula em que a escola opera, visando a utilização dos recursos disponíveis, como salas de aula ou laboratórios, minimizando a violação de restrições associadas aos professores e recursos \cite{TAN2021113943}.
+No caso específico da alocação de horários para escolas de ensino médio, o problema é definido em termos da disponibilidade dos professores, número de salas, número de aulas por professor em cada turma e restrições. Adequando estas necessidades à formulação do \textit{timetabling problem}, os encontros que desejamos alocar são entre os professores e as turmas, dados os horários de aula em que a escola opera, visando a utilização dos recursos disponíveis, como salas de aula ou laboratórios, minimizando a violação de restrições associadas aos professores e recursos \cite{TAN2021113943}.
 
 Segundo \citeonline{ABRAMSON}, o problema envolve agendar aulas, professores e salas de aula de tal forma que nenhum professor, turma ou sala de aula seja utilizado mais de uma vez em determinado horário. Situações em que ocorra este agendamento de recursos duplicados serão tratadas como ``conflitos'' neste trabalho.
 
@@ -21,22 +21,22 @@ Considerando a natureza complexa do problema, este trabalho propõe desenvolver 
 
 \section{NOVO ENSINO MÉDIO}
 \label{sec:novo_ensino_medio}
-O Novo Ensino Médio consiste na atualização das matrizes curriculares das salas desta etapa do sistema educacional (1º, 2º e 3º anos). Formulado através da Lei nº 13.415/2017 \cite{lei13415}, o novo modelo traz ainda mais desafios para a tarefa de organização de grades horárias escolares.
+O Novo Ensino Médio consiste na atualização das matrizes curriculares das salas desta etapa do sistema educacional (1º, 2º e 3º anos). Formulado através da Lei nº 13.415/2017, o novo modelo traz ainda mais desafios para a tarefa de organização de grades horárias escolares \cite{lei13415}.
 
 O principal destes novos desafios no contexto da criação de grades horárias é o conceito dos Itinerários Formativos, conjuntos de atividades que os estudantes podem escolher realizar durante o ensino médio, como discplinas, projetos, oficinas, entre outros.
 
 No caso de grandes instituições de ensino, é possível que seja viável oferecer essas atividades optativas através da criação de turmas específicas, entretanto, em escolas de pequeno porte, a adição destas turmas e quantidade relativamente pequena de estudantes por turma pode facilmente desgastar os recursos da instituição.
 
-Tendo estas limitações em mente, observou-se que uma estratégia aplicada por escolas de porte menor é a oferta de disciplinas optativas (Itinerários Formativos) em horários simultâneos em diferentes salas, nos períodos normais de ensino. No momento em que essas aulas acontecem, cada aluno das duas turmas se locomove para a sala adequada onde a aula que escolheu será ministrada, e com isso a escola não precisa alocar salas, professores ou horários adicionais. 
+Tendo estas limitações em mente, observou-se que uma estratégia aplicada por escolas de menor porte é a oferta de disciplinas optativas (Itinerários Formativos) em horários simultâneos em diferentes salas, nos períodos normais de ensino. No momento em que essas aulas acontecem, cada aluno das duas turmas se locomove para a sala adequada onde a aula que escolheu será ministrada, e com isso a escola não precisa alocar salas, professores ou horários adicionais. 
 
-Evidentemente, alocar horários simultâneos para determinadas aulas dificulta ainda mais o planejamento do horário escolar, sendo assim mais uma questão que pode ser auxiliada por um sistema de otimização da grade.
+Evidentemente, alocar horários simultâneos para determinadas aulas dificulta ainda mais o planejamento do horário escolar, sendo assim mais uma questão que pode ser auxiliada por um sistema de otimização de grades.
 
 \section{SIMULATED ANNEALING}
 Diversos problemas podem ser resolvidos imitando o que ocorre em fenômenos físicos ou naturais. Segundo \citeonline{van_1987}, \textit{Simulated Annealing} é uma meta-heurística que se inspira no processo de recozimento na área da metalurgia. Este processo tem como objetivo reduzir as tensões internas de determinado material, da seguinte forma:
 
 \begin{enumerate}
-	\item O material inicia com uma alta temperatura, com seus átomos desordenados e livres para vibrarem e se deslocarem
-	\item O sistema é resfriado gradualmente, fazendo com que os átomos encontrem posições cada vez mais estáveis. Em outras palavras, conforme a temperatura diminui, torna-se cada vez mais improvável um átomo se deslocar para uma posição menos estável
+	\item O material inicia com uma alta temperatura, com seus átomos desordenados e livres para vibrarem e se deslocarem;
+	\item O sistema é resfriado gradualmente, fazendo com que os átomos encontrem posições cada vez mais estáveis. Em outras palavras, conforme a temperatura diminui, torna-se cada vez mais improvável um átomo se deslocar para uma posição menos estável;
 	\item Por fim, atinge-se certa temperatura em que não ocorrem mais mudanças significativas no material. 
 \end{enumerate}
 

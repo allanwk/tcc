@@ -17,11 +17,11 @@
 \contentsline {section}{\numberline {3.2}MÉTODOS}{5}{section.3.2}%
 \contentsline {section}{\numberline {3.3}ANÁLISE E IMPLEMENTAÇÃO}{6}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Otimizador inicial}{6}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}PESOS E RESTRIÇÕES}{7}{subsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}Agrupamento de aulas}{7}{subsubsection.3.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.3.2.2}Constantes}{9}{subsubsection.3.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.3}Restrições}{10}{subsubsection.3.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.3.2.4}Limite de dias trabalhados}{12}{subsubsection.3.3.2.4}%
+\contentsline {subsection}{\numberline {3.3.2}PESOS E RESTRIÇÕES}{8}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}Agrupamento de aulas}{8}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}Constantes}{10}{subsubsection.3.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.3}Restrições}{11}{subsubsection.3.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.3.2.4}Limite de dias trabalhados}{11}{subsubsection.3.3.2.4}%
 \contentsline {subsubsection}{\numberline {3.3.2.5}Regiões}{12}{subsubsection.3.3.2.5}%
 \contentsline {subsubsection}{\numberline {3.3.2.6}Grupos de Alinhamento}{14}{subsubsection.3.3.2.6}%
 \contentsline {subsubsection}{\numberline {3.3.2.7}Janelas}{16}{subsubsection.3.3.2.7}%
@@ -30,24 +30,24 @@
 \contentsline {subsubsection}{\numberline {3.3.2.10}Armazenamento de soluções}{17}{subsubsection.3.3.2.10}%
 \contentsline {subsection}{\numberline {3.3.3}SERVIDOR E BANCO DE DADOS}{19}{subsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.3.4}INTERFACE}{22}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}USUÁRIOS E AUTENTICAÇÃO}{27}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.5}USUÁRIOS E AUTENTICAÇÃO}{28}{subsection.3.3.5}%
 \contentsline {subsubsection}{\numberline {3.3.5.1}Adaptação do banco de dados}{28}{subsubsection.3.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.3.5.2}Tela de login}{28}{subsubsection.3.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.3.5.2}Tela de login}{29}{subsubsection.3.3.5.2}%
 \contentsline {subsubsection}{\numberline {3.3.5.3}Rotas de autenticação}{29}{subsubsection.3.3.5.3}%
 \contentsline {subsubsection}{\numberline {3.3.5.4}Middlewares}{31}{subsubsection.3.3.5.4}%
 \contentsline {subsection}{\numberline {3.3.6}ALOCAÇÃO DE MATÉRIAS}{33}{subsection.3.3.6}%
-\contentsline {subsubsection}{\numberline {3.3.6.1}Alteração no banco de dados}{33}{subsubsection.3.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.3.6.1}Alteração no banco de dados}{34}{subsubsection.3.3.6.1}%
 \contentsline {subsubsection}{\numberline {3.3.6.2}Alteração de telas}{34}{subsubsection.3.3.6.2}%
-\contentsline {subsubsection}{\numberline {3.3.6.3}Alteração de métodos no servidor}{35}{subsubsection.3.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.3.6.3}Alteração de métodos no servidor}{36}{subsubsection.3.3.6.3}%
 \contentsline {subsubsection}{\numberline {3.3.6.4}Matérias no otimizador}{36}{subsubsection.3.3.6.4}%
 \contentsline {subsection}{\numberline {3.3.7}VALIDAÇÃO DE CONFIGURAÇÕES}{38}{subsection.3.3.7}%
 \contentsline {subsection}{\numberline {3.3.8}EXPORTAÇÃO DE GRADES HORÁRIAS}{39}{subsection.3.3.8}%
 \contentsline {chapter}{\chapternumberline {4}ANÁLISE E DISCUSSÃO DOS RESULTADOS}{41}{chapter.4}%
 \contentsline {section}{\numberline {4.1}VALIDAÇÃO INTERNA}{41}{section.4.1}%
 \contentsline {section}{\numberline {4.2}VALIDAÇÃO COM DATASETS PÚBLICOS}{50}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Instância 1}{50}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Instância 2}{53}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Instância 3}{57}{subsection.4.2.3}%
-\contentsline {chapter}{\chapternumberline {5}CONCLUSÃO}{62}{chapter.5}%
-\contentsline {chapter}{Refer\^encias}{63}{chapter*.9}%
+\contentsline {subsection}{\numberline {4.2.1}Instância 1}{51}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Instância 2}{54}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Instância 3}{58}{subsection.4.2.3}%
+\contentsline {chapter}{\chapternumberline {5}CONCLUSÃO}{63}{chapter.5}%
+\contentsline {chapter}{Refer\^encias}{64}{chapter*.9}%
 \vspace {\cftbeforepartskip }

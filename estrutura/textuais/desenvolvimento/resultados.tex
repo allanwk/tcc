@@ -16,12 +16,12 @@ Conforme amplamente abordado no \autoref{chap:desenvolvimento}, foram desenvolvi
 	\item Configurar as quantidades de aulas, e todas as métricas de qualidade;
 	\item Requisitar a geração das grades horárias;
 	\item Verificar se as configurações foram atendidas corretamente;
-	\item Realizar a exportação da grade horária no formato XLSX
+	\item Realizar a exportação da grade horária no formato XLSX.
 \end{enumerate}
 
 Após a execução dos itens 1 e 2, foi criada uma configuração que foi utilizada para a validação do \textit{software}. Esta configuração de teste contém dois turnos (``Manhã'' e ``Tarde''), cada qual com sete turmas. A tabela \ref{tab:validacao} contém a relação de professores, matérias e turmas do turno da manhã. 
 
-A tabela \ref{tab:validacao} contém o número de aulas que cada professor deve ministrar de cada matéria, em cada uma das salas. Por exemplo, seguindo esta configuração, a professora ``Adriana'' deve ministrar três aulas de qúimica e três aulas de biologia na turma do ``3º EM''.
+A tabela \ref{tab:validacao} contém o número de aulas que cada professor deve ministrar de cada matéria, em cada uma das turmas. Por exemplo, seguindo esta configuração, a professora ``Adriana'' deve ministrar três aulas de qúimica e três aulas de biologia na turma do ``3º EM''.
 
 \input{./dados/tabelas/quantidadeAulasValidacaoInterna}
 
@@ -160,7 +160,7 @@ Destas soluções, a melhor encontrada pode ser vista na figura \ref{fig:horario
 Observando as figuras \ref{fig:planilha_exportada_manha} e \ref{fig:planilha_exportada_tarde}, constata-se que:
 
 \begin{enumerate}
-	\item Foi alocada a quantidade correta de aulas para cada professor e matéria, nas salas corretas, de acordo com a tabela \ref{tab:validacao};
+	\item Foi alocada a quantidade correta de aulas para cada professor e matéria, nas turmas corretas, de acordo com a tabela \ref{tab:validacao};
 	\item As aulas foram alocadas sem causar conflitos, ou seja, em nenhum horário das grades, um professor está alocado para mais de uma turma simultaneamente;
 	\item Aproximadamente 64\% das aulas foram agrupadas: conforme o quadro \ref{qua:caracteristicas_horario_validacao}, apenas 142 do total de 396 aulas permaneceram separadas;
 	\item As aulas constantes mencionadas no item \ref{item_constantes} foram alocadas corretamente: Cristiane foi alocada nas duas primeiras aulas da segunda-feira na turma do 6º Ano e 6º Ano B;

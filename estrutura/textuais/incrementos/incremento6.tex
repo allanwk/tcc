@@ -1,8 +1,8 @@
 \subsection{ALOCAÇÃO DE MATÉRIAS}
 
-Durante os incrementos anterioriores, o otimizador gerava grades horárias que continham apenas os nomes dos professores alocados para aula. Em outras palavras, as grades eram matrizes nas quais as linhas eram os horários disponíveis, as colunas eram as salas e cada posição na matriz representava qual professor deveria ministrar a aula naquele horário.
+Durante os incrementos anterioriores, o otimizador gerava grades horárias que continham apenas os nomes dos professores alocados para aula. Em outras palavras, as grades eram matrizes nas quais as linhas eram os horários disponíveis, as colunas eram as turmas e cada posição na matriz representava qual professor deveria ministrar a aula naquele horário.
 
-A alocação dos professores é muito importante para a resolução do problema, pois apresenta a maior parte das retrições e dificuldades relacionadas, como os conflitos, por exemplo. Entretando, em termos de completude, as grades horárias devem ter também a alocação de matérias em cada horário de aula, visto que cada professor pode ministrar aulas de mais de uma matéria. As alterações necessárias para possibilitar isso foram:
+A alocação dos professores é muito importante para a resolução do problema, pois apresenta a maior parte das retrições e dificuldades relacionadas, como os conflitos, por exemplo. Entretando, em termos de completude, decidiu-se que as grades horárias devem ter também a alocação de matérias em cada horário de aula, visto que cada professor pode ministrar aulas de mais de uma matéria. As alterações necessárias para possibilitar isso foram:
 
 \begin{enumerate}
 	\item Alterar a modelagem do banco de dados para comportar informações relacionadas às matérias;
@@ -11,23 +11,23 @@ A alocação dos professores é muito importante para a resolução do problema,
 	\item Alterar código do otimizador para produzir grades horárias com matérias
 \end{enumerate}
 
+\newpage
 \subsubsection{Alteração no banco de dados}
 Para armazenar informações relacionadas às matérias, a modelagem do banco de dados foi alterada com a criação de uma tabela para armazenar as matérias, e a adição de uma coluna à tabela ``horario'' aula para que seja possível especificar matérias alocadas nas grades horárias. 
 Com estas alterações, a modelagem do banco de dados passa a ser representada pela figura \ref{fig:modelagemMateiras}.
 
-\begin{figure}[!htb]
+\begin{figure}[h]
 	\centering
 	\caption{Modelo Entidade-Relacionamento com Matérias}
 	\includegraphics[width=1\textwidth]{./dados/figuras/ER_horario_INCREMENTO6}
 	\fonte{Autor}
 	\label{fig:modelagemMateiras}
 \end{figure}
-\pagebreak`
 
 \subsubsection{Alteração de telas}
 Com a adição do conceito das matérias ao sistema, algumas telas da interface precisaram ser modificadas. A primeira destas, foi a tela inicial da configuração, ou seja, a tela de ``Estrutura da Escola'', cuja alteração pode ser vista na figura \ref{fig:estruturaAtualizada} consistiu na adição de uma seção para cadastro e visualização de matérias, semelhante ao componente de cadastro de professores.
 
-\begin{figure}[!htb]
+\begin{figure}[h]
 	\centering
 	\caption{Estrutura da Escola com Matérias}
 	\includegraphics[width=0.65\textwidth]{./dados/figuras/alteracaoEstrutura}
@@ -38,7 +38,7 @@ Com a adição do conceito das matérias ao sistema, algumas telas da interface 
 
 Além da tela de estrutura, a segunda aba da configuração (``Aulas/Matérias'') foi alterada para que fosse possível vincular matérias aos professores, e configurar a quantidade de aulas de cada matéria deve ser ministrada semanalmente, conforme a figura \ref{fig:alteracaoAulas}.
 
-\begin{figure}[!htb]
+\begin{figure}[h]
 	\centering
 	\caption{Tela de configuração de quantidades de aulas por matéria}
 	\includegraphics[width=0.65\textwidth]{./dados/figuras/alteracaoAulas}
@@ -48,7 +48,7 @@ Além da tela de estrutura, a segunda aba da configuração (``Aulas/Matérias''
 
 Por fim, na tela final da configuração, responsável por exibir as grades horárias geradas, foi necessário alterar o componente da grade para incluir, além dos nomes dos professores, os nomes das matérias alocadas para cada horário, como pode ser visto na figura \ref{fig:alteracaoHorario}.
 
-\begin{figure}[!htb]
+\begin{figure}[h]
 	\centering
 	\caption{Visualização de grade horária com matérias}
 	\includegraphics[width=0.65\textwidth]{./dados/figuras/alteracaoHorarios}
@@ -56,6 +56,7 @@ Por fim, na tela final da configuração, responsável por exibir as grades hor�
 	\label{fig:alteracaoHorario}
 \end{figure}
 
+\newpage
 \subsubsection{Alteração de métodos no servidor}
 A adição das matérias também envolveu algumas alterações no servidor. As rotas alteradas para acomodar a melhoria foram rotas de armazenamento e consulta da estrutura da escola, aulas e grades horárias.
 
@@ -64,7 +65,7 @@ Evidentemente, foi necessário criar rotas também para o gerenciamento de maté
 \subsubsection{Matérias no otimizador}
 Após as alterações na interface, servidor e banco de dados, o sistema estava pronto para lidar com as informações relacionadas às matérias, faltando apenas a incorporação destas na geração de grades horárias por parte do otimizador. 
 
-Para realizar isso, o otimizador foi alterado para alocar também matérias na grade horária, de forma que enquanto antes a grade horária armazenava em cada posição um professor que foi alocado para aquele horário, agora passa a armazenar uma dupla de professor e matéria alocados. Durante os passos de otimização, estas duplas seão permutadas, garantindo assim que cada matéria sempre corresponde a um professor compatível. Com estas alterações, o algoritmo \ref{alg:otimizadorCompleto} passa a representar o otimizador.
+Para realizar isso, o otimizador foi alterado para alocar também matérias na grade horária, de forma que enquanto antes a grade horária armazenava em cada posição um professor que foi alocado para aquele horário, agora passa a armazenar uma dupla de professor e matéria alocados. Durante os passos de otimização, estas duplas são permutadas, garantindo assim que cada matéria sempre corresponde a um professor compatível. Com estas alterações, o algoritmo \ref{alg:otimizadorCompleto} passa a representar o otimizador.
 
 
 \begin{algorithm}
@@ -85,7 +86,7 @@ Para realizar isso, o otimizador foi alterado para alocar também matérias na g
 			$probabilidade \leftarrow e^{-delta/temperatura}$\\
 			$valorAceite \leftarrow ValorAleatorioEntre(0, 1)$\\
 			\If {$delta < 0$ ou $probabilidade \ge valorAceite$} {
-				$grade.PermutaDuplas(sala, duplas)$\\
+				$grade.PermutaDuplas(turma, duplas)$\\
 				$deltaTotal \leftarrow deltaTotal + delta$\\
 				\If {grade não existe na lista de soluções} {
 					insere grade na lista de soluções\\

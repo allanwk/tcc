@@ -7,7 +7,7 @@ Apesar da importância da resolução de conflitos, existem diversas outras nuan
 
 A função de custo ponderado retorna um valor que representa a qualidade geral de uma grade horária, através do cálculo da média ponderada de todas as métricas de qualidade. Em outras palavras, quanto menor o custo, melhor a solução encontrada.
 
-Adicionalmente, as métricas foram implementadas de forma que pudessem ser rígidas ou suaves. As métricas rígidas precisam ser perfeitamente atendidas para que a grade horária seja considerada viável, enquanto as métricas suaves promovem a melhoria da qualidade, mas não necessariamente precisam ser perfeitamente atendidas.
+Adicionalmente, as métricas foram implementadas de forma que pudessem ser rígidas ou suaves. As métricas rígidas precisam ser perfeitamente atendidas para que a grade horária seja considerada viável, enquanto as métricas suaves promovem a melhoria da qualidade, mas não necessariamente precisam ser perfeitamente atendidas. Dessa forma, uma soluçaõ é condiderada ótima se pontua perfeitamente nas métricas rígidas, e atinge o limite inferior das métricas suaves.
 
 As próximas seções terão como objetivo explicar cada uma destas métricas e os desafios associados. A \autoref{subsec:salvamento} entrará em mais detalhes sobre como as grades horárias passaram a ser salvas após a implementação das métricas.
 
@@ -53,8 +53,8 @@ Observando o quadro \ref{qua:aulasSeparadas}, é possível notar:
 \begin{itemize}
 	\item Aulas separadas: 1, 2 e 3, visto que não estão em nenhum agrupamento;
 	\item Aulas desagrupadas: 1 e 3, pois consistem em múltiplas aulas iguais, no mesmo dia, que não foram agrupadas;
-	\item Excessos de aulas: 4, 5, 6, pois consiste em uma aula tripla, algo considerado não desejável neste trabalho
-\end{itemize}`
+	\item Excessos de aulas: 4, 5, 6, pois consiste em uma aula tripla, algo considerado não desejável neste trabalho.
+\end{itemize}
 
 Por fim, a situação de dias com todas aulas diferentes, que serão referidos como ``Dias fragmentados'' neste trabalho, pode ser observada no quadro \ref{qua:fragmentado}.
 
@@ -79,16 +79,17 @@ Por fim, a situação de dias com todas aulas diferentes, que serão referidos c
 	\fonte{Autoria própria}
 \end{quadro}
 
+\newpage
 \subsubsection{Constantes}
 
 Durante o desenvolvimento, concebeu-se o conceito de ``Aulas constantes'', como aulas que absolutamente devem ser alocadas em determinada posição da grade horária. Isto é útil para guiar o otimizador rumo a uma solução desejada, quando já são conhecidas algumas aulas que devem ser fixas. 
 
 Como exemplo de caso de uso, uma escola com seis aulas diárias pode ter alguns dias da semana com menos aulas, e pode ser interessante definir explicitamente quais dias devem ter a última aula da grade horária não alocada (vazia). A figura \ref{fig:constantes} mostra um exemplo de configuração de aulas constantes para determinada grade horária.
 
-\begin{figure}[!htb]
+\begin{figure}[h]
 	\centering
 	\caption{Aulas constantes}
-	\includegraphics[width=1\textwidth]{./dados/figuras/constantes}
+	\includegraphics[width=0.8\textwidth]{./dados/figuras/constantes}
 	\fonte{Autor}
 	\label{fig:constantes}
 \end{figure}
@@ -96,22 +97,20 @@ Como exemplo de caso de uso, uma escola com seis aulas diárias pode ter alguns 
 
 Considerando a natureza absoluta das aulas constantes, estas não são consideradas um métrica de qualidade, e não possuem um peso próprio. Em vez disso, no método ``GeraGradeInicial'' do algoritmo \ref{alg:otimizadorInicial}, o otimizador já aloca as aulas constantes nas posições desejadas, e a função ``EscolheHorariosAleatoriosValidos'' não seleciona posições que estejam alocadas com aulas constantes. Desta forma, um vez que as aulas constantes são posicionadas na grade horária, estas nunca são movidas durante os passos de otimização.
 
+
 \subsubsection{Restrições}
 
 As restrições representam o oposto das aulas constantes: posições em que determinadas aulas não devem ser alocadas. Implementaram-se no otimizador restrições suaves e rígidas, cada uma podendo também receber um peso customizado. Dessa forma, é possível configurar o otimizador para nunca alocar determinada aula em certa posição da grade, ou apenas evitar isso.
 
 Como exemplo de uso dessa funcionalidade, a figura \ref{fig:restricoes} demonstra uma configuração de restrições para determinado professor que não pode ser alocado nas duas últimas aulas de qualquer dia da grade horária.
 
-\begin{figure}[!htb]
+\begin{figure}[h]
 	\centering
 	\caption{Restrições}
-	\includegraphics[width=1\textwidth]{./dados/figuras/restricoes}
+	\includegraphics[width=0.6\textwidth]{./dados/figuras/restricoes}
 	\fonte{Autor}
 	\label{fig:restricoes}
 \end{figure}
-\pagebreak
-
-No caso das restrições, a métrica associada mensura a quantidade de restrições violadas, ou seja, posições em que determinada aula foi alocada, mas não deveria ter sido.
 
 \subsubsection{Limite de dias trabalhados}
 
@@ -119,6 +118,15 @@ Adicionou-se esta métrica como uma forma de especificar um número máximo de d
 
 Esta métrica simplesmente mensura o excesso de dias trabalhados, conforme os limites configurados. Por exemplo, se determinado professor tem um limite de 2 dias trabalhados, mas teve aulas alocadas em quatro dias diferentes, a métrica considera um desvio de dois dias.
 
+Como pode ser visto na figura \ref{fig:limites_dias}, os limites de dias trabalhados são diretamente associados aos professores, e por isso são configurados na tela de ``Estrutura da Escola'' na interface, na tabela de professores.
+
+\begin{figure}[h]
+	\centering
+	\caption{Limites de dias trabalhados por professor}
+	\includegraphics[width=1\textwidth]{./dados/figuras/limite_dias}
+	\fonte{Autor}
+	\label{fig:limites_dias}
+\end{figure}
 
 \subsubsection{Regiões}
 
@@ -129,34 +137,36 @@ Como exemplo de uso das regiões, a figura \ref{fig:regioes} demonstra uma confi
 \begin{figure}[!htb]
 	\centering
 	\caption{Exemplo de região}
-	\includegraphics[width=1\textwidth]{./dados/figuras/regioes}
+	\includegraphics[width=0.9\textwidth]{./dados/figuras/regioes}
 	\fonte{Autor}
 	\label{fig:regioes}
 \end{figure}
-\pagebreak
 
 A região configurada na \ref{fig:regioes} pode ser interpretada da seguinte forma: a professora ``Verônica'' deve ter exatamente cinco aulas alocadas dentro das posições marcadas pela cor azul. Como o otimizador não permite conflitos, cada uma das cinco aulas deverá ser alocada em um dos diferentes dias, garantindo que a professora terá uma aula agendada no primeiro horário de cada um dos dias.
 
 Neste caso, a métrica associada mensura o erro das regiões, ou seja, a diferença entre a quantidade de aulas esperada de acordo com a regra de cada região e a quantidade real de aulas alocadas.
 
+\newpage
 \subsubsection{Grupos de Alinhamento}
 
 Os grupos de alinhamento representam uma forma de configurar o otimizador para agendar aulas para diferentes turmas, nos mesmos horários. Isto é útil para atender a restrições relacionadas ao conceito dos Itinrários Formativos do Novo Ensino Médio, conforme citado na \autoref{sec:novo_ensino_medio}.
 
-Como exemplo de utilização dos grupos de alinhamentos, tem-se a configuração da figura \ref{fig:gruposAlinhamento}.
+Como exemplo de utilização dos grupos de alinhamentos, tem-se a configuração da figura \ref{fig:gruposAlinhamento}. Esta configuração de exemplo informa ao otimizador que 3 aulas da professora ``Verônica'' no ``6º Ano'' devem ser alocadas simultâneamente a 3 aulas da professora ``Adriana'' no ``7º Ano''. Os efeitos desta configuração podem ser vistos na \ref{fig:alinhados}, com as aulas corretamente alocadas em horários simultâneos.
 
-\begin{figure}[!htb]
+Implementaram-se duas métricas de qualidade relacionadas aos grupos de alinhamento, uma que mensura a quantidade de grupos formados e a quantidade de aulas ``desalinhadas'', ou seja, aulas que deveriam ser agendadas no mesmo horário, mas que não foram.
+
+No caso da figura \ref{fig:alinhados}, foram formados dois grupos (demarcados em vermelho), e nenhuma aula ficou desalinhada, ou seja, todas as seis aulas configuradas no grupo de alinhamento foram corretamente alocadas em horários simultâneos.
+
+\begin{figure}[h]
 	\centering
-	\caption{Exemplo de grupo de alinhamento sobre a grade horária gerada}
+	\caption{Exemplo de grupo de alinhamento configurado}
 	\includegraphics[width=1\textwidth]{./dados/figuras/gruposAlinhamento}
 	\fonte{Autor}
 	\label{fig:gruposAlinhamento}
 \end{figure}
 \pagebreak
 
-O efeito da configuração do grupo de alinhamento da figura \ref{fig:gruposAlinhamento}, pode ser observado na grade horária final gerada na figura \ref{fig:alinhados}, com as aulas corretamente alocadas em horários simultâneos.
-
-\begin{figure}[!htb]
+\begin{figure}[h]
 	\centering
 	\caption{Efeito de grupo de alinhamento}
 	\includegraphics[width=1\textwidth]{./dados/figuras/alinhados}
@@ -164,10 +174,6 @@ O efeito da configuração do grupo de alinhamento da figura \ref{fig:gruposAlin
 	\label{fig:alinhados}
 \end{figure}
 \pagebreak
-
-Implementaram-se duas métricas de qualidade relacionadas aos grupos de alinhamento, uma que mensura a quantidade de grupos formados e a quantidade de aulas ``desalinhadas'', ou seja, aulas que deveriam ser agendadas no mesmo horário, mas que não foram.
-
-No caso da figura \ref{fig:alinhados}, foram formados dois grupos (demarcados em vermelho), e nenhuma aula ficou desalinhada, ou seja, todas as seis aulas configuradas no grupo de alinhamento foram corretamente alocadas em horários simultâneos.
 
 \subsubsection{Janelas}
 
@@ -194,7 +200,7 @@ As janelas consistem em situações em que a jornada de trabalho de determinado 
 	\fonte{Autoria própria}
 \end{quadro}
 
-No quadro \ref{qua:janelas}, a professora Adriana tem uma janela na terceira aula, visto que tem aulas alocadas antes e depois (aulas 1, 2, 4 e 5). Em contrapartida, apesar de não ter nenhuma aula planejada no quinto horário, Rosa não tem janelas neste exemplo, pois pode encerrar sua jornada de trabalho na quarta aula.
+No quadro \ref{qua:janelas}, a professora ``Adriana'' tem uma janela na terceira aula, visto que tem aulas alocadas antes e depois (aulas 1, 2, 4 e 5). Em contrapartida, apesar de não ter nenhuma aula planejada no quinto horário, ``Rosa'' não tem janelas neste exemplo, pois pode encerrar sua jornada de trabalho na quarta aula.
 
 A métrica de janelas mensura o número de horários na grade que apresentam estes horários ociosos, para cada professor.
 
@@ -205,7 +211,7 @@ As preferências consistem em configurações que informam ao otimizador caracte
 \begin{enumerate}
 	\item Preferência de primeiras aulas;
 	\item Preferência de últimas aulas;
-	\item Preferência específica de última aula
+	\item Forçar última aula;
 \end{enumerate}
 
 \begin{figure}[!htb]
@@ -216,9 +222,9 @@ As preferências consistem em configurações que informam ao otimizador caracte
 	\label{fig:preferencias}
 \end{figure}
 
-A \autoref{fig:preferencias} representa um exemplo de configuração de preferências para determinado professor. Neste caso, a configuração informa ao otimizador que na segunda-feira, as aulas de ``Verônica'' devem ser alocadas desde o início do dia, não ultrapassando um total de aulas; e que na turma do ``6º Ano'', caso haja uma aula dessa professora, esta deve ser alocada na última aula.
+A \autoref{fig:preferencias} representa um exemplo de configuração de preferências para determinado professor. Neste caso, a configuração informa ao otimizador que na segunda-feira, as aulas de ``Verônica'' devem ser alocadas desde o início do dia, não ultrapassando um total de duas aulas; e que na terça-feira, na turma do ``6º Ano'', caso haja uma aula dessa professora, esta deve ser alocada na última aula.
 
-Vale ressaltar que o diferencial da preferência específica de última aula é que esta considera a possibilidade de aulas vazias, ou seja, caso o último horário do dia não tenha uma aula alocada, a preferência considera que a aula deve ser alocada na penúltima aula.
+Vale ressaltar que o diferencial da preferência ``Forçar última aula'' é que esta considera a possibilidade de aulas vazias, ou seja, caso o último horário do dia não tenha uma aula alocada, a preferência considera que a aula deve ser alocada na penúltima aula.
 
 \subsubsection{Mínimos e máximos}
 
@@ -237,7 +243,7 @@ O cálculo das métricas de qualidade relacionadas aos mínimos e máximos consi
 \subsubsection{Armazenamento de soluções}
 \label{subsec:salvamento}
 
-Com a adição das métricas, o critério para considerar uma grade horária como uma solução válida ficou mais estrito, e em muitos casos tornou-se impossível obter uma grade que atenda perfeitamente todas as nuances. Tendo isto em mente, foi necessário implementar uma funciondalide de armazenamento de grades horárias um pouco mais detalhada. O resultado disso, pode ser visto no algoritmo \ref{alg:otimizadorComRestricoes}.
+Com a adição das métricas, o critério para considerar uma grade horária como uma solução válida ficou mais estrito, e em muitos casos tornou-se praticamente impossível obter uma grade que atenda perfeitamente todas as métricas de qualidade suaves (não obrigatórias). Tendo isto em mente, foi necessário implementar uma funciondalide de armazenamento de grades horárias um pouco mais detalhada. O resultado disso, pode ser visto no algoritmo \ref{alg:otimizadorComRestricoes}.
 
 \begin{algorithm}
 	\caption{Otimizador com persistência de grades horárias}
@@ -252,12 +258,12 @@ Com a adição das métricas, o critério para considerar uma grade horária com
 		$deltaTotal \leftarrow 0$\\
 		\For {$passo = 0$ até $numeroPassos$} {
 			$turma \leftarrow grade.EscolheTurmaAleatoria()$\\
-			$linhas \leftarrow grade.EscolheHorariosAleatoriosValidos(sala)$\\
-			$delta \leftarrow grade.CalculaDelta(sala, linhas)$\\
+			$linhas \leftarrow grade.EscolheHorariosAleatoriosValidos(turma)$\\
+			$delta \leftarrow grade.CalculaDelta(turma, linhas)$\\
 			$probabilidade \leftarrow e^{-delta/temperatura}$\\
 			$valorAceite \leftarrow Aleatorio(0, 1)$\\
 			\If {$delta < 0$ ou $probabilidade \ge valorAceite$} {
-				$grade.PermutaProfessores(sala, linha1, linha2)$\\
+				$grade.PermutaProfessores(turma, linha1, linha2)$\\
 				$deltaTotal \leftarrow deltaTotal + delta$\\
 				\If {grade não existe na lista de soluções} {
 					insere grade na lista de soluções\\
@@ -283,6 +289,6 @@ Com a adição das métricas, o critério para considerar uma grade horária com
 
 Consinderando as diversas métricas de qualidade que as grades horárias passaram a ter, o método ``salvaGradesRelevantes'' do algoritmo \ref{alg:otimizadorComRestricoes} salva, para cada métrica escolhida, as 5 grades que tiveram a melhor pontuação em cada métrica. A princípio, optou-se por utilizar as métricas de qualidade geral (média ponderada de todas as métricas), janelas, agrupamento de aulas e número de preferências resolvidas, mas este método pode ser expandido para qualquer uma das métricas implementadas no sistema.
 
-Devido à complexidade do problema e à natureza não determinística do algoritmo aplicando \textit{Simulated Annealing}, é necessário utilizar o laço de repetição no presente no algoritmo \ref{alg:otimizadorComRestricoes}, controlado pela condição de parada. Em um cenário de produção, poderia ser utilizada como condição de parada um intervalo de tempo máximo de execução, ou um limite de soluções gerado.
+Devido à complexidade do problema e à natureza não determinística do algoritmo aplicando \textit{Simulated Annealing}, é necessário utilizar o laço de repetição no presente no algoritmo \ref{alg:otimizadorComRestricoes}, controlado pela condição de parada. Se o \textit{software} estivesse sendo utilizado em um cenário de produção, poderia ser utilizada como condição de parada um intervalo de tempo máximo de execução, ou um limite de soluções gerado.
 
 O principal desafio no desenvolvimento deste incremento foi manter a função ``CalculaDelta'' performática, já que esta é executada a cada passo de otimização. Para garantir uma performance aceitável, a função precisou ser implementada de forma que a variação de custo fosse calculada sem necessitar efetivamente a troca das aulas. Em outras palavras, a implementação simples, que seria realizar a permutação das aulas, calcular o custo e comparar com o custo atual da solução para obter a variação e depois desfazer a troca, seria ineficiente demais.

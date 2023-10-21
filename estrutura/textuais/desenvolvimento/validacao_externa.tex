@@ -9,6 +9,9 @@ Para a validação e comparação de soluções utilizando o formato XHSTT, exis
 
 Para cada uma das instâncias de validação presentes nas próximas subseções, foi utilizado o otimizador desenvolvido ao longo deste trabalho para produzir soluções, aplicando um limite de tempo de otimização de 5 minutos para cada instância. As melhores soluções produzidas foram então exportadas e validadas utilizando o HSeval, gerando relatórios de comparação das soluções com outras soluções presentes na literatura.
 
+Nos relatórios detalhados gerados pelo HSeval, visíveis nas figuras \ref{fig:hseval_brazilinstance1}, \ref{fig:hseval_brazilinstance5} e \ref{fig:hseval_brazilinstance7}, as tabelas têm suas duas últimas colunas nomeadas como ``Inf.'' e ``Obj.''. Estas representam respectivamente a inviabilidade e valor objetivo da solução. A inviabilidade consiste nas violações de trições rígidas (obrigatórias), enquanto o valor objetivo consiste nas violações de restrições suaves (não obrigatórias).
+
+\newpage
 \subsection{Instância 1}
 
 A primeira instância de teste, identificada como ``BrazilInstance1'', é composta por três turmas, 8 professores, cujas aulas devem ser alocadas em uma grade horária de 5 dias por semana, com 5 aulas por dia. As quantidade de aulas por professor em cada turma podem ser conferidas na tabela \ref{tab:config_aulas_br1}.
@@ -271,7 +274,7 @@ Os requisitos associados à instância são:
 \newpage
 A melhor solução produzida pelo otimizador pode ser vista nas figuras \ref{fig:brazilinstance7_solucao} e \ref{fig:brazilinstance7_solucao_2}, e a correspondente validação e pontuação na figura \ref{fig:hseval_brazilinstance5}.
 
-Vale ressaltar que todas as salas da instância pertecem ao mesmo turno, ou seja, apesar de as turmas terem sido separadas em duas figuras para melhor legibilidade, ainda poderiam ocorrer conflitos entre as turmas S1 e S20, por exemplo. Outra consideração importante é que para melhor legibilidade, na figura \ref{fig:hseval_brazilinstance7} omitiu-se a parte do relatório relacionada às quantidades mínimas de aulas duplas, considerando que a solução gerada tem 48 violações dessa regra. Contudo, estas violações ainda são consideradas no cálculo, como pode ser na primeira linha da tabela ``Summary'' na mesma figura.
+Vale ressaltar que todas as turmas da instância pertecem ao mesmo turno, ou seja, apesar de as turmas terem sido separadas em duas figuras para melhor legibilidade, ainda poderiam ocorrer conflitos entre as turmas S1 e S20, por exemplo. Outra consideração importante é que para melhor legibilidade, na figura \ref{fig:hseval_brazilinstance7} omitiu-se a parte do relatório relacionada às quantidades mínimas de aulas duplas, considerando que a solução gerada tem 48 violações dessa regra. Contudo, estas violações ainda são consideradas no cálculo, como pode ser na primeira linha da tabela ``Summary'' na mesma figura.
 
 \begin{figure}[h]
 	\centering
