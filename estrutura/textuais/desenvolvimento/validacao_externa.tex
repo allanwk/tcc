@@ -9,7 +9,7 @@ Para a validação e comparação de soluções utilizando o formato XHSTT, exis
 
 Para cada uma das instâncias de validação presentes nas próximas subseções, foi utilizado o otimizador desenvolvido ao longo deste trabalho para produzir soluções, aplicando um limite de tempo de otimização de 5 minutos para cada instância. As melhores soluções produzidas foram então exportadas e validadas utilizando o HSeval, gerando relatórios de comparação das soluções com outras soluções presentes na literatura.
 
-Nos relatórios detalhados gerados pelo HSeval, visíveis nas figuras \ref{fig:hseval_brazilinstance1}, \ref{fig:hseval_brazilinstance5} e \ref{fig:hseval_brazilinstance7}, as tabelas têm suas duas últimas colunas nomeadas como ``Inf.'' e ``Obj.''. Estas representam respectivamente a inviabilidade e valor objetivo da solução. A inviabilidade consiste nas violações de trições rígidas (obrigatórias), enquanto o valor objetivo consiste nas violações de restrições suaves (não obrigatórias).
+Nos relatórios detalhados gerados pelo HSeval, visíveis nas figuras \ref{fig:hseval_brazilinstance1}, \ref{fig:hseval_brazilinstance5} e \ref{fig:hseval_brazilinstance7}, as tabelas têm suas duas últimas colunas nomeadas como ``Inf.'' e ``Obj.''. Estas representam respectivamente a inviabilidade e valor objetivo da solução. A inviabilidade consiste nas violações de restrições rígidas (obrigatórias), enquanto o valor objetivo consiste nas violações de restrições suaves (não obrigatórias).
 
 \newpage
 \subsection{Instância 1}
@@ -21,7 +21,7 @@ A primeira instância de teste, identificada como ``BrazilInstance1'', é compos
 Os requisitos associados à instância são:
 \begin{enumerate}
 	\item Requisito 1 (obrigatório) : Não devem existir conflitos;
-	\item Requisito 2 (não obirgatório) : Não devem existir janelas;
+	\item Requisito 2 (não obrigatório) : Não devem existir janelas;
 	\item Requisito 3 (obrigatório) : Cada professor tem um dia da semana específico em que suas aulas não podem ser agendadas;
 	\item Requisito 4 (não obrigatório) : Os professores T1, T2, T3, T4. T5, T7 e T8 não devem ser alocados em mais de 2 dias da semana;
 	\item Requisito 5 (não obrigatório) : O professor T6 não deve ser alocado em mais de 3 dias da semana;
@@ -49,7 +49,7 @@ A melhor solução produzida pelo otimizador pode ser vista na figura \ref{fig:b
 
 \begin{figure}[h]
 	\centering
-	\caption{Relatório produzido pel HSEval para a solução apresentada}
+	\caption{Relatório produzido pelo HSEval para a solução apresentada}
 	\includegraphics[width=1\textwidth]{./dados/figuras/hseval_brazilinstance1}
 	\fonte{Relatório produzido no HSEval - \citeonline{HSEval}}
 	\label{fig:hseval_brazilinstance1}
@@ -274,7 +274,7 @@ Os requisitos associados à instância são:
 \newpage
 A melhor solução produzida pelo otimizador pode ser vista nas figuras \ref{fig:brazilinstance7_solucao} e \ref{fig:brazilinstance7_solucao_2}, e a correspondente validação e pontuação na figura \ref{fig:hseval_brazilinstance5}.
 
-Vale ressaltar que todas as turmas da instância pertecem ao mesmo turno, ou seja, apesar de as turmas terem sido separadas em duas figuras para melhor legibilidade, ainda poderiam ocorrer conflitos entre as turmas S1 e S20, por exemplo. Outra consideração importante é que para melhor legibilidade, na figura \ref{fig:hseval_brazilinstance7} omitiu-se a parte do relatório relacionada às quantidades mínimas de aulas duplas, considerando que a solução gerada tem 48 violações dessa regra. Contudo, estas violações ainda são consideradas no cálculo, como pode ser na primeira linha da tabela ``Summary'' na mesma figura.
+Vale ressaltar que todas as turmas da instância pertencem ao mesmo turno, ou seja, apesar de as turmas terem sido separadas em duas figuras para melhor legibilidade, ainda poderiam ocorrer conflitos entre as turmas S1 e S20, por exemplo. Outra consideração importante é que para melhor legibilidade, na figura \ref{fig:hseval_brazilinstance7} omitiu-se a parte do relatório relacionada às quantidades mínimas de aulas duplas, considerando que a solução gerada tem 48 violações dessa regra. Contudo, estas violações ainda são consideradas no cálculo, como pode ser na primeira linha da tabela ``Summary'' na mesma figura.
 
 \begin{figure}[h]
 	\centering
