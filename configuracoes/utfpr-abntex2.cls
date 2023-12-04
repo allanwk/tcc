@@ -369,35 +369,35 @@
             \vspace*{0.3cm}
             \begin{table}[!h]
             \begin{tabular}{cp{11.5cm}}
-            
+
             \ifthenelse{\equal{\license}{BY}}
             {
-            \includegraphics[width=3cm]{estrutura/pre-textuais/CreativeCommonsLogos/CC_BY.png}\\{\tiny 4.0 Internacional}
+            \includegraphics[width=3cm]{estrutura/pre-textuais/CreativeCommonsLogos/CC_BY.png}\\{\tiny \href{https://creativecommons.org/licenses/by/4.0/legalcode}{4.0 Internacional}}
             }{}
-            
+
             \ifthenelse{\equal{\license}{BYSA}}
             {
-            \includegraphics[width=3cm]{estrutura/pre-textuais/CreativeCommonsLogos/CC_BY_SA.png}\\{\tiny 4.0 Internacional}
+            \includegraphics[width=3cm]{estrutura/pre-textuais/CreativeCommonsLogos/CC_BY_SA.png}\\{\tiny \href{https://creativecommons.org/licenses/by-sa/4.0/legalcode}{4.0 Internacional}}
             }{}
-            
+
             \ifthenelse{\equal{\license}{BYND}}
             {
-            \includegraphics[width=3cm]{estrutura/pre-textuais/CreativeCommonsLogos/CC_BY_ND.png}\\{\tiny 4.0 Internacional}
+            \includegraphics[width=3cm]{estrutura/pre-textuais/CreativeCommonsLogos/CC_BY_ND.png}\\{\tiny \href{https://creativecommons.org/licenses/by-nd/4.0/legalcode}{4.0 Internacional}}
             }{}
-                     
+
             \ifthenelse{\equal{\license}{BYNC}}
             {
-            \includegraphics[width=3cm]{estrutura/pre-textuais/CreativeCommonsLogos/CC_BY_NC.png}\\{\tiny 4.0 Internacional}
+            \includegraphics[width=3cm]{estrutura/pre-textuais/CreativeCommonsLogos/CC_BY_NC.png}\\{\tiny \href{https://creativecommons.org/licenses/by-nc/4.0/deed.pt_BR}{4.0 Internacional}}
             }{}
-            
+
             \ifthenelse{\equal{\license}{BYNCSA}}
             {
-            \includegraphics[width=3cm]{estrutura/pre-textuais/CreativeCommonsLogos/CC_BY_NC_SA.png}\\{\tiny 4.0 Internacional}
+            \includegraphics[width=3cm]{estrutura/pre-textuais/CreativeCommonsLogos/CC_BY_NC_SA.png}\\{\tiny \href{https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR}{4.0 Internacional}}
             }{}
-            
+
             \ifthenelse{\equal{\license}{BYNCND}}
             {
-            \includegraphics[width=3cm]{estrutura/pre-textuais/CreativeCommonsLogos/CC_BY_NC_ND.png}\\{\tiny 4.0 Internacional}
+            \includegraphics[width=3cm]{estrutura/pre-textuais/CreativeCommonsLogos/CC_BY_NC_ND.png}\\{\tiny \href{https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode}{4.0 Internacional}}
             }{}
 
             & 

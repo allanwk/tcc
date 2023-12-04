@@ -1,8 +1,72 @@
 % -----------------------------------------------------------------------------
 % Folha de Aprovação
 % -----------------------------------------------------------------------------
+\newcommand{\imprimirdia}{5} %dia da defesa por extenso
+\newcommand{\imprimirmes}{dezembro} %mes da defesa por extenso
 
-\textopadraofolhadeaprovacao{Esta folha deverá ser substituída pela cópia digitalizada da folha de aprovação fornecida.}
+\newcommand{\imprimirbancaO}{Prof. Dr. Nome do orientador}
+\newcommand{\imprimirbancaA}{Profa. Dra. Professora da Banca}
+\newcommand{\imprimirbancaB}{Prof. Ms. Professor da Banca}
+
+{
+	\setlength{\parindent}{0pt}
+	\begin{minipage}[c][2.4cm][c]{0.09\textwidth}
+		\includegraphics[width=.9\textwidth]{dados/figuras/brasao.jpg}
+	\end{minipage}%
+	\begin{minipage}[c][2.4cm][t]{0.68\textwidth}
+		\begin{center}
+			\begin{SingleSpacing}
+				\MakeUppercase{\imprimirinstituicao} \\
+				\MakeUppercase{\imprimirdepartamento} \\
+				\MakeUppercase{\imprimirprograma} \\
+			\end{SingleSpacing}
+		\end{center}
+	\end{minipage}%
+	\begin{minipage}[c][2.4cm][c]{0.19\textwidth}
+		\begin{center}
+			\includegraphics[width=.93\textwidth]{dados/figuras/logo-instituicao.png}
+		\end{center}
+	\end{minipage} \\[-10pt]
+	
+	\rule{\textwidth}{1pt}  \\[-12pt]
+	{\color{yellow} \rule{\textwidth}{1pt}}
+}    
+\vspace{10pt}
+\begin{center}
+	\ABNTEXchapterfont\large\MakeUppercase{TERMO DE APROVAÇÃO}
+\end{center}
+\vspace{10pt}
+\begin{center}
+	\ABNTEXchapterfont\large{\imprimirtitulo}\\
+	\vspace{15pt}
+	\ABNTEXchapterfont\large{por}\\
+	\vspace{15pt}
+	\ABNTEXchapterfont\large{\imprimirautor}\\
+\end{center}
+\vspace{40pt}
+\par Este Trabalho de Conclusão de Curso de graduação foi julgado adequado para obtenção do Título de “{\imprimirtituloAcademico}” e aprovado em sua forma final pelo Programa de {\imprimirprograma} da Universidade Tecnológica Federal do Paraná. \\
+
+\vspace{10pt}
+\begin{center}
+	Cornélio Procópio, {\imprimirdia} de {\imprimirmes} de \imprimirdata
+\end{center}
+\vspace{30pt}
+\begin{center}
+	\rule[0pt]{320pt}{0.5pt}\\
+	\imprimirbancaO\\ \vspace{50pt}
+	
+	\rule[0pt]{320pt}{0.5pt}\\
+	\imprimirbancaA\\ \vspace{50pt}
+	
+	\rule[0pt]{320pt}{0.5pt}\\
+	\imprimirbancaB\\
+\end{center}
+\vfill
+\begin{center}
+	\begin{SingleSpacing}
+		“A Folha de Aprovação assinada encontra-se na Coordenação do Curso”
+	\end{SingleSpacing}
+\end{center}
 
 % -----------------------------------------------------------------------------
 % Este documento foi mantido apenas para preservar a paginação do trabalho
